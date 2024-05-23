@@ -14,7 +14,7 @@ top: 0;
   flex-shrink: 0;
   background: var(--branco, #fff);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  @media (max-width: 780px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;
