@@ -1,4 +1,6 @@
+import { TechnologyMaskImage, TestimonyGrid } from './container-styles';
 import { Testimony, TestimonyProps } from './testimony';
+import TechnologyMask from '@/imgs/technology-mask.png';
 
 interface TestimonyContainerProps {
   testimonies: ({ id: string } & TestimonyProps)[];
@@ -6,7 +8,7 @@ interface TestimonyContainerProps {
 
 export const TestimonyContainer = ({ testimonies }: TestimonyContainerProps) => {
   return (
-    <div>
+    <TestimonyGrid>
       {testimonies.map((testimony) => (
         <Testimony
           key={testimony.id}
@@ -14,6 +16,7 @@ export const TestimonyContainer = ({ testimonies }: TestimonyContainerProps) => 
           text={testimony.text}
         />
       ))}
-    </div>
+      <TechnologyMaskImage src={TechnologyMask.src} alt="technology mask" />
+    </TestimonyGrid>
   );
 };

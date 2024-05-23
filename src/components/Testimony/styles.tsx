@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  width: 600px;
+  width: 700px;
   height: 400px;
   align-items: center;
   gap: 1rem;
@@ -15,7 +15,6 @@ export const TestimonyContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  width: 662px;
 `;
 
 export const ClientContainer = styled.div`
@@ -27,9 +26,10 @@ export const ClientContainer = styled.div`
 export const ClientImage = styled.img`
   width: 192px;
   height: 176px;
-  border: 1px solid #000;
+  object-fit: contain;
 `;
 
 export const FeedbackContainer = styled.div`
   width: 400px;
+  text-align: justify;
 `;

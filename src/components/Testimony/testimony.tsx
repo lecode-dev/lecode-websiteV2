@@ -7,7 +7,7 @@ export interface TestimonyProps {
     name: string;
     company: string;
     role: string;
-    img: any;
+    img: string;
   };
   text: string;
 }
@@ -21,7 +21,7 @@ export const Testimony = ({ client, text }: TestimonyProps) => {
       />
       <TestimonyContainer>
         <ClientContainer>
-          <ClientImage />
+          <ClientImage src={client.img}/>
           <h3>{client.company}</h3>
           <p>{client.name}</p>
           <p>{client.role}</p>
