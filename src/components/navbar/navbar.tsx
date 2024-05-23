@@ -13,9 +13,9 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarContentContainer>
-        <NavLinks className=''>
+        <NavLinks>
           <Link
-            href='#danado'
+            href='#about'
             className={changa.className}
           >
             Quem Somos
