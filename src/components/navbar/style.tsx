@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import Link from 'next/link';
 
 export const NavbarContainer = styled.nav`
-position: fixed;
-top: 0;
+  position: fixed;
+  top: 0;
   display: flex;
   width: 100vw;
   height: 6.875rem;
@@ -57,5 +58,11 @@ export const ContactButton = styled.button`
       --gradiente-cta,
       radial-gradient(708.43% 135.72% at 8.24% 0%, #02a267 0%, #01b473 56%, #02794e 100%)
     );
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  &:hover {
+    color: #02a267;
   }
 `;
