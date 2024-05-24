@@ -7,7 +7,6 @@ import { NavbarContainer, NavbarContentContainer, NavLinks, StyledLink } from '.
 import { ContactButton } from '@/styles/global';
 
 const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
-
 const changa = Changa({ weight: ['500'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const Navbar = () => {
