@@ -3,7 +3,8 @@ import { Changa, Poppins } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import lecodeLogo from '../../../public/lecode-logo.svg';
-import { NavbarContainer, NavbarContentContainer, ContactButton, NavLinks, StyledLink } from './style';
+import { NavbarContainer, NavbarContentContainer, NavLinks, StyledLink } from './style';
+import { ContactButton } from '@/styles/global';
 
 const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
