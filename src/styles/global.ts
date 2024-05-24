@@ -55,7 +55,7 @@ margin-top: 0;
 margin-bottom: 0;
 text-transform: none; 
 `
-export const subtitle2 = styled.h2 `
+export const Subtitle2 = styled.h2 `
   font-family: Montserrat, sans-serif;
 font-weight: bold;
 font-size: 24px;
@@ -66,7 +66,7 @@ margin-top: 0;
 margin-bottom: 0;
 text-transform: none; 
 `
-export const paragrafo1 = styled.p `
+export const Paragraph1 = styled.p `
   font-family: Poppins, sans-serif;
 font-weight: 400;
 font-size: 16px;
@@ -77,7 +77,7 @@ margin-top: 0;
 margin-bottom: 0;
 text-transform: none; 
 `
-export const paragrafo2 = styled.p `
+export const Paragraph2 = styled.p `
   font-family: Poppins, sans-serif;
 font-weight: 500;
 font-size: 20px;
