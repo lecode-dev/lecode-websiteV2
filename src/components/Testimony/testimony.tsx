@@ -1,35 +1,49 @@
-import Image from 'next/image';
 import LecodeTestimonyLogo from '@/imgs/lecode-testimony.svg';
-import { Container, ClientContainer, FeedbackContainer, TestimonyContainer, ClientImage } from './styles';
+import {
+  ComponentContainer,
+  ClientContainer,
+  FeedbackContainer,
+  CardContainer,
+  ClientImage,
+  Logo,
+  ClientData,
+} from './styles';
 
 export interface TestimonyProps {
-  client: {
-    name: string;
-    company: string;
-    role: string;
-    img: string;
+  testimony: {
+    client: {
+      name: string;
+      company: string;
+      role: string;
+      img: string;
+    };
+    text: string;
   };
-  text: string;
+  oddEven?: boolean;
 }
 
-export const Testimony = ({ client, text }: TestimonyProps) => {
+export const Testimony = ({ testimony, oddEven = false }: TestimonyProps) => {
+  const { client, text } = testimony;
+
   return (
-    <Container>
-      <Image
-        src={LecodeTestimonyLogo}
-        alt='lecode-testimony-logo'
-      />
-      <TestimonyContainer>
+    <ComponentContainer oddEven={oddEven}>
+      <CardContainer>
         <ClientContainer>
-          <ClientImage src={client.img}/>
-          <h3>{client.company}</h3>
-          <p>{client.name}</p>
-          <p>{client.role}</p>
+          <ClientImage src={client.img} />
+          <ClientData>
+            <h3>{client.company}</h3>
+            <p>{client.name}</p>
+            <p>{client.role}</p>
+          </ClientData>
         </ClientContainer>
         <FeedbackContainer>
           <p>{text}</p>
         </FeedbackContainer>
-      </TestimonyContainer>
-    </Container>
+      </CardContainer>
+      <Logo
+        src={LecodeTestimonyLogo.src}
+        alt='lecode-testimony-logo'
+      />
+    </ComponentContainer>
   );
 };
