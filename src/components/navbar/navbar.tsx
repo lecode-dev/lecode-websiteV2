@@ -1,6 +1,7 @@
 'use client';
 import { Changa, Poppins } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 import lecodeLogo from '../../../public/lecode-logo.svg';
 import { NavbarContainer, NavbarContentContainer, ContactButton, NavLinks, StyledLink } from './style';
 
@@ -24,12 +25,12 @@ export const Navbar = () => {
           src={lecodeLogo}
         />
         <ContactButton>
-          <StyledLink
+          <Link
             href='#contact'
             className={poppins.className}
           >
             Entre em contato
-          </StyledLink>
+          </Link>
         </ContactButton>
       </NavbarContentContainer>
     </NavbarContainer>
