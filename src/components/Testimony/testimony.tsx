@@ -8,7 +8,7 @@ import {
   Logo,
   ClientData,
 } from './styles';
-import { Paragraph1, Paragraph2, Subtitle2 } from '@/styles/global';
+import { Paragraph2 } from '@/styles/global';
 
 export interface TestimonyProps {
   testimony: {
@@ -16,7 +16,7 @@ export interface TestimonyProps {
       name: string;
       company: string;
       role: string;
-      img: string;
+      img: any;
     };
     text: string;
   };
@@ -30,19 +30,22 @@ export const Testimony = ({ testimony, oddEven = false, ...props }: TestimonyPro
     <ComponentContainer oddEven={oddEven}>
       <CardContainer>
         <ClientContainer>
-          <ClientImage src={client.img} />
+          <ClientImage 
+            src={client.img} 
+            alt='client-image'
+          />
           <ClientData>
-            <Subtitle2>{client.company}</Subtitle2>
-            <Paragraph2>{client.name}</Paragraph2>
-            <Paragraph1>{client.role}</Paragraph1>
+            <p>{client.company}</p>
+            <p>{client.name}</p>
+            <p>{client.role}</p>
           </ClientData>
         </ClientContainer>
         <FeedbackContainer>
-          <p>{text}</p>
+          <Paragraph2>{text}</Paragraph2>
         </FeedbackContainer>
       </CardContainer>
       <Logo
-        src={LecodeTestimonyLogo.src}
+        src={LecodeTestimonyLogo}
         alt='lecode-testimony-logo'
       />
     </ComponentContainer>

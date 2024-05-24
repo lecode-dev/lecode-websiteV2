@@ -24,7 +24,7 @@ export const TestimonyContainer = ({ testimonies }: TestimonyContainerProps) => 
         ))}
       </TestimoniesContainer>
       <Mask
-        src={TechnologyMask.src}
+        src={TechnologyMask}
         alt='technology mask'
       />
     </SectionContainer>

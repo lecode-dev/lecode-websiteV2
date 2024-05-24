@@ -1,4 +1,5 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
+import Image from 'next/image';
 
 export const SectionContainer = styled.div`
   position: relative;
@@ -22,7 +23,7 @@ export const TestimoniesContainer = styled.div`
   gap: 5rem;
 `;
 
-export const Mask = styled.img`
+export const Mask = styled(Image)`
   position: absolute;
   bottom: 0px;
   right: 0px;
