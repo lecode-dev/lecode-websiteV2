@@ -7,5 +7,4 @@ export const defaultTheme = {
     'white':'##FFFFFF',
     'gradient-CTA': 'radial-gradient(#01B473, #70BE81, #048556)',
     'gradient-secondary': 'radial-linear(#00AB26, #01B473)',
-    
 }

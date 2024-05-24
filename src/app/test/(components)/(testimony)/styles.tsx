@@ -24,7 +24,7 @@ export const TestimoniesContainer = styled.div`
 
 export const Mask = styled.img`
   position: absolute;
-  bottom: -100px;
-  right: -100px;
+  bottom: 0px;
+  right: 0px;
   opacity: 40%;
 `;

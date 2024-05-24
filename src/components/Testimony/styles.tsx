@@ -1,3 +1,4 @@
+import { Subtitle2 } from '@/styles/global';
 import styled from 'styled-components';
 
 interface ComponentProps {
@@ -32,6 +33,9 @@ export const ClientContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 18px;
+  ${Subtitle2} {
+    color: ${({ theme }) => theme['main-green']};
+  }
 `;
 
 export const ClientData = styled.div`

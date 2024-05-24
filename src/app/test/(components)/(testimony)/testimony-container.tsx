@@ -12,7 +12,7 @@ export const TestimonyContainer = ({ testimonies }: TestimonyContainerProps) => 
   return (
     <SectionContainer>
       <TitleContainer>
-        <h1>Testimonies</h1>
+        <h1>Depoimentos</h1>
       </TitleContainer>
       <TestimoniesContainer>
         {testimonies.map(({ id, testimony }, index) => (

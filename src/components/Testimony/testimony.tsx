@@ -8,6 +8,7 @@ import {
   Logo,
   ClientData,
 } from './styles';
+import { Paragraph1, Paragraph2, Subtitle2 } from '@/styles/global';
 
 export interface TestimonyProps {
   testimony: {
@@ -22,7 +23,7 @@ export interface TestimonyProps {
   oddEven?: boolean;
 }
 
-export const Testimony = ({ testimony, oddEven = false }: TestimonyProps) => {
+export const Testimony = ({ testimony, oddEven = false, ...props }: TestimonyProps) => {
   const { client, text } = testimony;
 
   return (
@@ -31,9 +32,9 @@ export const Testimony = ({ testimony, oddEven = false }: TestimonyProps) => {
         <ClientContainer>
           <ClientImage src={client.img} />
           <ClientData>
-            <h3>{client.company}</h3>
-            <p>{client.name}</p>
-            <p>{client.role}</p>
+            <Subtitle2>{client.company}</Subtitle2>
+            <Paragraph2>{client.name}</Paragraph2>
+            <Paragraph1>{client.role}</Paragraph1>
           </ClientData>
         </ClientContainer>
         <FeedbackContainer>
