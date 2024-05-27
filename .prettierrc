@@ -9,5 +9,5 @@
   "singleAttributePerLine": true,
   "bracketSpacing": true,
   "bracketSameLine": false,
-  "endOfLine": "lf",
+  "endOfLine": "lf"
 }
