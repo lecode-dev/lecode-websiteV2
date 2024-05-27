@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 export const NavbarContainer = styled.nav`
   position: fixed;
-  top: 0;
   display: flex;
   width: 100vw;
   height: 6.875rem;
@@ -15,6 +14,7 @@ export const NavbarContainer = styled.nav`
   flex-shrink: 0;
   background: var(--branco, #fff);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  z-index: 5;
   @media (max-width: 1280px) {
     display: none;
   }
