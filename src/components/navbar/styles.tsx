@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import { Styles } from '@/styles';
 
 export const NavbarContainer = styled.nav`
   position: fixed;
@@ -15,7 +16,7 @@ export const NavbarContainer = styled.nav`
   flex-shrink: 0;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  @media (max-width: 1280px) {
+  @media (${Styles.sizes.tablet}) {
     display: none;
   }
 `;
