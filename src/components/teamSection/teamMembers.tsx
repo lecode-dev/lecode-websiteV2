@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import ErickProfile from '../../../public/erick-profile-img.png';
 import KarenProfile from '../../../public/karen-profile-img.png';
 import NatanProfile from '../../../public/natan-profile-img.png';
+import { ImageStyled } from './style';
 
 export const members = [
   {
@@ -9,7 +9,7 @@ export const members = [
     expertise: ['#C', 'NodeJS', 'React', 'DEVops'],
     charge: 'Full-Stack Developer',
     img: (
-      <Image
+      <ImageStyled
         src={ErickProfile}
         alt=''
       />
@@ -20,7 +20,7 @@ export const members = [
     expertise: ['ReactJS', 'NextJS', 'Cypress', 'NodeJS'],
     charge: 'Web Developer',
     img: (
-      <Image
+      <ImageStyled
         src={KarenProfile}
         alt=''
       />
@@ -31,7 +31,7 @@ export const members = [
     expertise: ['', '', ''],
     charge: 'Full-Stack Developer',
     img: (
-      <Image
+      <ImageStyled
         src={NatanProfile}
         alt=''
       />

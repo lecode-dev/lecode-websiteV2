@@ -1,8 +1,7 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ContactButton } from '@/styles/global';
-import { ContactLinkContainer, SectionContainer, TeamContainer } from './style';
+import { ContactLinkContainer, ExpertiseButtonn, HiddenDiv, SectionContainer, TeamContainer } from './style';
 import { members } from './teamMembers';
 
 export const TeamLecodeContainer = () => {
@@ -20,11 +19,12 @@ export const TeamLecodeContainer = () => {
           return (
             <>
            <div>{item.name}</div> 
-           <ul>
-          {item.expertise.map((i) => <li>{i}</li>)}
-           </ul>
-           <div>{item.charge}</div> 
+           <div>
            <div>{item.img}</div>
+           <ExpertiseButtonn> Expertise </ExpertiseButtonn>
+          {item.expertise.map((i) => <HiddenDiv>{i}</HiddenDiv>)}
+           </div>
+           <div>{item.charge}</div> 
             </>
           )
         })}
