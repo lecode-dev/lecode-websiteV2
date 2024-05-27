@@ -6,10 +6,18 @@ export const defaultTheme = {
         'gray': '#F6F6F6',
         'secundary-gray': '#3F3D3D',
         'white':'#FFFFFF',
+        'black':'#000000',
     },
-    gradient: {
-        'CTA': 'radial-gradient(#01B473, #70BE81, #048556)',
-        'secondary': 'radial-linear(#00AB26, #01B473)',
+    shadows: {
+        'main-green': '#00ab26',
+        'white': '#fffafa'
+    },
+    hover: {
+        'main-green': '#02a267',
+    },
+    gradients: {
+        'CTA': 'radial-gradient(708.43% 135.72% at 8.24% 0%, #04c17c 0%, #01b473 56%, #04c17c 100%)',
+        'secondary': 'radial-gradient(708.43% 135.72% at 8.24% 0%, #02a267 0%, #01b473 56%, #02794e 100%)',
     }
     
 }

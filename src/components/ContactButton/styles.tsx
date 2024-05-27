@@ -12,16 +12,13 @@ export const ContactButton = styled.button`
   border-radius: 0.5rem;
   font-size: 1rem;
   border: none;
-  background: var(--gradiente-cta, radial-gradient(708.43% 135.72% at 8.24% 0%, #04c17c 0%, #01b473 56%, #04c17c 100%));
-  box-shadow: 0px 0px 8px 0px #00ab26, 0px 0px 1.9px 0px #fffafa;
+  background: ${({ theme }) => theme.gradients.CTA};
+  box-shadow: ${({ theme }) => `0px 0px 8px 0px ${theme.shadows['main-green']}, 0px 0px 1.9px 0px ${theme.shadows.white}`};
   cursor: pointer;
   text-transform: uppercase;
-  color: #ffff;
+  color: ${({ theme }) => theme.colors.white};
 
   &:hover {
-    background: var(
-      --gradiente-cta,
-      radial-gradient(708.43% 135.72% at 8.24% 0%, #02a267 0%, #01b473 56%, #02794e 100%)
-    );
+    background: ${({ theme }) => theme.gradients.secondary};
   }
 `;
