@@ -1,8 +1,11 @@
 'use client';
 import Link from 'next/link';
-import { ContactButton } from '@/styles/global';
-import { ContactLinkContainer, ExpertiseButtonn, HiddenDiv, SectionContainer, TeamContainer } from './style';
+import { Changa } from 'next/font/google';
+import { ContactButton, Paragraph1 } from '@/styles/global';
+import { ContactLinkContainer, SectionContainer, TeamContainer, Container, Button, Overlay, OverlayText, ButtonContainer } from './style';
 import { members } from './teamMembers';
+
+const changa = Changa({ weight: ['500'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const TeamLecodeContainer = () => {
   return (
@@ -17,16 +20,19 @@ export const TeamLecodeContainer = () => {
       <TeamContainer>
         {members.map((item) => {
           return (
-            <>
-           <div>{item.name}</div> 
-           <div>
-           <div>{item.img}</div>
-           <ExpertiseButtonn> Expertise </ExpertiseButtonn>
-          {item.expertise.map((i) => <HiddenDiv>{i}</HiddenDiv>)}
-           </div>
-           <div>{item.charge}</div> 
-            </>
-          )
+      <Container>
+      {item.img}
+      <ButtonContainer>
+      <p className={changa.className}>{item.name}</p>
+      <Button>Expertise</Button>
+      </ButtonContainer>
+      <Overlay>
+      <OverlayText>
+        {item.expertise.map((i) => <li>{i}</li>)}
+        </OverlayText>
+      </Overlay>
+    </Container>
+ )
         })}
       </TeamContainer>
     </SectionContainer>

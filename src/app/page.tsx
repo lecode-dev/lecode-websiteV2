@@ -4,7 +4,7 @@ import { TeamLecodeContainer } from "@/components/teamSection/teamSection";
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <TeamLecodeContainer />
     </main>
   );
