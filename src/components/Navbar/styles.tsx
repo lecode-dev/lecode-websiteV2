@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { Styles } from '@/styles';
+import { ContactButton } from '../ContactButton';
 
 export const NavbarContainer = styled.nav`
   position: fixed;
@@ -44,3 +45,7 @@ export const StyledLink = styled(Link)`
     color: ${({ theme }) => theme.hover['main-green']};
   }
 `;
+
+export const StyledContactButton = styled(ContactButton) `
+  margin-left: 20rem;
+`

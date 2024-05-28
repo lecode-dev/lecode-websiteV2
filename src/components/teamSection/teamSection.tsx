@@ -1,38 +1,51 @@
 'use client';
 import Link from 'next/link';
 import { Changa } from 'next/font/google';
-import { ContactButton, Paragraph1 } from '@/styles/global';
-import { ContactLinkContainer, SectionContainer, TeamContainer, Container, Button, Overlay, OverlayText, ButtonContainer } from './style';
+import {
+  ContactLinkContainer,
+  SectionContainer,
+  TeamContainer,
+  MemberContainer,
+  ExpertiseButton,
+  Overlay,
+  OverlayText,
+  ButtonContainer,
+  MemberTeamName,Paragraph1Styled,
+  StyledHeader2
+} from './style';
 import { members } from './teamMembers';
+import { ContactButton } from '../ContactButton';
 
-const changa = Changa({ weight: ['500'], style: ['normal'], subsets: ['latin'], display: 'swap' });
+const changa = Changa({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const TeamLecodeContainer = () => {
   return (
     <SectionContainer>
       <ContactLinkContainer>
-      <h2>Encontre o seu time ideal</h2>
-      <p>Uma equipe completa, com a expertise que você precisa para alavancar suas ideias.</p>
-      <ContactButton>
-        <Link href='#contact'>Veja os detalhes da equipe </Link>
-      </ContactButton>
+        <StyledHeader2>Encontre o seu time ideal</StyledHeader2>
+        <Paragraph1Styled>Uma equipe completa, com a expertise que você precisa para alavancar suas ideias.</Paragraph1Styled>
+        <ContactButton>
+          <Link href='#contact' >Veja os detalhes da equipe </Link>
+        </ContactButton>
       </ContactLinkContainer>
       <TeamContainer>
         {members.map((item) => {
           return (
-      <Container>
-      {item.img}
-      <ButtonContainer>
-      <p className={changa.className}>{item.name}</p>
-      <Button>Expertise</Button>
-      </ButtonContainer>
-      <Overlay>
-      <OverlayText>
-        {item.expertise.map((i) => <li>{i}</li>)}
-        </OverlayText>
-      </Overlay>
-    </Container>
- )
+            <MemberContainer>
+              {item.img}
+              <ButtonContainer>
+                <MemberTeamName className={changa.className}>{item.name}</MemberTeamName>
+                <ExpertiseButton>Expertise</ExpertiseButton>
+              </ButtonContainer>
+              <Overlay>
+                <OverlayText>
+                  {item.expertise.map((i) => (
+                    <p>{i}</p>
+                  ))}
+                </OverlayText>
+              </Overlay>
+            </MemberContainer>
+          );
         })}
       </TeamContainer>
     </SectionContainer>
