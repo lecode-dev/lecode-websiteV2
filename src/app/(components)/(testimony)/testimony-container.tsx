@@ -5,7 +5,14 @@ import TechnologyMask from '@/imgs/technology-mask.png';
 import Stroke from '@/imgs/stroke.svg';
 import LecodeLogoBackground from '@/imgs/lecode-logo-background.svg';
 import { Header1 } from '@/styles';
-import { SectionContainer, TitleContainer, TestimoniesContainer, Mask, StrokeImage, LogoBackground } from './styles';
+import {
+  SectionContainer,
+  TitleContainer,
+  TestimoniesContainer,
+  Mask,
+  StrokeImage,
+  LogoBackground,
+} from './styles';
 
 interface TestimonyContainerProps {
   id: string;
@@ -15,9 +22,9 @@ interface TestimonyContainerProps {
 export const TestimonyContainer = ({ id, testimonies }: TestimonyContainerProps) => {
   const BackgroundLogo = [
     { $top: '-200px', $right: '-50px' },
-    { $top: '300px', $left: '-30px', $opacity: '10%'},
-    { $bottom: '450px', $right: '100px'},
-    { $bottom: '100px', $left: '90px', $opacity: '10%'},
+    { $top: '300px', $left: '-30px', $opacity: '10%' },
+    { $bottom: '450px', $right: '100px' },
+    { $bottom: '100px', $left: '90px', $opacity: '10%' },
   ];
 
   return (

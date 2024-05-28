@@ -24,7 +24,7 @@ export const TitleContainer = styled.div`
 
 export const StrokeImage = styled(Image)`
   position: absolute;
-  top: 45px;
+  top: 48px;
 `;
 
 export const TestimoniesContainer = styled.div`
