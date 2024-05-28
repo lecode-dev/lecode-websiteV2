@@ -1,4 +1,5 @@
-import LecodeTestimonyLogo from '@/imgs/lecode-testimony.svg';
+import type { StaticImageData } from 'next/image';
+import LecodeTestimonyLogo from '@/imgs/lecode-logo-testimony.svg';
 import {
   ComponentContainer,
   ClientContainer,
@@ -7,8 +8,11 @@ import {
   ClientImage,
   Logo,
   ClientData,
+  Paragraph,
+  CompanyName,
+  ClientName,
+  ClientRole,
 } from './styles';
-import { Paragraph2 } from '@/styles/global';
 
 export interface TestimonyProps {
   testimony: {
@@ -16,32 +20,32 @@ export interface TestimonyProps {
       name: string;
       company: string;
       role: string;
-      img: any;
+      img: StaticImageData;
     };
     text: string;
   };
-  oddEven?: boolean;
+  $oddEven?: boolean;
 }
 
-export const Testimony = ({ testimony, oddEven = false, ...props }: TestimonyProps) => {
+export const Testimony = ({ testimony, $oddEven = false }: TestimonyProps) => {
   const { client, text } = testimony;
 
   return (
-    <ComponentContainer oddEven={oddEven}>
+    <ComponentContainer $oddEven={$oddEven}>
       <CardContainer>
         <ClientContainer>
-          <ClientImage 
-            src={client.img} 
+          <ClientImage
+            src={client.img}
             alt='client-image'
           />
           <ClientData>
-            <p>{client.company}</p>
-            <p>{client.name}</p>
-            <p>{client.role}</p>
+            <CompanyName>{client.company}</CompanyName>
+            <ClientName>{client.name}</ClientName>
+            <ClientRole>{client.role}</ClientRole>
           </ClientData>
         </ClientContainer>
         <FeedbackContainer>
-          <Paragraph2>{text}</Paragraph2>
+          <Paragraph>{text}</Paragraph>
         </FeedbackContainer>
       </CardContainer>
       <Logo
