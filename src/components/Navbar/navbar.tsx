@@ -2,9 +2,8 @@
 import { Changa, Poppins } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ContactButton } from '@/components/ContactButton';
 import lecodeLogo from '../../../public/lecode-logo.svg';
-import { NavbarContainer, NavbarContentContainer, NavLinks, StyledLink } from './styles';
+import { NavbarContainer, NavbarContentContainer, NavLinks, StyledContactButton, StyledLink } from './styles';
 
 const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 const changa = Changa({ weight: ['500'], style: ['normal'], subsets: ['latin'], display: 'swap' });
@@ -24,14 +23,14 @@ export const Navbar = () => {
           alt='LeCode logo: green triangle with white Le and black code'
           src={lecodeLogo}
         />
-        <ContactButton>
+        <StyledContactButton>
           <Link
             href='#contact'
             className={poppins.className}
           >
             Entre em contato
           </Link>
-        </ContactButton>
+        </StyledContactButton>
       </NavbarContentContainer>
     </NavbarContainer>
   );
