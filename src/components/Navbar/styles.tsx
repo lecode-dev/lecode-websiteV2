@@ -16,6 +16,7 @@ export const NavbarContainer = styled.nav`
   flex-shrink: 0;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  z-index: 5;
   @media (${Styles.sizes.tablet}) {
     display: none;
   }
