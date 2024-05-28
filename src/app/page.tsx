@@ -1,5 +1,4 @@
-import { Navbar } from "@/components/navbar/navbar";
-import { TeamLecodeContainer } from "@/components/teamSection/teamSection";
+import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
   return (

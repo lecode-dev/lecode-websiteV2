@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import { Styles } from '@/styles';
 
 export const NavbarContainer = styled.nav`
   position: fixed;
-  display: flex;
   top: 0;
+  display: flex;
   width: 100vw;
   height: 6.875rem;
   padding: 0.625rem;
@@ -13,10 +14,9 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   gap: 0.625rem;
   flex-shrink: 0;
-  background: var(--branco, #fff);
+  background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  z-index: 5;
-  @media (max-width: 1280px) {
+  @media (${Styles.sizes.tablet}) {
     display: none;
   }
 `;
@@ -34,12 +34,12 @@ export const NavLinks = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  color: #000;
+  color: ${({ theme }) => theme.colors.black};
   font-size: 1rem;
 `;
 
 export const StyledLink = styled(Link)`
   &:hover {
-    color: #02a267;
+    color: ${({ theme }) => theme.hover['main-green']};
   }
 `;
