@@ -4,7 +4,8 @@ import * as Fonts from "./fonts"
 
 
 const Styles = {
-    sizes: Sizes.device,
+    devices: Sizes.device,
+    deviceSizes: Sizes.size,
     fonts: Fonts.fonts
 }
 export { Styles }

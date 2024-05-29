@@ -12,7 +12,8 @@ export const ContactButton = styled.button`
   font-size: 1rem;
   border: none;
   background: ${({ theme }) => theme.gradients.CTA};
-  box-shadow: ${({ theme }) => `0px 0px 8px 0px ${theme.shadows['main-green']}, 0px 0px 1.9px 0px ${theme.shadows.white}`};
+  box-shadow: ${({ theme }) =>
+    `0px 0px 8px 0px ${theme.colors.shadows.mainGreen}, 0px 0px 1.9px 0px ${theme.colors.shadows.white}`};
   cursor: pointer;
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.white};

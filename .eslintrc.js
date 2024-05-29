@@ -48,6 +48,7 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off',
     
     // React
-    'react/function-component-definition': 'off'
+    'react/function-component-definition': 'off',
+    'react/no-array-index-key': 'off',
   },
 };

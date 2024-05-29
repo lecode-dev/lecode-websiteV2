@@ -11,7 +11,7 @@ interface StyledComponentProps {
   lineHeight: string;
 }
 
-const createStyledHeading = (
+export const createStyledHeading = (
   tag: keyof JSX.IntrinsicElements,
   { fontFamily, fontWeight, fontSize, lineHeight }: StyledComponentProps
 ) => styled(tag)`
