@@ -84,7 +84,16 @@ export const ContactLinkContainer = styled.div`
   text-align: left;
 
   @media (${Styles.devices.laptop}) {
-    width: 100%;
+    width: 50vw;
+    margin: 10% 3%;
+    height: 21.6875rem;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (${Styles.devices.tabletL}) {
+    width: 60vw;
     margin: 10% 3%;
     height: 21.6875rem;
     align-items: center;
@@ -105,7 +114,7 @@ export const Paragraph1Styled = styled(Paragraph1)`
   }
 `;
 export const StyledHeader2 = styled(Header32)`
-  color: #0ec281;
+  color: ${({ theme }) => ` ${theme.colors.mainGreen}`};
   width: 80%;
   font-weight: 500;
 `;
