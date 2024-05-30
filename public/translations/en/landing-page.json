@@ -1,0 +1,45 @@
+{
+  "aboutUs": {
+    "title": "About Us",
+    "description": "We are a team of professionals who are passionate about what we do"
+  },
+  "ourSkills": {
+    "title": "Our Skills",
+    "description": "We are a team of professionals who are passionate about what we do"
+  },
+  "cases": {
+    "title": "Cases",
+    "description": "We are a team of professionals who are passionate about what we do"
+  },
+  "team": {
+    "title": "Team",
+    "description": "We are a team of professionals who are passionate about what we do"
+  },
+  "clients": {
+    "title": "Testimonials",
+    "client1": {
+      "name": "John Doe",
+      "position": "CEO",
+      "company": "Company Name",
+      "description": "We are a team of professionals who are passionate about what we do"
+    },
+    "client2": {
+      "name": "John Doe",
+      "position": "CEO",
+      "company": "Company Name",
+      "description": "We are a team of professionals who are passionate about what we do"
+    },
+    "client3": {
+      "name": "John Doe",
+      "position": "CEO",
+      "company": "Company Name",
+      "description": "We are a team of professionals who are passionate about what we do"
+    },
+    "client4": {
+      "name": "John Doe",
+      "position": "CEO",
+      "company": "Company Name",
+      "description": "We are a team of professionals who are passionate about what we do"
+    }
+  }
+}
