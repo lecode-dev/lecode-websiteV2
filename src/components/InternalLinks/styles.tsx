@@ -12,7 +12,7 @@ export const NavLinks = styled.div`
   align-items: center;
   gap: 1.39vw;
   color: ${({ theme }) => theme.colors.black};
-
+  line-height: 125%;
   
   @media (${Styles.devices.tablet}) {
     display: none;
