@@ -25,9 +25,16 @@ export const FooterContainer = styled.footer`
 
 export const LinksContainer = styled.nav`
   display: flex;
-  width: 82.01vw;
+  width: 82.01rem;
   justify-content: space-between;
   align-items: center;
+
+  @media (${Styles.devices.laptopL}) {
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 
   @media (${Styles.devices.tablet}) {
     justify-content: center;
@@ -37,14 +44,20 @@ export const LinksContainer = styled.nav`
 export const ExternalLinks = styled.div`
   color: ${({ theme }) => theme.colors.black};
   display: flex;
-  width: 29vw;
-  gap: 5vw;
-  
+  gap: 51px;
+
+  @media (${Styles.devices.laptopL}) {
+    width: 29vw;
+  }
   
   @media (${Styles.devices.tablet}) {
     flex-direction: column;
     align-items: center;
     gap: 28px;
+  }
+  
+  &:hover {
+    color: ${({ theme }) => theme.colors.hover.mainGreen};
   }
 `;
 
@@ -54,5 +67,7 @@ export const Typo = styled.p`
   width: 100%;
   padding: 20px;
   text-align: center;
+
+ 
 
 `
