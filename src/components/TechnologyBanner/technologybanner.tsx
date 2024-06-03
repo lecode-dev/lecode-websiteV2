@@ -13,6 +13,7 @@ import {
   OthersFrameworksText,
   UnorderedListTecnology,
   ListTecnologys,
+  SVGBackgroundTechnologies
 } from './styles';
 import Image from 'next/image';
 import reactLogo from '../../../public/react-logo.svg';
@@ -34,7 +35,9 @@ export const TechnologyBanner = () => {
         </TextRow>
         <MoreTechnologiesText>As tecnologias mais atuais em prol da efiência e performance</MoreTechnologiesText>
       </ContainerMainText>
+
       <ContainerTechnology>
+        <SVGBackgroundTechnologies/>
         <CardTechnology>
           <TitleCardTechnology>Front-end</TitleCardTechnology>
           <Image

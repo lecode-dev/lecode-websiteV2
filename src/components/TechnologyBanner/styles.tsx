@@ -1,5 +1,6 @@
 import { Header1, Subtitle, Header32, Paragraph1 } from '@/styles';
 import styled from 'styled-components';
+import backgroundTecnologies from '../../../public/background-tecnologies.svg';
 
 export const TechnologyContainer = styled.div`
   height: 978px;
@@ -48,6 +49,18 @@ export const ContainerTechnology = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+`;
+
+export const SVGBackgroundTechnologies = styled.div`
+  background-image: url(${backgroundTecnologies});
+  background-repeat: repeat-x; /* Repete a imagem no eixo horizontal */
+  background-position: center top; /* Centraliza a imagem horizontalmente e a posiciona no topo verticalmente */
+  position: absolute; /* Para usar z-index */
+  top: 0;
+  left: 0;
+  z-index: -99999; /* Coloca o SVG atrás dos outros elementos */
+  opacity: 0.5; /* Opcional: Adiciona transparência ao SVG */
 `;
 
 export const CardTechnology = styled.div`
