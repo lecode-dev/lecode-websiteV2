@@ -13,12 +13,16 @@ import {
   OthersFrameworksText,
   UnorderedListTecnology,
   ListTecnologys,
-  SVGBackgroundTechnologies
+  WrapContainer
 } from './styles';
 import Image from 'next/image';
 import reactLogo from '../../../public/react-logo.svg';
 import cSharpLogo from '../../../public/c-logo.svg';
 import azureLogo from '../../../public/azure-logo.svg';
+import TechnologyMask from '@/imgs/technology-mask.png';
+import { StyledMaskTechnology } from '@/app/(components)/(testimony)/styles';
+import { StyledMaskTechnologyInvert } from '@/app/(components)/(testimony)/styles';
+
 
 export const TechnologyBanner = () => {
   return (
@@ -30,14 +34,15 @@ export const TechnologyBanner = () => {
         </TextRow>
         <TextRow>
           <LearnAboutText color='green'>que o time da</LearnAboutText>
-          <LearnAboutText color='white'>Le code</LearnAboutText>
-          <LearnAboutText color='green'>domina</LearnAboutText>
+          <WrapContainer>
+            <LearnAboutText color='white'>Le code</LearnAboutText>
+            <LearnAboutText color='green'>domina</LearnAboutText>
+          </WrapContainer>
         </TextRow>
         <MoreTechnologiesText>As tecnologias mais atuais em prol da efiência e performance</MoreTechnologiesText>
       </ContainerMainText>
 
       <ContainerTechnology>
-        <SVGBackgroundTechnologies/>
         <CardTechnology>
           <TitleCardTechnology>Front-end</TitleCardTechnology>
           <Image
@@ -66,7 +71,7 @@ export const TechnologyBanner = () => {
           />
           <MainTitleTechnology>React</MainTitleTechnology>
           <TechnologyDescription>
-          Desenvolvemos uma estrutura robusta, com integrações e APIs para otimizar o desempenho.
+            Desenvolvemos uma estrutura robusta, com integrações e APIs para otimizar o desempenho.
           </TechnologyDescription>
           <OthersFrameworksText>Outros frameworks que utilizamos:</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -78,7 +83,6 @@ export const TechnologyBanner = () => {
           </UnorderedListTecnology>
         </CardTechnology>
 
-        
         <CardTechnology>
           <TitleCardTechnology>Infraestrutura</TitleCardTechnology>
           <Image
@@ -87,7 +91,7 @@ export const TechnologyBanner = () => {
           />
           <MainTitleTechnology>Azure</MainTitleTechnology>
           <TechnologyDescription>
-          Gerenciamos a infraestrutura dos projetos com o que há de melhor no mercado.
+            Gerenciamos a infraestrutura dos projetos com o que há de melhor no mercado.
           </TechnologyDescription>
           <OthersFrameworksText>Outros frameworks que utilizamos:</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -100,6 +104,14 @@ export const TechnologyBanner = () => {
           </UnorderedListTecnology>
         </CardTechnology>
       </ContainerTechnology>
+      <StyledMaskTechnologyInvert
+        src={TechnologyMask}
+        alt='technology-mask-styled-invert'
+      />
+      <StyledMaskTechnology
+        src={TechnologyMask}
+        alt='technology-mask-styled'
+      />
     </TechnologyContainer>
   );
 };

@@ -1,19 +1,19 @@
 import { Header1, Subtitle, Header32, Paragraph1 } from '@/styles';
 import styled from 'styled-components';
-import backgroundTecnologies from '../../../public/background-tecnologies.svg';
+import { Styles } from '@/styles';
+
 
 export const TechnologyContainer = styled.div`
-  height: 978px;
-  padding-top: 10rem;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 60px 25px 60px 25px;
   background: ${({ theme }) => theme.colors.mainBack};
 `;
 export const ContainerMainText = styled.div`
-  width: 850px;
-  height: 200px;
   margin-bottom: 48px;
 `;
 interface LearnAboutTextProps {
@@ -24,6 +24,7 @@ export const TextRow = styled.span`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
@@ -31,6 +32,17 @@ export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
   padding-right: 1rem;
   color: ${({ color, theme }) => (color === 'green' ? theme.colors.mainGreen : theme.colors.white)};
   text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.mainGreen};
+  @media (${Styles.devices.tablet}) {
+    width: 100%;
+    text-align: center;
+  }
+`;
+export const WrapContainer = styled.div`
+  display: flex;
+  @media (${Styles.devices.tablet}) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const ContainerSubText = styled.div`
   border: 5px solid purple;
@@ -45,23 +57,16 @@ export const MoreTechnologiesText = styled(Subtitle)`
 
 export const ContainerTechnology = styled.div`
   width: 100%;
-  height: 900px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
+  @media (${Styles.devices.tablet}) { 
+    flex-direction:column;
+    gap:4rem;
+  }
 `;
 
-export const SVGBackgroundTechnologies = styled.div`
-  background-image: url(${backgroundTecnologies});
-  background-repeat: repeat-x; /* Repete a imagem no eixo horizontal */
-  background-position: center top; /* Centraliza a imagem horizontalmente e a posiciona no topo verticalmente */
-  position: absolute; /* Para usar z-index */
-  top: 0;
-  left: 0;
-  z-index: -99999; /* Coloca o SVG atrás dos outros elementos */
-  opacity: 0.5; /* Opcional: Adiciona transparência ao SVG */
-`;
+
 
 export const CardTechnology = styled.div`
   height: 100%;
@@ -76,20 +81,17 @@ export const MainTitleTechnology = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
   margin-bottom: 18px;
-
 `;
 
 export const TechnologyDescription = styled(Paragraph1)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
   margin-bottom: 18px;
-
 `;
 export const OthersFrameworksText = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
   margin-bottom: 18px;
-
 `;
 export const UnorderedListTecnology = styled.ul`
   padding: 0;
@@ -101,5 +103,5 @@ export const UnorderedListTecnology = styled.ul`
 export const ListTecnologys = styled(Paragraph1).attrs({ as: 'li' })`
   color: ${({ theme }) => theme.colors.white};
   padding: 2px 0;
-  width: auto; 
+  width: auto;
 `;

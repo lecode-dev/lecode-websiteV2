@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <TechnologyBanner />
       <ScrollbarWrapper>
         <Body>
+          <TechnologyBanner />
           <TestimonyContainer
             id='clients'
             testimonies={TestimonyData}

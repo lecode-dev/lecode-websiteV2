@@ -47,6 +47,28 @@ export const Mask = styled(Image)`
   right: 0px;
   opacity: 20%;
 `;
+export const StyledMaskTechnology = styled(Mask)`
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  opacity: 20%;
+  @media (${Styles.devices.tablet}) {
+    position: absolute;
+    top: 0px;
+    opacity: 20%;
+  }
+`;
+export const StyledMaskTechnologyInvert = styled(Mask)`
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  opacity: 20%;
+  @media (${Styles.devices.tablet}) {
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+  }
+`;
 
 export const LogoBackground = styled(Image)<{
   $top?: string;
