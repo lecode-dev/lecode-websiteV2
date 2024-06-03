@@ -9,7 +9,7 @@ export const TechnologyContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.colors.mainBlack};
+  background: ${({ theme }) => theme.colors.mainBack};
 `;
 export const ContainerMainText = styled.div`
   width: 850px;
