@@ -10,7 +10,9 @@ export default function Home() {
       <Navbar />
       <ScrollbarWrapper>
         <Body>
-          <TechnologyBanner />
+          <TechnologyBanner
+          id='technologies'
+          />
           <TestimonyContainer
             id='clients'
             testimonies={TestimonyData}
