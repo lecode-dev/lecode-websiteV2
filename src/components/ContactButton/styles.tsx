@@ -5,7 +5,7 @@ export const ContactButton = styled.button`
   width: fit-content;
   height: 3.25rem;
   padding: 1.5625rem 1.5rem;
-  margin-left: 20rem;
+  /* margin-left: 20rem; */
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
