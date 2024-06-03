@@ -47,7 +47,7 @@ export const ExternalLinks = styled.div`
   gap: 51px;
 
   @media (${Styles.devices.laptopL}) {
-    width: 29vw;
+    width: 20vw;
   }
   
   @media (${Styles.devices.tablet}) {
