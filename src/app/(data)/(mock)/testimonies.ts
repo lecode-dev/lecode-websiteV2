@@ -1,5 +1,4 @@
 import ClientMock1 from '@/imgs/client-mock-1.png';
-import ClientMock2 from '@/imgs/client-mock-2.png';
 
 export const TestimonyData = [
   {
@@ -21,7 +20,7 @@ export const TestimonyData = [
         name: 'John Smith',
         company: 'Company',
         role: 'Role',
-        img: ClientMock2,
+        img: ClientMock1,
       },
       text: '"Estou extremamente satisfeito com os serviços prestados pela LeCode. Sua expertise, abordagem colaborativa e transparência nos fizeram sentir parte do processo. Desde que começamos a trabalhar com eles, nossa eficiência operacional aumentou significativamente."',
     },
@@ -33,7 +32,7 @@ export const TestimonyData = [
         name: 'Jane Doe',
         company: 'Company',
         role: 'Role',
-        img: ClientMock2,
+        img: ClientMock1,
       },
       text: '"Estou extremamente satisfeito com os serviços prestados pela LeCode. Sua expertise, abordagem colaborativa e transparência nos fizeram sentir parte do processo. Desde que começamos a trabalhar com eles, nossa eficiência operacional aumentou significativamente."',
     },

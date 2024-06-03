@@ -1,0 +1,21 @@
+{
+  "aboutUs": {
+    "title": "Quem somos",
+    "description": "Somos uma equipe de profissionais apaixonados pelo que fazemos"
+  },
+  "ourSkills": {
+    "title": "Nossas habilidades",
+    "description": "Somos uma equipe de profissionais apaixonados pelo que fazemos"
+  },
+  "cases": {
+    "title": "Cases",
+    "description": "Somos uma equipe de profissionais apaixonados pelo que fazemos"
+  },
+  "team": {
+    "title": "Equipe",
+    "description": "Somos uma equipe de profissionais apaixonados pelo que fazemos"
+  },
+  "testimonials": {
+    "title": "Depoimentos"
+  }
+}

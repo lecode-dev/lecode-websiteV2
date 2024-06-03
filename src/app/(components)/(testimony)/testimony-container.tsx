@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslation } from 'react-i18next';
 import { Testimony, type TestimonyProps } from '@/components/Testimony/testimony';
 import TechnologyMask from '@/imgs/technology-mask.png';
 import Stroke from '@/imgs/stroke.svg';
@@ -20,6 +21,9 @@ interface TestimonyContainerProps {
 }
 
 export const TestimonyContainer = ({ id, testimonies }: TestimonyContainerProps) => {
+
+  const { t } = useTranslation();
+
   const BackgroundLogo = [
     { $top: '-200px', $right: '-50px' },
     { $top: '300px', $left: '-30px', $opacity: '10%' },
@@ -30,7 +34,7 @@ export const TestimonyContainer = ({ id, testimonies }: TestimonyContainerProps)
   return (
     <SectionContainer id={id}>
       <TitleContainer>
-        <Header1>Depoimentos</Header1>
+        <Header1>{t('testimonials.title')}</Header1>
         <StrokeImage
           src={Stroke}
           alt='stroke'
