@@ -15,31 +15,33 @@
     "title": "Equipe",
     "description": "Somos uma equipe de profissionais apaixonados pelo que fazemos"
   },
-  "clients": {
+  "testimonials": {
     "title": "Depoimentos",
-    "client_1": {
-      "name": "John Doe",
-      "position": "CEO",
-      "company": "Company Name",
-      "description": "We are a team of professionals who are passionate about what we do"
-    },
-    "client_2": {
-      "name": "John Doe",
-      "position": "CEO",
-      "company": "Company Name",
-      "description": "We are a team of professionals who are passionate about what we do"
-    },
-    "client_3": {
-      "name": "John Doe",
-      "position": "CEO",
-      "company": "Company Name",
-      "description": "We are a team of professionals who are passionate about what we do"
-    },
-    "client_4": {
-      "name": "John Doe",
-      "position": "CEO",
-      "company": "Company Name",
-      "description": "We are a team of professionals who are passionate about what we do"
+    "clients": {
+      "client_1": {
+        "name": "John Doe",
+        "position": "CEO",
+        "company": "Company Name",
+        "description": "We are a team of professionals who are passionate about what we do"
+      },
+      "client_2": {
+        "name": "John Doe",
+        "position": "CEO",
+        "company": "Company Name",
+        "description": "We are a team of professionals who are passionate about what we do"
+      },
+      "client_3": {
+        "name": "John Doe",
+        "position": "CEO",
+        "company": "Company Name",
+        "description": "We are a team of professionals who are passionate about what we do"
+      },
+      "client_4": {
+        "name": "John Doe",
+        "position": "CEO",
+        "company": "Company Name",
+        "description": "We are a team of professionals who are passionate about what we do"
+      }
     }
   }
 }
