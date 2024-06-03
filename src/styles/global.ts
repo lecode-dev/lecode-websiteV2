@@ -124,15 +124,16 @@ const GlobalCSS = createGlobalStyle`
   } */
 
   * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
 
   html,
   body {
     max-width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   body {

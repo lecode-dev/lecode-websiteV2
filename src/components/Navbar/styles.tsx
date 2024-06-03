@@ -16,7 +16,9 @@ export const NavbarContainer = styled.nav`
   flex-shrink: 0;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  @media (${Styles.sizes.tablet}) {
+  z-index: 1000;
+
+  @media (${Styles.devices.tablet}) {
     display: none;
   }
 `;
@@ -40,6 +42,6 @@ export const NavLinks = styled.div`
 
 export const StyledLink = styled(Link)`
   &:hover {
-    color: ${({ theme }) => theme.hover['main-green']};
+    color: ${({ theme }) => theme.colors.hover.mainGreen};
   }
 `;
