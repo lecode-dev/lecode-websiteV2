@@ -56,7 +56,7 @@ export const Footer = () => {
           </Link>
         </ExternalLinks>
       </LinksContainer>
-      <Typo> © 2023 LeCode, Inc. Todos os direitos reservados. </Typo>
+      <Typo> © 2023 LeCode, Inc.Todos os direitos reservados. </Typo>
     </FooterContainer>
   );
 };
