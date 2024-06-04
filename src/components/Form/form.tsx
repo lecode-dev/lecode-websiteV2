@@ -20,11 +20,10 @@ import {
   BackgroundImageContainer,
 } from './styles';
 
-const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const Form = () => {
   return (
-    <Container>
+    <Container id='contact'>
       <FormContainer>
         <BackgroundImageContainer>
           <BackgroundImageLeft
@@ -57,7 +56,6 @@ export const Form = () => {
           <ContactButton>
             <Link
               href='#'
-              className={poppins.className}
             >
               Entre em contato
             </Link>
