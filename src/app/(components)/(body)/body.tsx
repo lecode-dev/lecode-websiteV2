@@ -1,10 +1,10 @@
 'use client'
-import { Styles } from "@/styles";
 import styled from "styled-components";
 
 export const Body = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
+
 `;
 
 export const ScrollbarWrapper = styled.div`

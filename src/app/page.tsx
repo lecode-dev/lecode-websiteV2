@@ -15,9 +15,9 @@ export default function Home() {
           id='clients'
           testimonies={TestimonyData}
         />
-      </Body>
-      <Form />
+        <Form />
       <Footer />
+      </Body>
       </ScrollbarWrapper>
     </main>
   );
