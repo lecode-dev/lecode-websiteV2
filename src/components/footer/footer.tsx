@@ -6,7 +6,6 @@ import linkedlnLogo from '../../imgs/linkedln-icon.svg';
 import gitHubLogo from '../../imgs/github-icon.svg';
 import lecodeLogo from '../../imgs/lecode-logo-gray.svg';
 import { InternalLinks } from '../InternalLinks';
-import Link from 'next/link';
 
 export const Footer = () => {
   return (
