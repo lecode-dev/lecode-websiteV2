@@ -18,9 +18,8 @@ export const Footer = () => {
       <LinksContainer>
         <InternalLinks />
         <ExternalLinks>
-          <Link
+          <a
             href='https://www.instagram.com/lecode_dev/'
-            passHref
             target='_blank'
           >
             <Image
@@ -29,10 +28,9 @@ export const Footer = () => {
               width={25}
               height={25}
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://br.linkedin.com/company/lecodedev'
-            passHref
             target='_blank'
           >
             <Image
@@ -41,10 +39,9 @@ export const Footer = () => {
               width={25}
               height={25}
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://github.com/lecode-dev'
-            passHref
             target='_blank'
           >
              <Image
@@ -53,7 +50,7 @@ export const Footer = () => {
             width={25}
             height={25}
           />
-          </Link>
+          </a>
         </ExternalLinks>
       </LinksContainer>
       <Typo> © 2023 LeCode, Inc.Todos os direitos reservados. </Typo>
