@@ -1,4 +1,4 @@
-import ClientMock1 from '@/imgs/client-mock-1.png';
+import ClientMock1 from '@/images/client-mock-1.png';
 
 export const TestimonyData = [
   {

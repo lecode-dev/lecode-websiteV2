@@ -2,9 +2,9 @@
 
 import { useTranslation } from 'react-i18next';
 import { Testimony, type TestimonyProps } from '@/components/Testimony/testimony';
-import TechnologyMask from '@/imgs/technology-mask.png';
-import Stroke from '@/imgs/stroke.svg';
-import LecodeLogoBackground from '@/imgs/lecode-logo-background.svg';
+import TechnologyMask from '@/images/technology-mask.png';
+import Stroke from '@/images/stroke.svg';
+import LecodeLogoBackground from '@/images/lecode-logo-background.svg';
 import { Header1 } from '@/styles';
 import {
   SectionContainer,
