@@ -1,19 +1,23 @@
 import { Navbar } from '@/components/Navbar';
 import { TestimonyContainer } from '@/app/(components)/(testimony)/testimony-container';
 import { TestimonyData } from '@/app/(data)/(mock)/testimonies';
-import { Body, ScrollbarWrapper } from '@/app/(components)/(body)/body';
+import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
+import { Form } from '@/components/Form';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <ScrollbarWrapper>
-        <Body>
+        <Content>
           <TestimonyContainer
             id='clients'
             testimonies={TestimonyData}
           />
-        </Body>
+          <Form />
+          <Footer />
+        </Content>
       </ScrollbarWrapper>
     </main>
   );
