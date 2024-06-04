@@ -1,9 +1,9 @@
 import { Navbar } from '@/components/Navbar';
 import { Form } from '@/components/Form';
+import { Footer } from '@/components/footer/footer';
 import { TestimonyContainer } from './(components)/(testimony)/testimony-container';
 import { TestimonyData } from './(data)/(mock)/testimonies';
 import { Body, ScrollbarWrapper } from './(components)/(body)/body';
-import { Footer } from '@/components/footer/footer';
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
           id='clients'
           testimonies={TestimonyData}
         />
+        <Form />
         <Footer />
       </Body>
-      <Form />
       </ScrollbarWrapper>
     </main>
   );
