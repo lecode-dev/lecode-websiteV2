@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Body = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
-
+  margin-top: 7rem;
 `;
 
 export const ScrollbarWrapper = styled.div`
