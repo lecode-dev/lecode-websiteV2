@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Link from 'next/link';
 import { Styles } from '@/styles';
 import { ContactButton } from '../ContactButton';
 

@@ -5,6 +5,10 @@ export const ContactButton = styled.button`
   width: fit-content;
   height: 3.25rem;
   padding: 1.5625rem 1.5rem;
+<<<<<<< HEAD
+=======
+  /* margin-left: 20rem; */
+>>>>>>> 14d76d30a519f2f3bb764bed6986b9c3e2f9f37f
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
