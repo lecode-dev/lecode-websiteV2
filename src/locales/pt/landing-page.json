@@ -19,6 +19,10 @@
     "title": "Depoimentos"
   },
   "contactUs": {
-    "title": "Entre em contato"
+    "button": "Entre em contato",
+    "title": "Vamos <span>juntos</span> tornar seu <span>negócio único</span>?",
+    "subtitle": "Entre em contato conosco para avaliarmos o que podemos fazer pela sua equipe",
+    "labelCompanyName": "Nome da sua Empresa",
+    "labelEmail": "Email"
   }
 }

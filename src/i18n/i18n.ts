@@ -23,6 +23,10 @@ export async function initTranslations(locale: string, namespaces: string[], i18
     fallbackNS: namespaces[0],
     ns: namespaces,
     preload: resources ? [] : i18nConfig.locales,
+    react: {
+      transSupportBasicHtmlNodes: true,
+      transKeepBasicHtmlNodesFor: ['br', 'strong', 'span'],
+    }
   });
 
   return {

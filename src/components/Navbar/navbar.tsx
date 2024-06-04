@@ -27,7 +27,7 @@ export const Navbar = () => {
             href='#contact'
             className={poppins.className}
           >
-            {t('contactUs.title')}
+            {t('contactUs.button')}
           </Link>
         </ContactButton>
         <Language />

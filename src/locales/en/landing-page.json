@@ -19,6 +19,10 @@
     "title": "Testimonials"
   },
   "contactUs": {
-    "title": "Contact us"
+    "button": "Contact Us",
+    "title": "Let's, <span>together</span>, make your <span>business unique</span>?",
+    "subtitle": "Contact us to see what we can do for your team",
+    "labelCompanyName": "Company Name",
+    "labelEmail": "Email"
   }
 }
