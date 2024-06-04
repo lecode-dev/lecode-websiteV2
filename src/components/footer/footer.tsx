@@ -20,6 +20,7 @@ export const Footer = () => {
           <a
             href='https://www.instagram.com/lecode_dev/'
             target='_blank'
+            rel="noreferrer"
           >
             <Image
               src={intagramLogo}
@@ -31,6 +32,7 @@ export const Footer = () => {
           <a
             href='https://br.linkedin.com/company/lecodedev'
             target='_blank'
+            rel="noreferrer"
           >
             <Image
               src={linkedlnLogo}
@@ -42,6 +44,7 @@ export const Footer = () => {
           <a
             href='https://github.com/lecode-dev'
             target='_blank'
+            rel="noreferrer"
           >
              <Image
             src={gitHubLogo}
