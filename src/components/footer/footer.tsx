@@ -1,12 +1,12 @@
 'use client';
-import { ExternalLinks, FooterContainer, LinksContainer, Typo } from './styles';
 import Image from 'next/image';
+import Link from 'next/link';
 import intagramLogo from '../../images/instagram-icon.svg';
 import linkedlnLogo from '../../images/linkedln-icon.svg';
 import gitHubLogo from '../../images/github-icon.svg';
 import lecodeLogo from '../../images/lecode-logo-gray.svg';
 import { InternalLinks } from '../InternalLinks';
-import Link from 'next/link';
+import { ExternalLinks, FooterContainer, LinksContainer, Typo } from './styles';
 
 export const Footer = () => {
   return (
