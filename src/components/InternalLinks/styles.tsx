@@ -25,4 +25,8 @@ export const StyledLink = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.colors.hover.mainGreen};
   }
+
+  @media (${Styles.devices.laptop}) {
+    font-size: 1rem;
+  }
 `;

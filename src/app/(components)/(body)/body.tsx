@@ -1,9 +1,8 @@
 'use client'
 import styled from "styled-components";
 
-export const Body = styled.div`
+export const Content = styled.div`
   margin-top: 7rem;
-  overflow-y: auto;
   overflow-x: hidden;
 `;
 
@@ -12,7 +11,6 @@ export const ScrollbarWrapper = styled.div`
   height: 100vh;
   overflow-y: scroll;
   scrollbar-color: ${({ theme }) => theme.colors.gray};
-;
   direction: ltr; // Show the scrollbar on the right: ;
 
   &::-webkit-scrollbar {

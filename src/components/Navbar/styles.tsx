@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import { Styles } from '@/styles';
-import { ContactButton } from '../ContactButton';
+import Image from 'next/image';
 
 export const NavbarContainer = styled.nav`
   position: fixed;
@@ -13,7 +13,7 @@ export const NavbarContainer = styled.nav`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
+  gap: 10px;
   flex-shrink: 0;
   background: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
@@ -23,30 +23,23 @@ export const NavbarContainer = styled.nav`
     display: none;
   }
 `;
+
 export const NavbarContentContainer = styled.div`
   display: flex;
-  padding: 0.625rem;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
   width: 90rem;
-`;
 
-export const NavLinks = styled.div`
-  display: flex;
-  padding: 0.625rem;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-  color: ${({ theme }) => theme.colors.black};
-  font-size: 1rem;
-`;
-
-export const StyledLink = styled(Link)`
-  &:hover {
-    color: ${({ theme }) => theme.colors.hover.mainGreen};
+  @media (${Styles.devices.laptopL}) {
+    width: fit-content;
   }
 `;
 
-export const StyledContactButton = styled(ContactButton) `
-  margin-left: 20rem;
+export const LecodeLogo = styled(Image) `
+  margin-right: 20%;
+
+  @media (${Styles.devices.laptopL}) {
+    margin-right: 10%;
+}
 `

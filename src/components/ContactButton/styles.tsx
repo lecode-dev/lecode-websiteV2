@@ -1,11 +1,13 @@
+import { Poppins } from 'next/font/google';
 import styled from 'styled-components';
+
+const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const ContactButton = styled.button`
   display: flex;
   width: fit-content;
   height: 3.25rem;
   padding: 1.5625rem 1.5rem;
-  /* margin-left: 20rem; */
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -18,6 +20,8 @@ export const ContactButton = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.white};
+  font-family: ${poppins.style.fontFamily};
+
 
   &:hover {
     background: ${({ theme }) => theme.gradients.secondary};
