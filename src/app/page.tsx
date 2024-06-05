@@ -1,8 +1,10 @@
 import { Navbar } from '@/components/Navbar';
+import { Form } from '@/components/Form';
+import { Footer } from '@/components/footer/footer';
+import { TechnologyBanner } from '@/components/TechnologyBanner';
 import { TestimonyContainer } from './(components)/(testimony)/testimony-container';
 import { TestimonyData } from './(data)/(mock)/testimonies';
 import { Body, ScrollbarWrapper } from './(components)/(body)/body';
-import { TechnologyBanner } from '@/components/TechnologyBanner';
 
 export default function Home() {
   return (
