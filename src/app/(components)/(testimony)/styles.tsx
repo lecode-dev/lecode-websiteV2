@@ -20,6 +20,8 @@ export const SectionContainer = styled.div`
 export const TitleContainer = styled.div`
   position: relative;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 `;
 
 export const StrokeImage = styled(Image)`
