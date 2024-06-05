@@ -1,5 +1,7 @@
 'use client';
-import { TeamLecode, type  TeamMembersProps} from '@/components/TeamSection/teamSection';
+import { TeamLecode, TeamMembersProps } from "@/components/teamSection/teamSection";
+import { ContactTeam } from '@/components/teamSection/contactSession';
+import { SectionContainer } from "./style";
 
 interface TeamLecodeContainerProps {
   id: string;
@@ -8,15 +10,16 @@ interface TeamLecodeContainerProps {
 
 export const TeamLecodeContainer = ({ id, profile }: TeamLecodeContainerProps) => {
   return (
-    <div id={id}>
-      <div>
+    <SectionContainer id={id}>
+      <ContactTeam />
+      <>
         {profile.map(({ id: profileId, profile }) => (
           <TeamLecode
             id={profileId}
             profile={profile}
           />
         ))}
-      </div>
-    </div>
+      </>
+    </SectionContainer>
   );
 };

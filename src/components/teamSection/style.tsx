@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import { Header32, Paragraph1, Styles } from '@/styles';
+import { Paragraph1, Styles } from '@/styles';
 import { Mask } from '@/app/(components)/(testimony)/styles';
 
 export const SectionContainer = styled.div`
   position: relative;
-  width: 75vw;
+  width: 100vw;
   height: fit-content;
   display: flex;
   gap: 1.30vw;
@@ -20,7 +20,7 @@ export const SectionContainer = styled.div`
 `;
 
 export const TeamContainer = styled.div`
-width: 50.52vw;
+width: fit-content;
   display: flex;
   height: 26.125rem;
   gap: 2%;
@@ -34,7 +34,7 @@ width: 50.52vw;
   }
 `;
 
-export const ImageStyled = styled(Image)`
+export const StyledImage = styled(Image)`
   cursor: pointer;
 `;
 
@@ -84,7 +84,7 @@ export const ContactLinkContainer = styled.div`
   text-align: left;
 
   @media (${Styles.devices.laptop}) {
-    width: 50vw;
+    width: 100vw;
     margin: 10% 3%;
     height: 21.6875rem;
     align-items: center;
@@ -113,13 +113,9 @@ export const Paragraph1Styled = styled(Paragraph1)`
     width: 60%;
   }
 `;
-export const StyledHeader2 = styled(Header32)`
-  color: ${({ theme }) => ` ${theme.colors.mainGreen}`};
-  width: 80%;
-  font-weight: 500;
-`;
 
 export const StyledMask = styled(Mask)`
   left: 0;
   object-fit: cover;
 `
+
