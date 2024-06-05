@@ -40,7 +40,7 @@ export const ClientsContainer = styled.div`
 `;
 
 export const ClientsCarouselContainer = styled.div`
-  padding: 48px 101px 48px 101px;
+  padding: 48px 101px 101px 48px;
   display: none;
 
   @media (${Styles.devices.tablet}) {
