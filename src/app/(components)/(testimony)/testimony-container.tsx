@@ -16,11 +16,10 @@ import {
 } from './styles';
 
 interface TestimonyContainerProps {
-  id: string;
   testimonies: ({ id: string } & TestimonyProps)[];
 }
 
-export const TestimonyContainer = ({ id, testimonies }: TestimonyContainerProps) => {
+export const TestimonyContainer = ({ testimonies }: TestimonyContainerProps) => {
 
   const { t } = useTranslation();
 
@@ -32,7 +31,7 @@ export const TestimonyContainer = ({ id, testimonies }: TestimonyContainerProps)
   ];
 
   return (
-    <SectionContainer id={id}>
+    <SectionContainer>
       <TitleContainer>
         <Header1>{t('testimonials.title')}</Header1>
         <StrokeImage

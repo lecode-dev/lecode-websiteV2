@@ -9,7 +9,7 @@ export const SectionContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  padding: 60px 25px 60px 25px;
+  padding: 8rem 25px 60px 25px;
   background-color: ${({ theme }) => theme.colors.gray};
 
   @media (${Styles.devices.tablet}) {

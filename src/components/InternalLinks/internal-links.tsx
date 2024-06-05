@@ -12,7 +12,7 @@ export const InternalLinks = () => {
       <StyledLink href='#technologies'>{t('ourSkills.title')}</StyledLink>
       <StyledLink href='#cases'>{t('cases.title')}</StyledLink>
       <StyledLink href='#team'>{t('team.title')}</StyledLink>
-      <StyledLink href='#clients'>{t('testimonials.title')}</StyledLink>
+      <StyledLink href='#clients'>{t('clients.title')}</StyledLink>
     </NavLinks>
   );
 };

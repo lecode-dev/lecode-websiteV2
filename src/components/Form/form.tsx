@@ -28,7 +28,7 @@ export const Form = () => {
 
   return (
     <Container>
-      <FormContainer>
+      <FormContainer id='contact'>
         <BackgroundImageContainer>
           <BackgroundImageLeft
             src={BgImage}
