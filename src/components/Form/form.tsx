@@ -27,7 +27,7 @@ export const Form = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container id='contact'>
       <FormContainer>
         <BackgroundImageContainer>
           <BackgroundImageLeft
