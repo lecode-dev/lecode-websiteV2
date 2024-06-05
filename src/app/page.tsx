@@ -8,16 +8,16 @@ import { Footer } from '@/components/Footer/footer';
 export default function Home() {
   return (
     <main>
-      <Navbar/>
+      <Navbar />
       <ScrollbarWrapper>
-      <Body>
-        <TestimonyContainer
-          id='clients'
-          testimonies={TestimonyData}
-        />
-        <Form />
-      <Footer />
-      </Body>
+        <Body>
+          <TestimonyContainer
+            id='clients'
+            testimonies={TestimonyData}
+          />
+          <Form />
+          <Footer />
+        </Body>
       </ScrollbarWrapper>
     </main>
   );
