@@ -2,8 +2,9 @@
 
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
+import { Trans, useTranslation } from 'react-i18next';
 import { ContactButton } from '../ContactButton';
-import BgImage from '../../imgs/technology-mask.png';
+import BgImage from '../../images/technology-mask.png';
 import {
   BackgroundImageRight,
   BackgroundImageLeft,
@@ -16,12 +17,14 @@ import {
   FormSubtitle,
   FormTextContainer,
   FormTitle,
-  FormInputContent,
+  FormInputContent, 
   BackgroundImageContainer,
 } from './styles';
 
 
 export const Form = () => {
+  const { t } = useTranslation();
+
   return (
     <Container id='contact'>
       <FormContainer>
@@ -38,18 +41,18 @@ export const Form = () => {
         <FormContent>
           <FormTextContainer>
             <FormTitle>
-              Vamos <span>juntos</span> tornar seu <span>negócio único</span>?
+              <Trans i18nKey='contactUs.title' />
             </FormTitle>
-            <FormSubtitle>Entre em contato conosco para avaliarmos o que podemos fazer pela sua equipe</FormSubtitle>
+            <FormSubtitle>{t('contactUs.subtitle')}</FormSubtitle>
           </FormTextContainer>
 
           <FormInputContainer>
             <FormInputContent>
-              <FormLabel htmlFor='name'>Nome da sua Empresa:</FormLabel>
+              <FormLabel htmlFor='name'>{t('contactUs.labelCompanyName')}:</FormLabel>
               <FormInput type='text' />
             </FormInputContent>
             <FormInputContent>
-              <FormLabel htmlFor='email'>Email:</FormLabel>
+              <FormLabel htmlFor='email'>{t('contactUs.labelEmail')}:</FormLabel>
               <FormInput type='email' />
             </FormInputContent>
           </FormInputContainer>
@@ -57,7 +60,7 @@ export const Form = () => {
             <Link
               href='#'
             >
-              Entre em contato
+              {t('contactUs.button')}
             </Link>
           </ContactButton>
         </FormContent>

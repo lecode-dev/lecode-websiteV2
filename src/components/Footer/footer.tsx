@@ -1,12 +1,11 @@
 'use client';
-import { ExternalLinks, FooterContainer, LinksContainer, Typo } from './styles';
 import Image from 'next/image';
-import Link from 'next/link';
-import intagramLogo from '../../imgs/instagram-icon.svg';
-import linkedlnLogo from '../../imgs/linkedln-icon.svg';
-import gitHubLogo from '../../imgs/github-icon.svg';
-import lecodeLogo from '../../imgs/lecode-logo-gray.svg';
+import intagramLogo from '../../images/instagram-icon.svg';
+import linkedlnLogo from '../../images/linkedln-icon.svg';
+import gitHubLogo from '../../images/github-icon.svg';
+import lecodeLogo from '../../images/lecode-logo-gray.svg';
 import { InternalLinks } from '../InternalLinks';
+import { ExternalLinks, FooterContainer, LinksContainer, Typo } from './styles';
 
 export const Footer = () => {
   return (
@@ -18,10 +17,10 @@ export const Footer = () => {
       <LinksContainer>
         <InternalLinks />
         <ExternalLinks>
-          <Link
+          <a
             href='https://www.instagram.com/lecode_dev/'
-            passHref
             target='_blank'
+            rel="noreferrer"
           >
             <Image
               src={intagramLogo}
@@ -29,11 +28,11 @@ export const Footer = () => {
               width={25}
               height={25}
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://br.linkedin.com/company/lecodedev'
-            passHref
             target='_blank'
+            rel="noreferrer"
           >
             <Image
               src={linkedlnLogo}
@@ -41,19 +40,19 @@ export const Footer = () => {
               width={25}
               height={25}
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://github.com/lecode-dev'
-            passHref
             target='_blank'
+            rel="noreferrer"
           >
-            <Image
-              src={gitHubLogo}
-              alt='black GitHub logo'
-              width={25}
-              height={25}
-            />
-          </Link>
+             <Image
+            src={gitHubLogo}
+            alt='black GitHub logo'
+            width={25}
+            height={25}
+          />
+          </a>
         </ExternalLinks>
       </LinksContainer>
       <Typo> © 2023 LeCode, Inc.Todos os direitos reservados. </Typo>
