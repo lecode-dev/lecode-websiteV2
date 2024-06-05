@@ -1,6 +1,5 @@
 'use client';
 
-import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import { Trans, useTranslation } from 'react-i18next';
 import { ContactButton } from '../ContactButton';
@@ -21,13 +20,12 @@ import {
   BackgroundImageContainer,
 } from './styles';
 
-const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const Form = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container id='contact'>
       <FormContainer>
         <BackgroundImageContainer>
           <BackgroundImageLeft
@@ -60,7 +58,6 @@ export const Form = () => {
           <ContactButton>
             <Link
               href='#'
-              className={poppins.className}
             >
               {t('contactUs.button')}
             </Link>
