@@ -11,15 +11,17 @@ export default function Home() {
     <main>
       <Navbar />
       <ScrollbarWrapper>
-        <Body>
-          <TechnologyBanner
+      <Body>
+      <TechnologyBanner
           id='technologies'
           />
-          <TestimonyContainer
-            id='clients'
-            testimonies={TestimonyData}
-          />
-        </Body>
+        <TestimonyContainer
+          id='clients'
+          testimonies={TestimonyData}
+        />
+        <Form />
+        <Footer />
+      </Body>
       </ScrollbarWrapper>
     </main>
   );

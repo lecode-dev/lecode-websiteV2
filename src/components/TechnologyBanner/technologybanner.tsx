@@ -1,4 +1,10 @@
 'use client';
+import Image from 'next/image';
+import TechnologyMask from '@/imgs/technology-mask.png';
+import { StyledMaskTechnology , StyledMaskTechnologyInvert } from '@/app/(components)/(testimony)/styles';
+import reactLogo from '../../../public/react-logo.svg';
+import cSharpLogo from '../../../public/c-logo.svg';
+import azureLogo from '../../../public/azure-logo.svg';
 import {
   ContainerMainText,
   ContainerTechnology,
@@ -15,13 +21,6 @@ import {
   ListTecnologys,
   WrapContainer,
 } from './styles';
-import Image from 'next/image';
-import reactLogo from '../../../public/react-logo.svg';
-import cSharpLogo from '../../../public/c-logo.svg';
-import azureLogo from '../../../public/azure-logo.svg';
-import TechnologyMask from '@/imgs/technology-mask.png';
-import { StyledMaskTechnology } from '@/app/(components)/(testimony)/styles';
-import { StyledMaskTechnologyInvert } from '@/app/(components)/(testimony)/styles';
 
 interface TechnologyContainerProps {
   id: string;
