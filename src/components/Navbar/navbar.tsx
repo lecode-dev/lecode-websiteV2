@@ -3,7 +3,7 @@ import {Poppins } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import lecodeLogo from '../../../public/lecode-logo.svg';
-import { NavbarContainer, NavbarContentContainer} from './styles';
+import { NavbarContainer, NavbarContentContainer, StyledContactButton} from './styles';
 import { InternalLinks } from '../InternalLinks';
 
 const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
