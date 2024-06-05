@@ -1,16 +1,24 @@
 import styled from 'styled-components';
 
-export const Select = styled.select`
-  width: 150px;
-  height: 30px;
-  padding: 5px;
+
+export const SelectContainer = styled.div`
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+
+`;
+
+export const OptionsContainer = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 14px;
-  appearance: none; /* Remover o estilo padrão do select */
-  background-image: url('https://fontawesome.com/icons/arrow-down'); /* Ícone de seta para baixo */
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 20px;
-  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;
+
+export const Select = styled.select`
 `;
