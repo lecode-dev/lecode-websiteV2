@@ -1,19 +1,23 @@
 'use client';
-import {Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { ContactButton } from '@/components/ContactButton';
 import lecodeLogo from '../../../public/lecode-logo.svg';
-import { NavbarContainer, NavbarContentContainer} from './styles';
 import { InternalLinks } from '../InternalLinks';
+import { Language } from '../Language';
+import { NavbarContainer, NavbarContentContainer } from './styles';
 
 const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <NavbarContainer>
       <NavbarContentContainer>
-       <InternalLinks />
+        <InternalLinks />
         <Image
           alt='LeCode logo: green triangle with white Le and black code'
           src={lecodeLogo}
@@ -23,9 +27,10 @@ export const Navbar = () => {
             href='#contact'
             className={poppins.className}
           >
-            Entre em contato
+            {t('contactUs.button')}
           </Link>
         </ContactButton>
+        <Language />
       </NavbarContentContainer>
     </NavbarContainer>
   );

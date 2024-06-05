@@ -1,13 +1,18 @@
-import {NavLinks, StyledLink } from './styles';
+'use client'
 
-export const InternalLinks = () =>{
-   return (
-    <NavLinks >
-    <StyledLink href='#about'>Quem Somos</StyledLink>
-    <StyledLink href='#technologies'>Nossas Habilidades</StyledLink>
-    <StyledLink href='#cases'>Cases</StyledLink>
-    <StyledLink href='#team'>Equipe</StyledLink>
-    <StyledLink href='#clients'>Clientes</StyledLink>
-  </NavLinks>
-   ) 
+import { useTranslation } from 'react-i18next';
+import { NavLinks, StyledLink } from './styles';
+
+export const InternalLinks = () => {
+   const { t } = useTranslation();
+
+  return (
+    <NavLinks>
+      <StyledLink href='#about'>{t('aboutUs.title')}</StyledLink>
+      <StyledLink href='#technologies'>{t('ourSkills.title')}</StyledLink>
+      <StyledLink href='#cases'>{t('cases.title')}</StyledLink>
+      <StyledLink href='#team'>{t('team.title')}</StyledLink>
+      <StyledLink href='#clients'>{t('testimonials.title')}</StyledLink>
+    </NavLinks>
+  );
 };
