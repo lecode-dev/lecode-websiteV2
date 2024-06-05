@@ -1,6 +1,5 @@
 'use client';
 
-import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import { Trans, useTranslation } from 'react-i18next';
 import { ContactButton } from '../ContactButton';
