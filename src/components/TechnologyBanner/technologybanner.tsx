@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import TechnologyMask from '@/imgs/technology-mask.png';
 import { StyledMaskTechnology , StyledMaskTechnologyInvert } from '@/app/(components)/(testimony)/styles';
+import TechnologyMask from '@/images/technology-mask.png';
 import reactLogo from '../../../public/react-logo.svg';
 import cSharpLogo from '../../../public/c-logo.svg';
 import azureLogo from '../../../public/azure-logo.svg';
@@ -21,6 +21,7 @@ import {
   ListTecnologys,
   WrapContainer,
 } from './styles';
+
 
 interface TechnologyContainerProps {
   id: string;

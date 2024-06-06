@@ -4,6 +4,8 @@ import { TestimonyData } from '@/app/(data)/(mock)/testimonies';
 import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
 import { Form } from '@/components/Form';
 import { Footer } from '@/components/Footer';
+import { TechnologyBanner } from '@/components/TechnologyBanner';
+
 
 export default function Home() {
   return (
@@ -11,6 +13,9 @@ export default function Home() {
       <Navbar />
       <ScrollbarWrapper>
         <Content>
+        <TechnologyBanner
+        id='technologies'
+        />
           <TestimonyContainer
             id='clients'
             testimonies={TestimonyData}
