@@ -7,11 +7,18 @@ export const SectionContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
-  padding: 60px 25px 60px 25px;
+  padding: 7rem 25px 60px 25px;
   background-color: ${({ theme }) => theme.colors.gray};
-
+  overflow: hidden;
   @media (${Styles.devices.tablet}) {
     display: none;
   }
 `;
+
+export const MemberContainer = styled.div`
+  position: relative;
+z-index: 2;
+display: flex;
+background-color: ${({ theme }) => theme.colors.gray};
+
+`

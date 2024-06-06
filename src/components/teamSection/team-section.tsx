@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { MemberName } from './style';
+import {  MemberName } from './style';
 
 export interface TeamMembersProps {
   id: string

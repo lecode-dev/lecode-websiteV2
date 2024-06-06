@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Changa, Montserrat } from 'next/font/google';
+import Image from 'next/image';
 import { Styles } from '@/styles';
 
 const changa = Changa({ weight: ['500', '600'], subsets: ['latin'] });
@@ -30,6 +31,8 @@ export const ContactContainer = styled.div`
   justify-content: space-evenly;
   padding: 25px;
   margin-right: 25px;
+  position: relative;
+  z-index: 1;
 `;
 
 export const Header = styled.h1`
@@ -55,3 +58,14 @@ export const MemberName = styled.p`
   line-height: 125%;
   font-weight: 600;
 `;
+
+export const BgImage = styled(Image)`
+  position: absolute;
+  opacity: 30%;
+  z-index: -1;
+  transform: translate(-3.1rem, 15ex);
+  @media (${Styles.devices.tablet}) {
+    display: none;
+  }
+`
+

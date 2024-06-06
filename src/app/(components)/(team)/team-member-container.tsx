@@ -1,7 +1,7 @@
 'use client';
 import { ContactTeam } from "@/components/TeamSection/contact-session";
 import { TeamLecode, type TeamMembersProps } from "@/components/TeamSection/team-section";
-import { SectionContainer } from "./style";
+import { MemberContainer, SectionContainer } from "./style";
 
 interface TeamLecodeContainerProps {
   id: string;
@@ -12,7 +12,7 @@ export const TeamLecodeContainer = ({ id, profile }: TeamLecodeContainerProps) =
   return (
     <SectionContainer id={id}>
       <ContactTeam />
-      <>
+      <MemberContainer>
         {profile.map(({ id: profileId, profile }) => (
           <TeamLecode
             id={profileId}
@@ -20,7 +20,7 @@ export const TeamLecodeContainer = ({ id, profile }: TeamLecodeContainerProps) =
             key={profileId}
           />
         ))}
-      </>
+      </MemberContainer>
     </SectionContainer>
   );
 };

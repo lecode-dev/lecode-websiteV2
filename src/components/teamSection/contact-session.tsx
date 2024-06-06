@@ -1,6 +1,7 @@
 import Link from "next/link";
+import TechnologyMask from '@/images/technology-mask.png';
 import { ContactButton } from "../ContactButton";
-import { ContactContainer, Header, Paragraph } from "./style";
+import { BgImage, ContactContainer, Header, Paragraph } from "./style";
 
 
 export const ContactTeam = () => {
@@ -17,12 +18,10 @@ export const ContactTeam = () => {
         Veja os detalhes da equipe{' '}
       </Link>
     </ContactButton>
-    {/* <StyledMask
+    <BgImage
     src={TechnologyMask}
-    alt='technology-mask'
-    objectFit='cover'
-    /> */}
-
+    alt='Background Image'
+    />
     </ContactContainer> 
   );
 }
