@@ -3,8 +3,14 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { i18nConfig } from '@/i18n';
+import { Paragraph1 } from '@/styles/typographies';
 import languageIcon from '../../../public/language.svg';
-import { Select, SelectContainer, OptionsContainer } from './styles';
+import { SelectContainer, OptionsContainer, Option, ContainerLanguage } from './styles';
+
+const languageNames: Record<string, string> = {
+  pt: 'Português',
+  en: 'English',
+};
 
 export const Language: React.FC = () => {
   const { i18n } = useTranslation();
@@ -32,52 +38,40 @@ export const Language: React.FC = () => {
 
       router.refresh();
     },
-    [currentLocale, currentPathname, router]
+    [currentLocale, currentPathname, router],
   );
 
   const handleIconClick = () => {
     setShowOptions(!showOptions);
   };
 
-  const handleIconKeyPress = (event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === 'Enter') {
-      setShowOptions(!showOptions);
-    }
-  };
-
   return (
-    <SelectContainer>
-      <div
-        tabIndex={0} 
-        role="button" 
+    <ContainerLanguage>
+      <SelectContainer
+        tabIndex={0}
         onClick={handleIconClick}
-        onKeyPress={handleIconKeyPress} 
       >
         <Image
           src={languageIcon}
           alt='language icon in black'
-          width={24} 
-          height={24} 
+          width={24}
+          height={24}
         />
-      {showOptions ? <OptionsContainer>
-          <Select
-            value={currentLocale}
-            onChange={(e) => {
-              handleChange(e.target.value);
-            }}
-          >
-            {languages.map((lang) => (
-              <option
-                key={lang}
-                value={lang}
-              >
-                {lang}
-              </option>
-            ))}
-          </Select>
-        </OptionsContainer> : null}
-      </div>
-
-    </SelectContainer>
+      </SelectContainer>
+      {showOptions ? (
+        <OptionsContainer>
+          {languages.map((lang) => (
+            <Option
+              key={lang}
+              onClick={() => {
+                handleChange(lang);
+              }}
+            >
+              <Paragraph1>{languageNames[lang]}</Paragraph1>
+            </Option>
+          ))}
+        </OptionsContainer>
+      ) : null}
+    </ContainerLanguage>
   );
 };
