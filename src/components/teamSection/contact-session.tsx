@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { ContactButton } from "../ContactButton";
-// import { ContactLinkContainer, Paragraph1Styled, StyledMask } from "./style";
-import TechnologyMask from '@/imgs/technology-mask.png';
+import { ContactContainer, Header, Paragraph } from "./style";
+
 
 export const ContactTeam = () => {
   return (
-    <div>
-    <>Encontre o seu time ideal</>
-    <div>
+    <ContactContainer>
+    <Header>Encontre o seu time ideal</Header>
+    <Paragraph>
       Uma equipe completa, com a expertise que você precisa para alavancar suas ideias.
-    </div>
+    </Paragraph>
     <ContactButton>
       <Link
         href='#contact'
@@ -22,6 +22,7 @@ export const ContactTeam = () => {
     alt='technology-mask'
     objectFit='cover'
     /> */}
-    </div> 
+
+    </ContactContainer> 
   );
 }

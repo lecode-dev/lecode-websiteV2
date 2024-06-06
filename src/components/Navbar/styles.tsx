@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import styled from 'styled-components';
-import { Styles } from '@/styles';
 import Image from 'next/image';
+import { Styles } from '@/styles';
 
 export const NavbarContainer = styled.nav`
   position: fixed;

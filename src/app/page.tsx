@@ -4,8 +4,8 @@ import { Footer } from '@/components/footer/footer';
 import { TestimonyContainer } from './(components)/(testimony)/testimony-container';
 import { TestimonyData } from './(data)/(mock)/testimonies';
 import { Body, ScrollbarWrapper } from './(components)/(body)/body';
-import { TeamMembers } from "./(data)/(mock)/teamMembers";
-import { TeamLecodeContainer } from './(components)/(team)/teamMemberContainer';
+import { TeamMembers } from "./(data)/(mock)/team-members";
+import { TeamLecodeContainer } from './(components)/(team)/team-member-container';
 
 export default function Home() {
   return (

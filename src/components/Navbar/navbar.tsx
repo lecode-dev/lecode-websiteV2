@@ -20,7 +20,7 @@ export const Navbar = () => {
           alt='LeCode logo: green triangle with white Le and black code'
           src={lecodeLogo}
         />
-        <StyledContactButton>
+        <ContactButton>
           <Link
             href='#contact'
           >

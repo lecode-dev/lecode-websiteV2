@@ -1,1 +1,1 @@
-export * from './contactButton'
+export * from './contact-button'

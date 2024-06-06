@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 import { Styles } from '@/styles';
 
 export const SectionContainer = styled.div`
@@ -8,6 +7,7 @@ export const SectionContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
   padding: 60px 25px 60px 25px;
   background-color: ${({ theme }) => theme.colors.gray};
 

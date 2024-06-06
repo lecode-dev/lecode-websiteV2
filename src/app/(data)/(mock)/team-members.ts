@@ -1,9 +1,9 @@
 import ErickProfile from '../../../../public/erick-profile-img.png';
 import KarenProfile from '../../../../public/karen-profile-img.png';
 import NatanProfile from '../../../../public/natan-profile-img.png';
-import intagramLogo from '../../../imgs/github-icon.svg';
-import teste from '../../../imgs/gmail-icon.svg';
-import teste3 from '../../../imgs/linkedln-icon.svg';
+import intagramLogo from '../../../images/github-icon.svg';
+import teste from '../../../images/gmail-icon.svg';
+import teste3 from '../../../images/linkedln-icon.svg';
 
 
 export const TeamMembers = [

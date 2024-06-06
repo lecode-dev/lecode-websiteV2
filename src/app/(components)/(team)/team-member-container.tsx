@@ -1,6 +1,6 @@
 'use client';
-import { TeamLecode, TeamMembersProps } from "@/components/teamSection/teamSection";
-import { ContactTeam } from '@/components/teamSection/contactSession';
+import { ContactTeam } from "@/components/TeamSection/contact-session";
+import { TeamLecode, type TeamMembersProps } from "@/components/TeamSection/team-section";
 import { SectionContainer } from "./style";
 
 interface TeamLecodeContainerProps {
@@ -17,6 +17,7 @@ export const TeamLecodeContainer = ({ id, profile }: TeamLecodeContainerProps) =
           <TeamLecode
             id={profileId}
             profile={profile}
+            key={profileId}
           />
         ))}
       </>
