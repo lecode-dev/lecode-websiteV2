@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import {  MemberName } from './style';
+import {  MemberName, Subparagraph, ProfileContainer, ProfilePicture, ExpertiseContainer } from './style';
 
 export interface TeamMembersProps {
   id: string
@@ -10,14 +10,14 @@ export interface TeamMembersProps {
 export const TeamLecode = ({ id , profile }: TeamMembersProps) => {
   return (
     <div id={id}>
-      <div>
-        <div>
-              <Image src={profile.img} alt='Profile picture of an person in black and white' />
+        <ProfileContainer>
+            <ProfilePicture src={profile.img} alt='Profile picture of an person in black and white' />
              <MemberName>{profile.name}</MemberName> 
-             {profile.charge}
+             <ExpertiseContainer>
+             <Subparagraph>{profile.charge}</Subparagraph>
               {profile.expertise.map((item: any) => <Image src={item} alt='' key={id} width={20} height={20}/>)}
-            </div>
-      </div>
+              </ExpertiseContainer>
+            </ProfileContainer>
     </div>
   );
 };

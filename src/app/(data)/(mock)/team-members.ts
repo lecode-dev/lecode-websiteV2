@@ -1,6 +1,4 @@
-import ErickProfile from '../../../../public/erick-profile-img.png';
 import KarenProfile from '../../../../public/karen-profile-img.png';
-import NatanProfile from '../../../../public/natan-profile-img.png';
 import intagramLogo from '../../../images/github-icon.svg';
 import teste from '../../../images/gmail-icon.svg';
 import teste3 from '../../../images/linkedln-icon.svg';
@@ -17,7 +15,7 @@ export const TeamMembers = [
         teste3
       ],
       charge: 'Full-Stack Developer',
-      img: ErickProfile,
+      img: KarenProfile,
 
     },
   },
@@ -44,7 +42,7 @@ export const TeamMembers = [
         teste3
       ],
       charge: 'Full-Stack Developer',
-      img: NatanProfile,
+      img: KarenProfile,
     },
   },
 ];
