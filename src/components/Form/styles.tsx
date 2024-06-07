@@ -12,7 +12,7 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 0.625rem; // 10px
+  padding-top: 8rem; // 10px
 `;
 
 export const FormContainer = styled.div`
