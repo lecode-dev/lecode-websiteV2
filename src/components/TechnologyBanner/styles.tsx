@@ -10,7 +10,7 @@ export const TechnologyContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  padding: 60px 25px 60px 25px;
+  padding: 8rem 25px 60px 25px;
   background: ${({ theme }) => theme.colors.mainBack};
 `;
 export const ContainerMainText = styled.div`
