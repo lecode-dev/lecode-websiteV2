@@ -7,7 +7,7 @@ export const SectionContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  padding: 7rem 25px 60px 25px;
+  padding: 9rem 25px 60px 25px;
   background: ${({ theme }) => theme.colors.white};
   /* flex-wrap: wrap; */
   gap: 2rem;
