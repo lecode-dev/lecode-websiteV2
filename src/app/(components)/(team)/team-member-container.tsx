@@ -5,15 +5,15 @@ import { MemberContainer, SectionContainer } from "./style";
 
 interface TeamLecodeContainerProps {
   id: string;
-  profile: ({ id: string } & TeamMembersProps)[];
+  profiles: ({ id: string } & TeamMembersProps)[];
 }
 
-export const TeamLecodeContainer = ({ id, profile }: TeamLecodeContainerProps) => {
+export const TeamLecodeContainer = ({ id, profiles }: TeamLecodeContainerProps) => {
   return (
     <SectionContainer id={id}>
       <ContactTeam />
       <MemberContainer>
-        {profile.map(({ id: profileId, profile }) => (
+        {profiles.map(({ id: profileId,  profile }) => (
           <TeamLecode
             id={profileId}
             profile={profile}

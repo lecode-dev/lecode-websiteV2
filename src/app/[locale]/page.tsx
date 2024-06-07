@@ -19,7 +19,7 @@ export default function Home() {
           />
           <TeamLecodeContainer
             id='team'
-            profile={TeamMembers}
+            profiles={TeamMembers}
           />
           <Form />
           <Footer />

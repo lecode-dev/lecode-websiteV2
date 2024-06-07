@@ -69,8 +69,8 @@ export const TextContainer = styled.div`
   gap: 28px;
 
   @media (${Styles.devices.laptop}) {
-gap: 15px;
-margin-bottom: 15px;
+    gap: 15px;
+    margin-bottom: 15px;
   }
 
   @media (${Styles.devices.tabletL}) {
@@ -138,8 +138,8 @@ export const BgImage = styled(Image)`
 `;
 
 export const ProfilePicture = styled(Image)`
- width: 13.875rem;
- height: 20.3125rem;
+  width: 13.875rem;
+  height: 20.3125rem;
 
   @media (${Styles.devices.laptop}) {
     width: 10.875rem;
@@ -148,5 +148,5 @@ export const ProfilePicture = styled(Image)`
 `;
 
 export const StyledLink = styled(Link)`
-    font-size: 0.9rem;
-`
+  font-size: 0.9rem;
+`;
