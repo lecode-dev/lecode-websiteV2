@@ -1,16 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import TechnologyMask from '@/images/technology-mask.png';
 import { ContactButton } from '../ContactButton';
 import { BgImage, ContactContainer, Header, Paragraph, TextContainer, StyledLink } from './style';
 
 export const ContactTeam = () => {
+  const { t } = useTranslation();
+
   return (
     <ContactContainer>
       <TextContainer>
-        <Header>Encontre o seu time ideal</Header>
-        <Paragraph>Uma equipe completa, com a expertise que você precisa para alavancar suas ideias.</Paragraph>
+        <Header>{t('contactTeam.title')}</Header>
+        <Paragraph>{t('contactTeam.description')}</Paragraph>
       </TextContainer>
       <ContactButton>
-        <StyledLink href='#contact'>Veja os detalhes da equipe </StyledLink>
+        <StyledLink href='#contact'>{t('contactTeam.button')}</StyledLink>
       </ContactButton>
       <BgImage
         src={TechnologyMask}

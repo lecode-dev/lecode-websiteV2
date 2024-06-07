@@ -24,5 +24,10 @@
     "subtitle": "Contact us to see what we can do for your team",
     "labelCompanyName": "Company Name",
     "labelEmail": "Email"
+  },
+  "contactTeam" : {
+    "button":"See more details about our team",
+    "title": "Find your ideal team",
+    "description": "A complete team, with the expertise you need to leverage your ideas."
   }
 }
