@@ -1,22 +1,24 @@
-import Link from "next/link";
 import TechnologyMask from '@/images/technology-mask.png';
+import { BgImage, ContactContainer, Header, Paragraph, TextContainer, StyledContactButton, StyledLink } from "./style";
 import { ContactButton } from "../ContactButton";
-import { BgImage, ContactContainer, Header, Paragraph } from "./style";
 
 
 export const ContactTeam = () => {
   return (
     <ContactContainer>
-    <Header>Encontre o seu time ideal</Header>
+    <TextContainer>
+       <Header>Encontre o seu time ideal</Header>
     <Paragraph>
       Uma equipe completa, com a expertise que você precisa para alavancar suas ideias.
     </Paragraph>
+    </TextContainer>
+   
     <ContactButton>
-      <Link
+      <StyledLink
         href='#contact'
       >
         Veja os detalhes da equipe{' '}
-      </Link>
+      </StyledLink>
     </ContactButton>
     <BgImage
     src={TechnologyMask}

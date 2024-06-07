@@ -1,5 +1,6 @@
 import { Poppins } from 'next/font/google';
 import styled from 'styled-components';
+import { Styles } from '@/styles';
 
 const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 

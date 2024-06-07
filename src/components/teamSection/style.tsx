@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Changa, Montserrat } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Styles } from '@/styles';
 
 const changa = Changa({ weight: ['500', '600'], subsets: ['latin'] });
@@ -32,31 +33,49 @@ export const ContactContainer = styled.div`
   height: 418px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 25px;
-  margin-right: 25px;
   position: relative;
   z-index: 1;
-margin-right: 25px;
+  align-items: center;
 
-@media (${Styles.devices.laptop}) {
-  width: 25.57vw;
+  @media (${Styles.devices.laptop}) {
+    width: 25vw;
+    height: max-content;
   }
 
   @media (${Styles.devices.tabletL}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5.25rem 0.5rem; // 36px 8px
+    width: 100%;
+    height: fit-content; // 540px
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    gap: 25px;
+  }
+`;
+
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2.25rem 0.5rem; // 36px 8px
-  width: 90%;
-  height: 33.75rem; // 540px
-  background-color: black;
-  position: relative;
-  z-index: 1;
-  overflow: hidden; 
- }
-  
+  align-items: flex-start;
+  gap: 28px;
+
+  @media (${Styles.devices.laptop}) {
+gap: 15px;
+margin-bottom: 15px;
+  }
+
+  @media (${Styles.devices.tabletL}) {
+    align-items: center;
+  }
 `;
 
 export const Header = styled.h1`
@@ -74,7 +93,32 @@ export const Paragraph = styled.p`
   text-transform: uppercase;
   width: 73.31%;
   height: 115px;
+
+  @media (max-width: 1334px) {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  @media (${Styles.devices.tabletL}) {
+    width: 73.31%;
+    height: 115px;
+  }
 `;
+
+export const ProfileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+`;
+
+export const ExpertiseContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
 export const MemberName = styled.p`
   font-family: ${changa.style.fontFamily};
   font-size: 1.1rem;
@@ -83,36 +127,26 @@ export const MemberName = styled.p`
   font-weight: 600;
 `;
 export const Subparagraph = styled.small`
-    font-family: ${changa.style.fontFamily};
+  font-family: ${changa.style.fontFamily};
   font-size: 0.8rem;
-`
+`;
 export const BgImage = styled(Image)`
   position: absolute;
   opacity: 30%;
   z-index: -1;
   transform: translate(-3.1rem, 15ex);
-`
- 
-export const ProfileContainer = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 18px;
-`
+`;
 
 export const ProfilePicture = styled(Image)`
-width: 238px;
-height: 341px;
+ width: 13.875rem;
+ height: 20.3125rem;
 
-@media (${Styles.devices.laptop}) {
-  width: 20.53vw;
-  height: 23.58vh;
-   }
-`
+  @media (${Styles.devices.laptop}) {
+    width: 10.875rem;
+    height: 17.3125rem;
+  }
+`;
 
-export const ExpertiseContainer = styled.div `
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+export const StyledLink = styled(Link)`
+    font-size: 0.9rem;
 `
