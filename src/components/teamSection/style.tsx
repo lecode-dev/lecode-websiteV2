@@ -50,7 +50,7 @@ export const ContactContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding: 5.25rem 0.5rem; // 36px 8px
-    width: 100%;
+    width: 90%;
     height: fit-content; // 540px
     background-color: black;
     position: relative;
@@ -59,6 +59,10 @@ export const ContactContainer = styled.div`
     text-align: center;
     margin: 0;
     gap: 25px;
+  }
+  
+  @media (${Styles.devices.tabletL}) {
+    width: 100%;
   }
 `;
 
@@ -135,6 +139,8 @@ export const BgImage = styled(Image)`
   opacity: 30%;
   z-index: -1;
   transform: translate(-3.1rem, 15ex);
+  width: 26.5415rem;
+  height: 25.24469rem;
 `;
 
 export const ProfilePicture = styled(Image)`
