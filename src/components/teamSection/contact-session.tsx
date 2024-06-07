@@ -1,3 +1,4 @@
+"use client"
 import { useTranslation } from 'react-i18next';
 import TechnologyMask from '@/images/technology-mask.png';
 import { ContactButton } from '../ContactButton';

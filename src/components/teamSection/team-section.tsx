@@ -22,7 +22,7 @@ export const TeamLecode = ({ id, profile }: TeamMembersProps) => {
           {profile.expertise.map((item: any) => (
             <Image
               src={item}
-              alt=''
+              alt='technologies icons'
               key={id}
               width={20}
               height={20}
