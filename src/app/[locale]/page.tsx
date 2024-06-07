@@ -5,6 +5,7 @@ import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
 import { Form } from '@/components/Form';
 import { Footer } from '@/components/Footer';
 import { TechnologyBanner } from '@/components/TechnologyBanner';
+import { Clients } from '@/components/Clients';
 
 
 export default function Home() {
@@ -16,8 +17,8 @@ export default function Home() {
         <TechnologyBanner
         id='technologies'
         />
+          <Clients />
           <TestimonyContainer
-            id='clients'
             testimonies={TestimonyData}
           />
           <Form />
