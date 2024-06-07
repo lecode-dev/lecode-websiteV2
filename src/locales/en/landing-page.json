@@ -15,6 +15,10 @@
     "title": "Team",
     "description": "We are a team of professionals who are passionate about what we do"
   },
+  "clients": {
+    "title": "Clients",
+    "subtitle": "See who has already <span>partnered with us</span>."
+  },
   "testimonials": {
     "title": "Testimonials"
   },
