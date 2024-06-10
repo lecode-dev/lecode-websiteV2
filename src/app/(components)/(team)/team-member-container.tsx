@@ -1,5 +1,5 @@
 'use client';
-import { type TeamMembersProps, ContactTeam, TeamLecode } from "@/components/TeamSection";
+import { ContactTeam, TeamLecode, type TeamMembersProps } from "@/components/TeamSection";
 import { MemberContainer, SectionContainer } from "./style";
 
 interface TeamLecodeContainerProps {

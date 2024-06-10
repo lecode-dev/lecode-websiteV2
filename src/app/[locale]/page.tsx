@@ -6,7 +6,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { TechnologyBanner } from '@/components/TechnologyBanner';
 import { Clients } from '@/components/Clients';
-import { TeamMembers } from '../(data)/(mock)/team-members';
+import { TeamMembers } from "@/app/(data)/(mock)/team-members";
 import { TeamLecodeContainer } from '../(components)/(team)/team-member-container';
 
 export default function Home() {
