@@ -1,6 +1,5 @@
-import { Header1, Subtitle, Header32, Paragraph1 } from '@/styles';
 import styled from 'styled-components';
-import { Styles } from '@/styles';
+import { Header1, Subtitle, Header32, Paragraph1, Styles } from '@/styles';
 
 
 export const TechnologyContainer = styled.div`

@@ -28,5 +28,10 @@
     "subtitle": "Entre em contato conosco para avaliarmos o que podemos fazer pela sua equipe",
     "labelCompanyName": "Nome da sua Empresa",
     "labelEmail": "Email"
+  },
+  "contactTeam" : {
+    "button":"Veja os detalhes da equipe",
+    "title": "Encontre o seu time ideal",
+    "description": "Uma equipe completa, com a expertise que você precisa para alavancar suas ideias."
   }
 }
