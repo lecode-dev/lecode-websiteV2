@@ -23,7 +23,6 @@ export const Language: React.FC = () => {
 
   const handleChange = useCallback(
     (newLocale: string) => {
-      console.log('newLocale', newLocale);
       const days = 30;
       const date = new Date();
       date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
