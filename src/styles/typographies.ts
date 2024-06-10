@@ -44,41 +44,41 @@ export const createStyledParagraph = (
 export const Header1 = createStyledHeading('h1', {
   fontFamily: 'Montserrat',
   fontWeight: fonts.bold,
-  fontSize: '3em',
+  fontSize: '3rem',
   lineHeight: '125%'
 });
 
 export const Subtitle = createStyledHeading('h2', {
   fontFamily: 'Montserrat',
   fontWeight: fonts.bold,
-  fontSize: '1.5em',
+  fontSize: '1.5rem',
   lineHeight: '125%'
 });
 
 export const Header32 = createStyledHeading('h3', {
   fontFamily: 'Montserrat',
   fontWeight: fonts.bold,
-  fontSize: '2em',
+  fontSize: '2rem',
   lineHeight: '125%'
 });
 
 export const Header24 = createStyledHeading('h4', {
   fontFamily: 'Montserrat',
   fontWeight: fonts.bold,
-  fontSize: '1.5em',
+  fontSize: '1.5rem',
   lineHeight: '125%'
 });
 
 export const Paragraph1 = createStyledParagraph('p', {
   fontFamily: 'Poppins',
   fontWeight: fonts.normal,
-  fontSize: '1em',
+  fontSize: '1rem',
   lineHeight: '125%'
 });
 
 export const Paragraph2 = createStyledParagraph('p', {
   fontFamily: 'Poppins',
   fontWeight: fonts.medium,
-  fontSize: '1.25em',
+  fontSize: '1.25rem',
   lineHeight: '125%'
 });
