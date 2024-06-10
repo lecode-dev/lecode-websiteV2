@@ -18,7 +18,7 @@ export const NavbarContainer = styled.nav`
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 
-  @media (${Styles.devices.tablet}) {
+  @media (${Styles.devices.tabletL}) {
     display: none;
   }
 `;
@@ -41,4 +41,10 @@ export const LecodeLogo = styled(Image) `
   @media (${Styles.devices.laptopL}) {
     margin-right: 10%;
 }
+`
+export const TranslateButtonContainer = styled.div`
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-left: 20%;
 `
