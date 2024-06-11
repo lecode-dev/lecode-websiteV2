@@ -31,7 +31,9 @@ export const NavbarContentContainer = styled.div`
   width: 90rem;
 
   @media (${Styles.devices.laptopL}) {
-    width: fit-content;
+    width: 100%;
+    margin: 0 20%;
+    gap: 2%;
   }
 `;
 
@@ -47,4 +49,11 @@ export const TranslateButtonContainer = styled.div`
   gap: 10px;
   justify-content: center;
   margin-left: 20%;
+  
+  @media (max-width: 1285px) {
+    margin-left: 15%;
+  }
+  @media (${Styles.devices.laptop}) {
+    margin-left: auto;
+  }
 `
