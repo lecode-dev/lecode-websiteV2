@@ -1,0 +1,241 @@
+import { Montserrat, Poppins } from 'next/font/google';
+import styled from 'styled-components';
+import Image from 'next/image';
+import { Styles } from '@/styles';
+
+const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
+const poppins = Poppins({ weight: ['400'], style: ['normal'], subsets: ['latin'], display: 'swap' });
+
+export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.white};
+  width: 100%;
+  padding-top: 8rem;
+
+  @media (${Styles.devices.laptop}) {
+    padding-top: 3.125rem; // 50px
+  }
+`;
+
+export const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+
+export const Title = styled.h1`
+  font-size: 3rem; // 48px
+  font-weight: 700;
+  line-height: 3.75rem; // 60px
+  font-family: ${montserrat.style.fontFamily};
+  color: ${({ theme }) => theme.colors.black};
+  text-align: center;
+  width: 44rem; // 704px
+  z-index: 2;
+
+  span {
+    color: ${({ theme }) => theme.colors.mainGreen};
+  }
+
+  @media (${Styles.devices.laptop}) {
+    font-size: 2.25rem; // 36px
+    line-height: 2.8125rem; // 45px
+    width: 36rem; // 576px
+  }
+
+  @media (${Styles.devices.tablet}) {
+    font-size: 1.75rem; // 28px
+    line-height: 2.5rem; // 40px
+    width: 28rem; // 448px
+  }
+
+  @media (${Styles.devices.mobileL}) {
+    font-size: 1.5rem; // 24px
+    line-height: 1.875rem; // 30px
+    width: 24rem; // 384px
+  }
+`;
+
+export const SpanWithStroke = styled.span`
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 2.625rem; // 42px
+    right: -1rem; // -16px
+
+    @media (${Styles.devices.laptop}) {
+      top: 1.75rem; // 28px
+      right: -1rem; // -16px
+      width: 15rem; // 240px
+    }
+
+    @media (${Styles.devices.tablet}) {
+      top: 1.1875rem; // 19px
+      right: -0.5rem; // -8px
+      width: 11.125rem; // 178px
+    }
+
+    @media (${Styles.devices.mobileL}) {
+      top: 0.8125rem; // 13px
+      right: 0.25rem; // 4px
+      width: 8.4375rem; // 135px
+    }
+  }
+`;
+
+export const ImagesContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+`;
+
+export const HeroImage = styled(Image)`
+  position: relative;
+  width: 70%;
+  height: 70%;
+  max-width: 63.9375rem;
+  max-height: 34.40794rem;
+  top: -2.6875rem; // -43px
+  left: -0.25rem; // -4px
+  z-index: 1;
+
+  @media (${Styles.devices.laptop}) {
+    width: 80%;
+    height: 80%;
+    top: -2.0625rem; // -33px
+    left: -0.1875rem; // -3px
+  }
+
+  @media (${Styles.devices.tablet}) {
+    position: static;
+  }
+`;
+
+export const RectangleWithGreenStroke = styled(Image)`
+  position: absolute;
+  height: 100%;
+  top: 40%;
+`;
+
+export const HeroGroupImageLeft = styled(Image)`
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 18%;
+  right: 35%;
+  z-index: 0;
+
+  @media (${Styles.devices.laptop}) {
+    right: 40%;
+  }
+
+  @media (${Styles.devices.tablet}) {
+    display: none;
+  }
+`;
+
+export const HeroGroupSecundaryImageLeft = styled(Image)`
+  display: none;
+
+  @media (${Styles.devices.tablet}) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 22%;
+    right: 37%;
+    height: 55%;
+  }
+`;
+
+export const HeroGroupImageRight = styled(Image)`
+  position: absolute;
+  width: 100%;
+  height: 37%;
+  top: 20%;
+  right: -34%;
+  z-index: 0;
+
+  @media (${Styles.devices.laptop}) {
+    right: -40%;
+  }
+
+  @media (${Styles.devices.tablet}) {
+    display: none;
+  }
+`;
+
+export const HeroGroupSecundaryImageRight = styled(Image)`
+  display: none;
+
+  @media (${Styles.devices.tablet}) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 32%;
+    right: -38%;
+    height: 40%;
+  }
+`;
+
+export const CardsContainer = styled.div`
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 3rem 1.5625rem 0 1.5625rem; // 48px 25px 0 25px
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.5rem; // 72px
+  top: -2.625rem; // -42px
+  background-color: ${({ theme }) => theme.colors.white};
+
+  @media (${Styles.devices.laptop}) {
+    gap: 3.125rem; // 50px
+    padding: 2.5rem 1.5625rem 0 1.5625rem; // 40px 25px 0 25px
+    top: -2.125rem; // -34px
+  }
+
+  @media (${Styles.devices.tablet}) {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+  }
+`;
+
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem; // 14px
+  width: 15.625rem; // 250px
+`;
+
+export const CardTitle = styled.h1`
+  font-size: 1.5rem; // 24px
+  font-weight: 700;
+  line-height: 1.875rem; // 30px
+  font-family: ${montserrat.style.fontFamily};
+  color: ${({ theme }) => theme.colors.black};
+`;
+
+export const CardDescription = styled.p`
+  font-size: 1rem; // 16px
+  font-weight: 400;
+  line-height: 1.25rem; // 20px
+  font-family: ${poppins.style.fontFamily};
+  color: ${({ theme }) => theme.colors.secundaryGray};
+`;
