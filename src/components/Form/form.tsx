@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { Trans, useTranslation } from 'react-i18next';
+import BgImage from '@/images/technology-mask.png';
 import { ContactButton } from '../ContactButton';
-import BgImage from '../../images/technology-mask.png';
 import {
   BackgroundImageRight,
   BackgroundImageLeft,
