@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import { TechnologyBanner } from '@/components/TechnologyBanner';
 import { Clients } from '@/components/Clients';
 import { HeroSection } from '@/components/HeroSection';
-import { TeamMembers } from "@/app/(data)/(mock)/team-members";
+import { TeamMembers } from '@/app/(data)/(mock)/team-members';
 import { TeamLecodeContainer } from '../(components)/(team)/team-member-container';
 
 export default function Home() {
@@ -16,14 +16,10 @@ export default function Home() {
       <Navbar />
       <ScrollbarWrapper>
         <Content>
-        <HeroSection />
-        <TechnologyBanner
-        id='technologies'
-        />
+          <HeroSection />
+          <TechnologyBanner id='technologies' />
           <Clients />
-          <TestimonyContainer
-            testimonies={TestimonyData}
-          />
+          <TestimonyContainer testimonies={TestimonyData} />
           <TeamLecodeContainer
             id='team'
             profiles={TeamMembers}

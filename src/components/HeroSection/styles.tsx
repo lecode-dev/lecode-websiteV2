@@ -13,7 +13,7 @@ export const Container = styled.section`
   align-items: center;
   background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
-  padding-top: 5rem; // 80px
+  padding-top: 8rem;
 
   @media (${Styles.devices.laptop}) {
     padding-top: 3.125rem; // 50px
