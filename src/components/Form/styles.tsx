@@ -12,6 +12,7 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
+  padding-top: 8rem; // 10px
 `;
 
 export const FormContainer = styled.div`
@@ -78,6 +79,7 @@ export const FormContent = styled.div`
   gap: 2rem; // 32px
   width: 100%;
   max-width: 37.5rem; // 600px
+  height: 100%;
 `;
 
 export const FormTextContainer = styled.div`
