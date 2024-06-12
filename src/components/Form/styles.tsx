@@ -79,7 +79,6 @@ export const FormContent = styled.div`
   gap: 2rem; // 32px
   width: 100%;
   max-width: 37.5rem; // 600px
-  height: 100%;
 `;
 
 export const FormTextContainer = styled.div`
