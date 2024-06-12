@@ -1,5 +1,5 @@
 import type { StaticImageData } from 'next/image';
-import LecodeTestimonyLogo from '@/images/lecode-logo-testimony.svg';
+import LecodeTestimonyLogo from '@/imgs/lecode-logo-testimony.svg';
 import {
   ComponentContainer,
   ClientContainer,

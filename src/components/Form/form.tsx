@@ -1,9 +1,9 @@
 'use client';
 
+import { Poppins } from 'next/font/google';
 import Link from 'next/link';
-import { Trans, useTranslation } from 'react-i18next';
 import { ContactButton } from '../ContactButton';
-import BgImage from '../../images/technology-mask.png';
+import BgImage from '../../imgs/technology-mask.png';
 import {
   BackgroundImageRight,
   BackgroundImageLeft,
@@ -16,16 +16,15 @@ import {
   FormSubtitle,
   FormTextContainer,
   FormTitle,
-  FormInputContent, 
+  FormInputContent,
   BackgroundImageContainer,
 } from './styles';
 
+const poppins = Poppins({ weight: ['600'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const Form = () => {
-  const { t } = useTranslation();
-
   return (
-    <Container id='contact'>
+    <Container>
       <FormContainer>
         <BackgroundImageContainer>
           <BackgroundImageLeft
@@ -40,26 +39,27 @@ export const Form = () => {
         <FormContent>
           <FormTextContainer>
             <FormTitle>
-              <Trans i18nKey='contactUs.title' />
+              Vamos <span>juntos</span> tornar seu <span>negócio único</span>?
             </FormTitle>
-            <FormSubtitle>{t('contactUs.subtitle')}</FormSubtitle>
+            <FormSubtitle>Entre em contato conosco para avaliarmos o que podemos fazer pela sua equipe</FormSubtitle>
           </FormTextContainer>
 
           <FormInputContainer>
             <FormInputContent>
-              <FormLabel htmlFor='name'>{t('contactUs.labelCompanyName')}:</FormLabel>
+              <FormLabel htmlFor='name'>Nome da sua Empresa:</FormLabel>
               <FormInput type='text' />
             </FormInputContent>
             <FormInputContent>
-              <FormLabel htmlFor='email'>{t('contactUs.labelEmail')}:</FormLabel>
+              <FormLabel htmlFor='email'>Email:</FormLabel>
               <FormInput type='email' />
             </FormInputContent>
           </FormInputContainer>
           <ContactButton>
             <Link
               href='#'
+              className={poppins.className}
             >
-              {t('contactUs.button')}
+              Entre em contato
             </Link>
           </ContactButton>
         </FormContent>

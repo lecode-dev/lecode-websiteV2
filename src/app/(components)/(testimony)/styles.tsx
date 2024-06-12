@@ -9,7 +9,7 @@ export const SectionContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  padding: 8rem 25px 60px 25px;
+  padding: 60px 25px 60px 25px;
   background-color: ${({ theme }) => theme.colors.gray};
 
   @media (${Styles.devices.tablet}) {
@@ -20,8 +20,6 @@ export const SectionContainer = styled.div`
 export const TitleContainer = styled.div`
   position: relative;
   margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
 `;
 
 export const StrokeImage = styled(Image)`
@@ -48,28 +46,6 @@ export const Mask = styled(Image)`
   bottom: 0px;
   right: 0px;
   opacity: 20%;
-`;
-export const StyledMaskTechnology = styled(Mask)`
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  opacity: 20%;
-  @media (${Styles.devices.tablet}) {
-    position: absolute;
-    top: 0px;
-    opacity: 20%;
-  }
-`;
-export const StyledMaskTechnologyInvert = styled(Mask)`
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  opacity: 20%;
-  @media (${Styles.devices.tablet}) {
-    position: absolute;
-    bottom: 0px;
-    left: 20%;
-  }
 `;
 
 export const LogoBackground = styled(Image)<{

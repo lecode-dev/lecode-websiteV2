@@ -1,10 +1,9 @@
 'use client';
 
-import { useTranslation } from 'react-i18next';
 import { Testimony, type TestimonyProps } from '@/components/Testimony/testimony';
-import TechnologyMask from '@/images/technology-mask.png';
-import Stroke from '@/images/stroke.svg';
-import LecodeLogoBackground from '@/images/lecode-logo-background.svg';
+import TechnologyMask from '@/imgs/technology-mask.png';
+import Stroke from '@/imgs/stroke.svg';
+import LecodeLogoBackground from '@/imgs/lecode-logo-background.svg';
 import { Header1 } from '@/styles';
 import {
   SectionContainer,
@@ -16,13 +15,11 @@ import {
 } from './styles';
 
 interface TestimonyContainerProps {
+  id: string;
   testimonies: ({ id: string } & TestimonyProps)[];
 }
 
-export const TestimonyContainer = ({ testimonies }: TestimonyContainerProps) => {
-
-  const { t } = useTranslation();
-
+export const TestimonyContainer = ({ id, testimonies }: TestimonyContainerProps) => {
   const BackgroundLogo = [
     { $top: '-200px', $right: '-50px' },
     { $top: '300px', $left: '-30px', $opacity: '10%' },
@@ -31,9 +28,9 @@ export const TestimonyContainer = ({ testimonies }: TestimonyContainerProps) => 
   ];
 
   return (
-    <SectionContainer>
+    <SectionContainer id={id}>
       <TitleContainer>
-        <Header1>{t('testimonials.title')}</Header1>
+        <Header1>Depoimentos</Header1>
         <StrokeImage
           src={Stroke}
           alt='stroke'
