@@ -18,12 +18,12 @@ export default function Home() {
         <Content>
           <HeroSection />
           <TechnologyBanner id='technologies' />
-          <Clients />
-          <TestimonyContainer testimonies={TestimonyData} />
           <TeamLecodeContainer
             id='team'
             profiles={TeamMembers}
           />
+          <Clients />
+          <TestimonyContainer testimonies={TestimonyData} />
           <Form />
           <Footer />
         </Content>

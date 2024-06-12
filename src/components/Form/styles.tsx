@@ -13,6 +13,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   padding-top: 8rem; // 10px
+  background: ${({ theme }) => theme.colors.white};
 `;
 
 export const FormContainer = styled.div`
