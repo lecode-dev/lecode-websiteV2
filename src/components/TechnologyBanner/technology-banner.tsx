@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { StyledMaskTechnology , StyledMaskTechnologyInvert } from '@/app/(components)/(testimony)/styles';
-import TechnologyMask from '@/images/technology-mask.png';
+import TechnologyMask from '@/images/technology-mask.svg';
 import reactLogo from '../../../public/react-logo.svg';
 import cSharpLogo from '../../../public/c-logo.svg';
 import azureLogo from '../../../public/azure-logo.svg';
@@ -20,6 +19,8 @@ import {
   UnorderedListTecnology,
   ListTecnologys,
   WrapContainer,
+  StyledMaskTechnology,
+  StyledMaskTechnologyInvert
 } from './styles';
 
 
