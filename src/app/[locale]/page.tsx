@@ -1,4 +1,3 @@
-import { NextSeo } from 'next-seo';
 import { TestimonyContainer } from '@/app/(components)/(testimony)/testimony-container';
 import { TestimonyData } from '@/app/(data)/(mock)/testimonies';
 import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
@@ -14,10 +13,6 @@ import { TeamLecodeContainer } from '../(components)/(team)/team-member-containe
 export default function Home() {
   return (
     <main>
-      <NextSeo 
-      title="Using More of Config"
-      description="This example uses more of the available config options."
-      />
       <Navbar />
       <ScrollbarWrapper>
         <Content>
