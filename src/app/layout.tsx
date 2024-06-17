@@ -5,7 +5,8 @@ import { i18nConfig } from '@/i18n';
 
 export const metadata: Metadata = {
   title: 'LeCode',
-  description: 'LeCode interprise is especialized in web development, and also is an agency with React, JavaScript, NodeJs, Electra and NextJs developers',
+  description:
+    'LeCode Enterprise specializes in web development and operates as an agency with expertise in React, JavaScript, Node.js, Electron, and Next.js.',
 };
 
 export function generateStaticParams() {
