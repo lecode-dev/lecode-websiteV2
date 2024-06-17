@@ -1,2 +1,2 @@
-export * from './technologybanner'
+export * from './technology-banner'
 
