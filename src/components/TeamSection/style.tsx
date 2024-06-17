@@ -60,7 +60,7 @@ export const ContactContainer = styled.div`
     margin: 0;
     gap: 25px;
   }
-  
+
   @media (${Styles.devices.tabletL}) {
     width: 100%;
   }
@@ -141,6 +141,23 @@ export const BgImage = styled(Image)`
   transform: translate(-3.1rem, 15ex);
   width: 26.5415rem;
   height: 25.24469rem;
+
+  @media (${Styles.devices.laptopL}) {
+    transform: translate(-2rem, 21ex);
+    width: 20.5415rem;
+    height: 20.24469rem;
+  }
+
+  @media (${Styles.devices.laptop}) {
+    transform: translate(-1.5rem, 15ex);
+    width: 16.5415rem;
+    height: 16.24469rem;
+  }
+
+  @media (${Styles.devices.tabletL}) {
+    width: 26.5415rem;
+    height: 25.24469rem;
+  }
 `;
 
 export const ProfilePicture = styled(Image)`

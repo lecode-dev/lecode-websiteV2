@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Trans, useTranslation } from 'react-i18next';
-import BgImage from '@/images/technology-mask.png';
+import BgImage from '@/images/technology-mask.svg';
 import { ContactButton } from '../ContactButton';
 import {
   BackgroundImageRight,

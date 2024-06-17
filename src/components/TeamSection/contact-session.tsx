@@ -1,6 +1,6 @@
 "use client"
 import { useTranslation } from 'react-i18next';
-import TechnologyMask from '@/images/technology-mask.png';
+import TechnologyMask from '@/images/technology-mask.svg';
 import { ContactButton } from '../ContactButton';
 import { BgImage, ContactContainer, Header, Paragraph, TextContainer, StyledLink } from './style';
 
