@@ -20,7 +20,9 @@ export const Navbar = () => {
           alt='LeCode logo: green triangle with white Le and black code'
           src={lecodeLogo}
         /><TranslateButtonContainer>
-        <ContactButton>
+        <ContactButton 
+          type='button'
+        >
           <Link
             href='#contact'
           >
