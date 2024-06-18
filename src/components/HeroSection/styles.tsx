@@ -2,7 +2,12 @@ import { Montserrat, Poppins } from 'next/font/google';
 import styled from 'styled-components';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { type HTMLAttributes } from 'react';
 import { Styles } from '@/styles';
+
+interface SpanWithStrokeProps extends HTMLAttributes<HTMLSpanElement> {
+  language: string; // Defina a propriedade language como parte das props
+}
 
 const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 const poppins = Poppins({ weight: ['400'], style: ['normal'], subsets: ['latin'], display: 'swap' });
@@ -65,29 +70,29 @@ export const Title = styled(motion.h1)`
   }
 `;
 
-export const SpanWithStroke = styled(motion.span)`
+export const SpanWithStroke = styled(motion.span)<SpanWithStrokeProps>`
   position: relative;
 
   img {
     position: absolute;
     top: 2.625rem; // 42px
-    right: -1rem; // -16px
+    right: ${({ language }) => (language === 'en' ? '0' : '-1rem')}; 
 
     @media (${Styles.devices.laptop}) {
       top: 1.75rem; // 28px
-      right: -1rem; // -16px
+      right: ${({ language }) => (language === 'en' ? '0' : '-1rem')}; 
       width: 15rem; // 240px
     }
 
     @media (${Styles.devices.tablet}) {
       top: 1.1875rem; // 19px
-      right: -0.5rem; // -8px
+      right: ${({ language }) => (language === 'en' ? '0' : '-0.5rem')};
       width: 11.125rem; // 178px
     }
 
     @media (${Styles.devices.mobileL}) {
       top: 0.8125rem; // 13px
-      right: 0.25rem; // 4px
+      right: ${({ language }) => (language === 'en' ? '0' : '0.25rem')};
       width: 8.4375rem; // 135px
     }
   }
