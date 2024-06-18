@@ -29,9 +29,21 @@
     "labelCompanyName": "Nome da sua Empresa",
     "labelEmail": "Email"
   },
-  "contactTeam" : {
-    "button":"Veja os detalhes da equipe",
+  "contactTeam": {
+    "button": "Veja os detalhes da equipe",
     "title": "Encontre o seu time ideal",
     "description": "Uma equipe completa, com a expertise que você precisa para alavancar suas ideias."
+  },
+  "technology": {
+    "title":"Conheça as",
+    "technologies": "tecnologias",
+    "thatTheTeam": "que o time da",
+    "dominates": "domina",
+    "subtitle": "As tecnologias mais atuais em prol da efiência e performance",
+    "therFrameworks": "Outros frameworks que usamos:",
+    "subtitleFrontEnd": "Utilizamos este e outros frameworks conhecidos como os melhores do mercado",
+    "subtitleBackEnd": "Desenvolvemos uma estrutura robusta, com integrações e APIs para otimizar o desempenho.",
+    "Infrastructure": "Infraestrutura",
+    "subtitleInfra": "Gerenciamos a infraestrutura dos projetos com o que há de melhor no mercado."
   }
 }
