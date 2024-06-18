@@ -29,9 +29,21 @@
     "labelCompanyName": "Company Name",
     "labelEmail": "Email"
   },
-  "contactTeam" : {
-    "button":"See more details about our team",
+  "contactTeam": {
+    "button": "See more details about our team",
     "title": "Find your ideal team",
     "description": "A complete team, with the expertise you need to leverage your ideas."
+  },
+  "technology": {
+    "title":"Discover the",
+    "technologies": "technologies",
+    "thatTheTeam": "that the",
+    "dominates": "team dominates",
+    "subtitle": "The most current technologies for efficiency and performance",
+    "therFrameworks": "Other frameworks we use:",
+    "subtitleFrontEnd": "We use this and other frameworks known as the best on the market.",
+    "subtitleBackEnd": "We developed a robust framework, with integrations and APIs to optimize performance.",
+    "Infrastructure": "Infrastructure",
+    "subtitleInfra": "We manage project infrastructure with the best on the market."
   }
 }
