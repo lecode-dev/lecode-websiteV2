@@ -13,7 +13,9 @@ export const ContactTeam = () => {
         <Header>{t('contactTeam.title')}</Header>
         <Paragraph>{t('contactTeam.description')}</Paragraph>
       </TextContainer>
-      <ContactButton>
+      <ContactButton 
+        type='button'
+      >
         <StyledLink href='#contact'>{t('contactTeam.button')}</StyledLink>
       </ContactButton>
       <BgImage
