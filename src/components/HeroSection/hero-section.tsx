@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
+import { Trans, useTranslation } from 'react-i18next';
 import HeroImg from '../../images/hero-image.png';
 import HeroGroupImgLeft from '../../images/hero-group-left.svg';
 import RetangleWithGreenShadow from '../../images/rectangle-with-green-shadow.svg';
@@ -85,6 +86,8 @@ const groupSecundaryImageRightVariants = {
 };
 
 export const HeroSection = () => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
   const titleContainerControls = useAnimation();
   const strokeControls = useAnimation();
   const titleControls = useAnimation();
@@ -113,10 +116,20 @@ export const HeroSection = () => {
     }
 
     sequence();
-  }, [titleContainerControls, strokeControls, titleControls, imagesContainerControls, cardsContainerControls, groupImageLeftControls, groupSecundaryImageLeftControls, groupImageRightControls, groupSecundaryImageRightControls]);
+  }, [
+    titleContainerControls,
+    strokeControls,
+    titleControls,
+    imagesContainerControls,
+    cardsContainerControls,
+    groupImageLeftControls,
+    groupSecundaryImageLeftControls,
+    groupImageRightControls,
+    groupSecundaryImageRightControls,
+  ]);
 
   return (
-    <Container>
+    <Container id='aboutUs'>
       <SectionContainer>
         <TitleContainer
           as={motion.div}
@@ -130,22 +143,22 @@ export const HeroSection = () => {
             animate={titleControls}
             variants={titleVariants}
           >
-            Somos uma{' '}
-            <span>
-              {' '}
-              <SpanWithStroke>
-                consultoria{' '}
-                <AnimatedImage
-                  src={Stroke}
-                  alt='Stroke'
-                  initial='hidden'
-                  animate={strokeControls}
-                  variants={strokeVariants}
-                />
-              </SpanWithStroke>{' '}
-              Outsourcing
-            </span>{' '}
-            que se encaixa no seu <span>Negócio</span>
+            <Trans
+              i18nKey="aboutUs.description"
+              components={{
+                span: <span />,
+                strokeSpan: <SpanWithStroke language={currentLanguage} />,
+                animatedImage: (
+                  <AnimatedImage
+                    src={Stroke}
+                    alt='Stroke'
+                    initial='hidden'
+                    animate={strokeControls}
+                    variants={strokeVariants}
+                  />
+                )
+              }}
+            />
           </Title>
         </TitleContainer>
         <ImagesContainer
@@ -203,40 +216,32 @@ export const HeroSection = () => {
             src={TimeIcon}
             alt='Time Icon'
           />
-          <CardTitle>Recrutamento no tempo certo</CardTitle>
-          <CardDescription>
-            Auxiliamos na escolha e alocação de talentos de acordo com prazos definidos pelo cliente.
-          </CardDescription>
+          <CardTitle>{t('aboutUs.ourQualities.0.title')}</CardTitle>
+          <CardDescription>{t('aboutUs.ourQualities.0.description')}</CardDescription>
         </Card>
         <Card>
           <Image
             src={PuzzleIcon}
             alt='Puzzle Icon'
           />
-          <CardTitle>Monte um time eficiente</CardTitle>
-          <CardDescription>
-            Procure e encontre em nossa lista especialistas dedicados com as habilidades que seu time precisa.
-          </CardDescription>
+          <CardTitle>{t('aboutUs.ourQualities.1.title')}</CardTitle>
+          <CardDescription>{t('aboutUs.ourQualities.1.description')}</CardDescription>
         </Card>
         <Card>
           <Image
             src={ChartLineIcon}
             alt='Chart Line Icon'
           />
-          <CardTitle>Desempenho monitorado</CardTitle>
-          <CardDescription>
-            Temos níveis de gerenciamento para acompanhar o desempenho dos nossos especialistas alocados.
-          </CardDescription>
+          <CardTitle>{t('aboutUs.ourQualities.2.title')}</CardTitle>
+          <CardDescription>{t('aboutUs.ourQualities.2.description')}</CardDescription>
         </Card>
         <Card>
           <Image
             src={UserIcon}
             alt='User Icon'
           />
-          <CardTitle>Talentos com técnica e qualidade</CardTitle>
-          <CardDescription>
-            Nossos especialistas são avaliados e passam por crivo técnico e de qualidade para integrar nossa lista.
-          </CardDescription>
+          <CardTitle>{t('aboutUs.ourQualities.3.title')}</CardTitle>
+          <CardDescription>{t('aboutUs.ourQualities.3.description')}</CardDescription>
         </Card>
       </CardsContainer>
     </Container>

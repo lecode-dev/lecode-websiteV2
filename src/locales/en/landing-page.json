@@ -1,7 +1,25 @@
 {
   "aboutUs": {
     "title": "About Us",
-    "description": "We are a team of professionals who are passionate about what we do"
+    "description": "We are an <span>consultancy<strokeSpan> <animatedImage /></strokeSpan> Outsourcing</span> that fits your <span>Business</span>",
+    "ourQualities": [
+      {
+        "title": "Recruitment at the Right Time",
+        "description": "We assist in the selection and allocation of talents according to client-defined deadlines."
+      },
+      {
+        "title": "Build an Efficient Team",
+        "description": "Search and find dedicated specialists with the skills your team needs in our list."
+      },
+      {
+        "title": "Monitored Performance",
+        "description": "We have management levels to monitor the performance of our allocated specialists."
+      },
+      {
+        "title": "Talents with Technique and Quality",
+        "description": "Our specialists are evaluated and undergo technical and quality scrutiny to join our list."
+      }
+    ]
   },
   "ourSkills": {
     "title": "Our Skills",

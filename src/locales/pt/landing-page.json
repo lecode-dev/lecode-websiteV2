@@ -1,7 +1,25 @@
 {
   "aboutUs": {
     "title": "Quem somos",
-    "description": "Somos uma equipe de profissionais apaixonados pelo que fazemos"
+    "description": "Somos uma <span><strokeSpan>consultoria <animatedImage /></strokeSpan> Outsourcing</span> que se encaixa no seu <span>Negócio</span>",
+    "ourQualities": [
+      {
+        "title": "Recrutamento no tempo certo",
+        "description": "Auxiliamos na escolha e alocação de talentos de acordo com prazos definidos pelo cliente."
+      },
+      {
+        "title": "Monte um time eficiente",
+        "description": "Procure e encontre em nossa lista especialistas dedicados com as habilidades que seu time precisa."
+      },
+      {
+        "title": "Desempenho monitorado",
+        "description": "Temos níveis de gerenciamento para acompanhar o desempenho dos nossos especialistas alocados."
+      },
+      {
+        "title": "Talentos com técnica e qualidade",
+        "description": "Nossos especialistas são avaliados e passam por crivo técnico e de qualidade para integrar nossa lista."
+      }
+    ]
   },
   "ourSkills": {
     "title": "Nossas habilidades",
