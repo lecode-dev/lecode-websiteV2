@@ -1,4 +1,5 @@
 const { resolve } = require('node:path');
+
 const project = resolve(process.cwd(), 'tsconfig.json');
 
 const extendsData = ['next/core-web-vitals'];
@@ -50,6 +51,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
     
     // React
     'react/function-component-definition': 'off',

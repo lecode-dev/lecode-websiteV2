@@ -84,7 +84,6 @@ export const Form = () => {
       toast.success('Email sent successfully');
       reset();
     } catch (error) {
-      console.error(error);
       toast.error('Failed to send email');
     } finally {
       setLoading(false);
