@@ -38,6 +38,7 @@ export const BackgroundImageContainer = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -1;
 `;
 
 export const BackgroundImageRight = styled(Image)`
@@ -73,7 +74,7 @@ export const BackgroundImageLeft = styled(Image)`
   }
 `;
 
-export const FormContent = styled.div`
+export const FormContent = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +139,7 @@ export const FormInputContainer = styled.div`
   }
 `;
 
-export const FormInputContent = styled.form`
+export const FormInputContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
