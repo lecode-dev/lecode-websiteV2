@@ -6,7 +6,7 @@ import { type HTMLAttributes } from 'react';
 import { Styles } from '@/styles';
 
 interface SpanWithStrokeProps extends HTMLAttributes<HTMLSpanElement> {
-  language: string; // Defina a propriedade language como parte das props
+  language: string;
 }
 
 const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
