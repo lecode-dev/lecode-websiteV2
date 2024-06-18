@@ -1,6 +1,7 @@
 import { Montserrat, Poppins } from 'next/font/google';
 import styled from 'styled-components';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { Styles } from '@/styles';
 
 const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
@@ -14,13 +15,9 @@ export const Container = styled.section`
   background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
   padding-top: 8rem;
-
-  @media (${Styles.devices.laptop}) {
-    padding-top: 3.125rem; // 50px
-  }
 `;
 
-export const SectionContainer = styled.div`
+export const SectionContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,14 +25,14 @@ export const SectionContainer = styled.div`
   width: 100%;
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 `;
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
   font-size: 3rem; // 48px
   font-weight: 700;
   line-height: 3.75rem; // 60px
@@ -68,7 +65,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const SpanWithStroke = styled.span`
+export const SpanWithStroke = styled(motion.span)`
   position: relative;
 
   img {
@@ -96,7 +93,7 @@ export const SpanWithStroke = styled.span`
   }
 `;
 
-export const ImagesContainer = styled.div`
+export const ImagesContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +189,7 @@ export const HeroGroupSecundaryImageRight = styled(Image)`
   }
 `;
 
-export const CardsContainer = styled.div`
+export const CardsContainer = styled(motion.div)`
   display: flex;
   position: relative;
   width: 100%;
