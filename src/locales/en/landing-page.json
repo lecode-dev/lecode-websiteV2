@@ -47,6 +47,16 @@
     "labelCompanyName": "Company Name",
     "labelEmail": "Email"
   },
+  "formValidation": {
+    "requiredName": "Company name is required",
+    "invalidEmail": "Invalid email",
+    "requiredEmail": "Email is required"
+  },
+  "toastEmailStatus": {
+    "successEmail": "Email sent successfully",
+    "failedEmail": "Failed to send email",
+    "errorEmailConfig": "Error sending email"
+  },
   "contactTeam": {
     "button": "See more details about our team",
     "title": "Find your ideal team",

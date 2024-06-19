@@ -47,6 +47,16 @@
     "labelCompanyName": "Nome da sua Empresa",
     "labelEmail": "Email"
   },
+  "formValidation": {
+    "requiredName": "Nome da empresa é obrigatório",
+    "invalidEmail": "Email inválido",
+    "requiredEmail": "Email é obrigatório"
+  },
+  "toastEmailStatus": {
+    "successEmail": "Email enviado com sucesso",
+    "failedEmail": "Falha ao enviar email",
+    "errorEmailConfig": "Erro ao enviar email"
+  },
   "contactTeam": {
     "button": "Veja os detalhes da equipe",
     "title": "Encontre o seu time ideal",
