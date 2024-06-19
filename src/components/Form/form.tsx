@@ -27,8 +27,6 @@ import {
   BackgroundImageContainer,
 } from './styles';
 
-
-
 export const Form = () => {
   const { t } = useTranslation();
 
