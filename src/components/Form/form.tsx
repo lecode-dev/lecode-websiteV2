@@ -27,15 +27,16 @@ import {
   BackgroundImageContainer,
 } from './styles';
 
-const schema = z.object({
-  name: z.string().min(1, 'Company name is required'),
-  email: z.string().email('Invalid email address').min(1, 'Email is required'),
-});
-
-type FormData = z.infer<typeof schema>;
-
 export const Form = () => {
   const { t } = useTranslation();
+
+  const schema = z.object({
+    name: z.string().min(1, t('formValidation.requiredName')),
+    email: z.string().email(t('formValidation.invalidEmail')).min(1, t('formValidation.requiredEmail')),
+  });
+
+  type FormData = z.infer<typeof schema>;
+  
   const {
     register,
     handleSubmit,
@@ -63,7 +64,7 @@ export const Form = () => {
     const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
 
     if (!serviceId || !templateId || !publicKey) {
-      toast.error('Email service configuration is missing');
+      toast.error(t('toastEmailStatus.errorEmailConfig'));
       return;
     }
 
@@ -81,10 +82,10 @@ export const Form = () => {
         publicKey,
       );
 
-      toast.success('Email sent successfully');
+      toast.success(t('toastEmailStatus.successEmail'));
       reset();
     } catch (error) {
-      toast.error('Failed to send email');
+      toast.error(t('toastEmailStatus.failedEmail'));
     } finally {
       setLoading(false);
     }
