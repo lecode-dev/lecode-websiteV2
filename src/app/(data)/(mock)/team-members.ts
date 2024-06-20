@@ -1,20 +1,26 @@
 import KarenProfile from '../../../../public/karen-profile-img.png';
-import intagramLogo from '../../../images/github-icon.svg';
-import teste from '../../../images/gmail-icon.svg';
-import teste3 from '../../../images/linkedln-icon.svg';
+import c from '../../../../public/c.svg';
+import cPlusPlus from '../../../../public/cplusplus.svg';
+import python from '../../../../public/python.svg';
+import typeScript from '../../../../public/typescript.svg'
+import react from '../../../../public/react.svg'
+import nextJS from '../../../../public/nextjs.svg'
+import nodeJs from '../../../../public/nodejs.svg'
+import electron from '../../../../public/electron.svg'
+import webpack from '../../../../public/webpack.svg'
 
 
 export const TeamMembers = [
   {
     id: '1',
     profile: {
-      name: 'Erick Willian',
+      name: 'Marcone Tenório',
       expertise: [
-        intagramLogo,
-        teste,
-        teste3
+        c,
+        cPlusPlus,
+        python
       ],
-      charge: 'Full-Stack Developer',
+      charge: 'PLC Programmer',
       img: KarenProfile,
 
     },
@@ -22,11 +28,11 @@ export const TeamMembers = [
   {
     id: '2',
     profile: {
-      name: 'Káren Myllena',
+      name: 'Káren Myllena Gonçalves',
       expertise: [
-        intagramLogo,
-        teste,
-        teste3
+        typeScript,
+        nextJS,
+        react,
       ],
       charge: 'Web Developer',
       img: KarenProfile,
@@ -35,11 +41,11 @@ export const TeamMembers = [
   {
     id: '3',
     profile: {
-      name: 'Natan Erico',
+      name: 'João Guilherme Santiago',
       expertise: [
-        intagramLogo,
-        teste,
-        teste3
+        nodeJs,
+        electron,
+        webpack
       ],
       charge: 'Full-Stack Developer',
       img: KarenProfile,

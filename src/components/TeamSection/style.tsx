@@ -113,7 +113,7 @@ export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  gap: 1.58vh;
 `;
 
 export const ExpertiseContainer = styled.div`
