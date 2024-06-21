@@ -1,4 +1,5 @@
-import KarenProfile from '../../../../public/karen-profile-img.png';
+import karenProfile from '../../../../public/karen-profile.jpg';
+import marconeProfile from '../../../../public/marcone-profile.jpg';
 import c from '../../../../public/c.svg';
 import cPlusPlus from '../../../../public/cplusplus.svg';
 import python from '../../../../public/python.svg';
@@ -21,7 +22,7 @@ export const TeamMembers = [
         python
       ],
       charge: 'PLC Programmer',
-      img: KarenProfile,
+      img: marconeProfile,
 
     },
   },
@@ -35,7 +36,7 @@ export const TeamMembers = [
         react,
       ],
       charge: 'Web Developer',
-      img: KarenProfile,
+      img: karenProfile,
     },
   },
   {
@@ -48,7 +49,7 @@ export const TeamMembers = [
         webpack
       ],
       charge: 'Full-Stack Developer',
-      img: KarenProfile,
+      img: karenProfile,
     },
   },
 ];
