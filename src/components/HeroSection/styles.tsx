@@ -22,6 +22,27 @@ export const Container = styled.section`
   padding-top: 8rem;
 `;
 
+export const LogoContainer = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: ${({ theme }) => theme.colors.white};
+`;
+
+export const AnimatedLogo = styled(motion(Image))`
+  position: relative;
+  width: 42.88888rem; // 686px
+  height: 24.125rem; // 386px
+  right: -0.25rem; // -4px
+  z-index: 1000;
+`;
+
 export const SectionContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
