@@ -1,5 +1,6 @@
 import karenProfile from '../../../../public/karen-profile.jpg';
 import marconeProfile from '../../../../public/marcone-profile.jpg';
+import joaoProfile from '../../../../public/joao-profile.jpg';
 import c from '../../../../public/c.svg';
 import cPlusPlus from '../../../../public/cplusplus.svg';
 import python from '../../../../public/python.svg';
@@ -29,6 +30,19 @@ export const TeamMembers = [
   {
     id: '2',
     profile: {
+      name: 'João Guilherme Santiago',
+      expertise: [
+        nodeJs,
+        electron,
+        webpack
+      ],
+      charge: 'Full-Stack Developer',
+      img: joaoProfile,
+    },
+  },
+  {
+    id: '3',
+    profile: {
       name: 'Káren Myllena Gonçalves',
       expertise: [
         typeScript,
@@ -39,17 +53,5 @@ export const TeamMembers = [
       img: karenProfile,
     },
   },
-  {
-    id: '3',
-    profile: {
-      name: 'João Guilherme Santiago',
-      expertise: [
-        nodeJs,
-        electron,
-        webpack
-      ],
-      charge: 'Full-Stack Developer',
-      img: karenProfile,
-    },
-  },
+ 
 ];
