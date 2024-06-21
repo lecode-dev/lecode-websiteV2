@@ -41,6 +41,10 @@ export const AnimatedLogo = styled(motion(Image))`
   height: 24.125rem; // 386px
   right: -0.25rem; // -4px
   z-index: 1000;
+
+  @media (${Styles.devices.laptop}) {
+    right: 0.875rem; // 14px
+  }
 `;
 
 export const SectionContainer = styled(motion.section)`
