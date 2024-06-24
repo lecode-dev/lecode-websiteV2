@@ -22,7 +22,7 @@ export const TeamMembers = [
         cPlusPlus,
         python
       ],
-      charge: 'PLC Programmer',
+      charge: 'Embedded developer',
       img: marconeProfile,
 
     },
