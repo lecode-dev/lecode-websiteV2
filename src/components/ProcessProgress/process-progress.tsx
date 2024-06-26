@@ -1,6 +1,7 @@
 'use client';
+import cardsData, { type CardData } from '@/app/(data)/(process)/processes-data';
 // import { useTranslation } from 'react-i18next';
-import lecodeLogoBackground from '../../../public/light-lecode-logo.svg';
+import CardSelectedNode from '@/app/(components)/(card)/card-selected-node';
 import {
   MainTextContainer,
   ProcessProgressContainer,
@@ -9,13 +10,7 @@ import {
   TextRow,
   LearnAboutText,
   WrapContainer,
-  ContainerSelectedNode,
-  CardSelectedNode,
-  NumberText,
-  TextContentArea,
-  TitleCard,
-  SubTitleCard,
-  LeCodeLogoBackground,
+  ContainerSelected
 } from './styles';
 
 export const ProcessProgress = () => {
@@ -38,36 +33,14 @@ export const ProcessProgress = () => {
         </CenterContainerText>
       </MainTextContainer>
       <ProcessProgressContainer>
-        <ContainerSelectedNode>
-          <CardSelectedNode>
-            <LeCodeLogoBackground
-              src={lecodeLogoBackground}
-              alt='le-code-logo-background'
-            />
-            <NumberText>1</NumberText>
-            <TextContentArea>
-              <TitleCard>Briefing</TitleCard>
-              <SubTitleCard>
-                Através de uma conversa faremos um briefing e entenderemos quais são suas necessidades para indicar os
-                melhores perfis de profissionais para atender as suas demandas.
-              </SubTitleCard>
-            </TextContentArea>
-          </CardSelectedNode>
-          <CardSelectedNode>
-            <LeCodeLogoBackground
-              src={lecodeLogoBackground}
-              alt='le-code-logo-background'
-            />
-            <NumberText>1</NumberText>
-            <TextContentArea>
-              <TitleCard>Briefing</TitleCard>
-              <SubTitleCard>
-                Através de uma conversa faremos um briefing e entenderemos quais são suas necessidades para indicar os
-                melhores perfis de profissionais para atender as suas demandas.
-              </SubTitleCard>
-            </TextContentArea>
-          </CardSelectedNode>
-        </ContainerSelectedNode>
+      <ContainerSelected>
+        {cardsData.map((card: CardData, index: number) => (
+          <CardSelectedNode
+            key={index}
+            cardsData={card}
+          />
+        ))}
+      </ContainerSelected>
       </ProcessProgressContainer>
     </SessionProcessProgress>
   );

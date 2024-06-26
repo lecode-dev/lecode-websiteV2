@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import Image from 'next/image';
-import { Header1, Paragraph1, Subtitle } from '@/styles';
+import { Header1,  } from '@/styles';
 
 export const SessionProcessProgress = styled.div``;
 
@@ -43,44 +42,10 @@ export const ProcessProgressContainer = styled.div`
   overflow: hidden;
 `;
 
-export const ContainerSelectedNode = styled.div`
+export const ContainerSelected = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 850px;
-  height: 350px;
-  border: 1px solid red;
+  height: 400px;
   gap: 2rem;
-`;
-
-export const CardSelectedNode = styled.div`
-  height: 200px;
-  width: 240px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-`;
-
-export const NumberText = styled(Header1)`
-  color: ${({ theme }) => theme.colors.mainGreen};
-`;
-export const TextContentArea = styled.div`
-  height: 240px;
-  width: 184px;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const TitleCard = styled(Subtitle)`
-  color: ${({ theme }) => theme.colors.white};
-`;
-
-export const SubTitleCard = styled(Paragraph1)`
-  color: ${({ theme }) => theme.colors.white};
-`;
-
-export const LeCodeLogoBackground = styled(Image)`
-  position: absolute;
-  top: -20%;
-  left: 20%;
 `;
