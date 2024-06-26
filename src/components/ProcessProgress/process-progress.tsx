@@ -1,5 +1,6 @@
 'use client';
 // import { useTranslation } from 'react-i18next';
+import lecodeLogoBackground from '../../../public/light-lecode-logo.svg';
 import {
   MainTextContainer,
   ProcessProgressContainer,
@@ -7,7 +8,14 @@ import {
   CenterContainerText,
   TextRow,
   LearnAboutText,
-  WrapContainer
+  WrapContainer,
+  // ContainerSelectedNode,
+  CardSelectedNode,
+  NumberText,
+  TextContentArea,
+  TitleCard,
+  SubTitleCard,
+  LeCodeLogoBackground,
 } from './styles';
 
 export const ProcessProgress = () => {
@@ -30,7 +38,22 @@ export const ProcessProgress = () => {
         </CenterContainerText>
       </MainTextContainer>
       <ProcessProgressContainer>
-        <p>a</p>
+        {/* <ContainerSelectedNode> */}
+        <CardSelectedNode>
+          <LeCodeLogoBackground
+            src={lecodeLogoBackground}
+            alt='le-code-logo-background'
+          />
+          <NumberText>1</NumberText>
+          <TextContentArea>
+            <TitleCard>Briefing</TitleCard>
+            <SubTitleCard>
+              Através de uma conversa faremos um briefing e entenderemos quais são suas necessidades para indicar os
+              melhores perfis de profissionais para atender as suas demandas.
+            </SubTitleCard>
+          </TextContentArea>
+        </CardSelectedNode>
+        {/* </ContainerSelectedNode> */}
       </ProcessProgressContainer>
     </SessionProcessProgress>
   );
