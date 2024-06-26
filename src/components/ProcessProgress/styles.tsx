@@ -43,13 +43,20 @@ export const ProcessProgressContainer = styled.div`
   overflow: hidden;
 `;
 
-export const ContainerSelectedNode = styled.div``;
+export const ContainerSelectedNode = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  height: 350px;
+  border: 1px solid red;
+  gap: 2rem;
+`;
 
 export const CardSelectedNode = styled.div`
   height: 200px;
   width: 240px;
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
   position: relative;
 `;
@@ -72,10 +79,8 @@ export const SubTitleCard = styled(Paragraph1)`
   color: ${({ theme }) => theme.colors.white};
 `;
 
-
-
 export const LeCodeLogoBackground = styled(Image)`
-  position: absolute; 
+  position: absolute;
   top: -20%;
   left: 20%;
 `;
