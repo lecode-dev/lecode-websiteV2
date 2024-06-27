@@ -51,8 +51,8 @@ export const LeCodeLogoBackground = styled(Image)`
   top: -20%;
   left: 10%;
   @media (${Styles.devices.laptop}) {
-    top: -30%; 
-    left: 10%; 
-    width: 95%; 
+    top: -30%;
+    left: 10%;
+    width: 95%;
   }
 `;
