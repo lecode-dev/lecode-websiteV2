@@ -63,7 +63,7 @@
     "description": "A complete team, with the expertise you need to leverage your ideas."
   },
   "technology": {
-    "title":"Discover the",
+    "title": "Discover the",
     "technologies": "technologies",
     "thatTheTeam": "that the",
     "dominates": "team dominates",
@@ -73,5 +73,19 @@
     "subtitleBackEnd": "We developed a robust framework, with integrations and APIs to optimize performance.",
     "Infrastructure": "Infrastructure",
     "subtitleInfra": "We manage project infrastructure with the best on the market."
+  },
+  "process": {
+    "mainLearnAbotBlack": "Our approach to",
+    "mainLearnAbotGreen": "ensuring",
+    "subtitleLearnAbotBlack": " the success of your",
+    "subtitleLearnAbotGreen": "technology project",
+    "cardTitle1": "Project Briefing",
+    "cardSubTitle1": "Through a conversation, we will conduct a briefing to understand your needs and recommend the best professional profiles to meet your demands.",
+    "cardTitle2": "Timeline",
+    "cardSubTitle2": "Within a few days, we will present a list of selected professionals for your review and approval.",
+    "cardTitle3": "Resource Allocation",
+    "cardSubTitle3": "After approval, our professional will be allocated to your company within 7 days, without any delays or bureaucracy.",
+    "cardTitle4": "Project Monitoring",
+    "cardSubTitle4": "While our professionals are at your disposal, we will provide continuous monitoring and performance tracking to ensure maximum efficiency in delivering the work."
   }
 }

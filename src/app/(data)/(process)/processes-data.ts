@@ -1,30 +1,38 @@
+import { useTranslation } from 'react-i18next';
+
 export interface CardData {
   number: string;
   title: string;
   subTitle: string;
 }
 
-const cardsData: CardData[] = [
-  {
-    number: "1",
-    title: "Briefing",
-    subTitle: "Através de uma conversa faremos um briefing e entenderemos quais são suas necessidades para indicar os melhores perfis de profissionais para atender as suas demandas."
-  },
-  {
-    number: "2",
-    title: "Tempo hábil",
-    subTitle: "Em poucos dias será apresentada uma lista de profissionais selecionados para que você também possa avaliar e aprovar."
-  },
-  {
-    number: "3",
-    title: "Alocação",
-    subTitle: "Após a aprovação, nosso profissional será alocado em até 7 dias dentro da sua empresa, sem perda de tempo e sem burocracia."
-  },
-  {
-    number: "4",
-    title: "Acompanhamento",
-    subTitle: "Enquanto nossos profissionais estiverem à sua disposição, faremos todo o acompanhamento e monitoramento do desempenho para garantir a máxima eficiência na entrega do trabalho."
-  }
-];
+const useCardsData = () => {
+  const { t } = useTranslation();
 
-export default cardsData;
+  const cardsData: CardData[] = [
+    {
+      number: "1",
+      title: t('process.cardTitle1'),
+      subTitle: t('process.cardSubTitle1'),
+    },
+    {
+      number: "2",
+      title: t('process.cardTitle2'),
+      subTitle: t('process.cardSubTitle2'),
+    },
+    {
+      number: "3",
+      title: t('process.cardTitle3'),
+      subTitle: t('process.cardSubTitle3'),
+    },
+    {
+      number: "4",
+      title: t('process.cardTitle4'),
+      subTitle: t('process.cardSubTitle4'),
+    }
+  ];
+
+  return cardsData;
+};
+
+export default useCardsData;

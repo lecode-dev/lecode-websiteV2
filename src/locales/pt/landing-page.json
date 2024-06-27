@@ -63,7 +63,7 @@
     "description": "Uma equipe completa, com a expertise que você precisa para alavancar suas ideias."
   },
   "technology": {
-    "title":"Conheça as",
+    "title": "Conheça as",
     "technologies": "tecnologias",
     "thatTheTeam": "que o time da",
     "dominates": "domina",
@@ -73,5 +73,19 @@
     "subtitleBackEnd": "Desenvolvemos uma estrutura robusta, com integrações e APIs para otimizar o desempenho.",
     "Infrastructure": "Infraestrutura",
     "subtitleInfra": "Gerenciamos a infraestrutura dos projetos com o que há de melhor no mercado."
+  },
+  "process": {
+    "mainLearnAbotBlack": "Nossa abordagem para",
+    "mainLearnAbotGreen": "garantir",
+    "subtitleLearnAbotBlack": "sucesso do seu",
+    "subtitleLearnAbotGreen": "projeto de tecnologia",
+    "cardTitle1": "Briefing",
+    "cardSubTitle1": "Através de uma conversa faremos um briefing e entenderemos quais são suas necessidades para indicar os melhores perfis de profissionais para atender as suas demandas.",
+    "cardTitle2": "Tempo hábil",
+    "cardSubTitle2": "Em poucos dias será apresentada uma lista de profissionais selecionados para que você também possa avaliar e aprovar.",
+    "cardTitle3": "Alocação",
+    "cardSubTitle3": "Após a aprovação, nosso profissional será alocado em até 7 dias dentro da sua empresa, sem perda de tempo e sem burocracia.",
+    "cardTitle4": "Acompanhamento",
+    "cardSubTitle4": "Enquanto nossos profissionais estiverem à sua disposição, faremos todo o acompanhamento e monitoramento do desempenho para garantir a máxima eficiência na entrega do trabalho."
   }
 }
