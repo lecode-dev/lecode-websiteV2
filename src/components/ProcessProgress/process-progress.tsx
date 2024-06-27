@@ -21,11 +21,11 @@ export const ProcessProgress = () => {
       <MainTextContainer>
         <CenterContainerText>
           <TextRow>
-            <LearnAboutText color='black'>Como iremos </LearnAboutText>
-            <LearnAboutText color='green'>te ajudar</LearnAboutText>
+            <LearnAboutText color='black'>Nossa abordagem para </LearnAboutText>
+            <LearnAboutText color='green'>garantir </LearnAboutText>
           </TextRow>
           <TextRow>
-            <LearnAboutText color='black'>a entregar seu</LearnAboutText>
+            <LearnAboutText color='black'>sucesso do seu</LearnAboutText>
             <WrapContainer>
               <LearnAboutText color='green'>projeto de tecnologia</LearnAboutText>
             </WrapContainer>

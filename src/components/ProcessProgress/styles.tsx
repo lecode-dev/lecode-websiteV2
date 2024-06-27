@@ -47,5 +47,4 @@ export const ContainerSelected = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 400px;
-  gap: 2rem;
 `;

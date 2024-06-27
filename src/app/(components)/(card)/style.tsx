@@ -6,18 +6,20 @@ export const CardContainer = styled.div`
   height: 200px;
   width: 240px;
   display: flex;
-  justify-content: space-between;
+  gap:1rem;
   position: relative;
 `;
 
 export const NumberText = styled(Header1)`
   color: ${({ theme }) => theme.colors.mainGreen};
+
 `;
 export const TextContentArea = styled.div`
   height: 240px;
   width: 184px;
   display: flex;
   flex-direction: column;
+  gap:0.5rem;
 `;
 
 export const TitleCard = styled(Subtitle)`
@@ -31,5 +33,5 @@ export const SubTitleCard = styled(Paragraph1)`
 export const LeCodeLogoBackground = styled(Image)`
   position: absolute;
   top: -20%;
-  left: 20%;
+  left: 10%;
 `;
