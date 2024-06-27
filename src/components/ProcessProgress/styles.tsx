@@ -1,7 +1,11 @@
 import styled from 'styled-components';
-import { Header1,  } from '@/styles';
+import {Styles, Header1,  } from '@/styles';
 
-export const SessionProcessProgress = styled.div``;
+export const SessionProcessProgress = styled.div`
+  @media (${Styles.devices.tablet}) {
+    display: none;
+  }
+`;
 
 export const MainTextContainer = styled.div`
   background: ${({ theme }) => theme.colors.white};
