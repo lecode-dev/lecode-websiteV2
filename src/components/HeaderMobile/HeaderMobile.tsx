@@ -15,7 +15,7 @@ export const HeaderMobile = () => {
   return (
     <NavbarContainer>
       <NavbarContentContainer>
-      <ContactButton>
+      <ContactButton type='button'>
           <Link
             href='#contact'
           >
