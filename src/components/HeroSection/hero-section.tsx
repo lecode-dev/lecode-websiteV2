@@ -45,7 +45,7 @@ const AnimatedGroupSecundaryImageRight = motion(HeroGroupSecundaryImageRight);
 
 const logoContainerVariants = {
   initial: { opacity: 1 },
-  animate: { opacity: 0, display: 'none', transition: { duration: 0.5 } },
+  animate: { opacity: 1, transition: { duration: 0.5 } },
 };
 
 const logoVariants = {
@@ -61,7 +61,7 @@ const logoVariants = {
     opacity: 1,
     width: '9.28125rem', // 148.5px
     height: '5.22069rem', // 83.5px
-    y: -271,
+    y: '-7.125rem', // -114px
     transition: { duration: 0.5 },
   },
 };
@@ -164,20 +164,20 @@ export const HeroSection = () => {
 
   return (
     <Container id='aboutUs'>
-      <LogoContainer
-        initial='initial'
-        animate={logoContainerControls}
-        variants={logoContainerVariants}
-      >
-        <AnimatedLogo
-          src={Logo}
-          alt='Hero Image'
-          initial='initial'
-          animate={logoControls}
-          variants={logoVariants}
-        />
-      </LogoContainer>
       <SectionContainer>
+        <LogoContainer
+          initial='initial'
+          animate={logoContainerControls}
+          variants={logoContainerVariants}
+        >
+          <AnimatedLogo
+            src={Logo}
+            alt='Hero Image'
+            initial='initial'
+            animate={logoControls}
+            variants={logoVariants}
+          />
+        </LogoContainer>
         <TitleContainer
           as={motion.div}
           initial='hidden'
