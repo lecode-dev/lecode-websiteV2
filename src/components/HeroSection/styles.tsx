@@ -31,7 +31,7 @@ export const LogoContainer = styled(motion.div)`
   position: absolute;
   top: 0;
   left: 0;
-  /* z-index: 1000; */
+  z-index: 1000;
   background-color: ${({ theme }) => theme.colors.white};
 `;
 

@@ -45,7 +45,7 @@ const AnimatedGroupSecundaryImageRight = motion(HeroGroupSecundaryImageRight);
 
 const logoContainerVariants = {
   initial: { opacity: 1 },
-  animate: { opacity: 1, transition: { duration: 0.5 } },
+  animate: { opacity: 0, transition: { duration: 0.5 } },
 };
 
 const logoVariants = {
