@@ -1,7 +1,25 @@
 {
   "aboutUs": {
     "title": "Quem somos",
-    "description": "Somos uma equipe de profissionais apaixonados pelo que fazemos"
+    "description": "Somos uma <span><strokeSpan>consultoria <animatedImage /></strokeSpan> Outsourcing</span> que se encaixa no seu <span>Negócio</span>",
+    "ourQualities": [
+      {
+        "title": "Recrutamento no tempo certo",
+        "description": "Auxiliamos na escolha e alocação de talentos de acordo com prazos definidos pelo cliente."
+      },
+      {
+        "title": "Monte um time eficiente",
+        "description": "Procure e encontre em nossa lista especialistas dedicados com as habilidades que seu time precisa."
+      },
+      {
+        "title": "Desempenho monitorado",
+        "description": "Temos níveis de gerenciamento para acompanhar o desempenho dos nossos especialistas alocados."
+      },
+      {
+        "title": "Talentos com técnica e qualidade",
+        "description": "Nossos especialistas são avaliados e passam por crivo técnico e de qualidade para integrar nossa lista."
+      }
+    ]
   },
   "ourSkills": {
     "title": "Nossas habilidades",
@@ -29,9 +47,45 @@
     "labelCompanyName": "Nome da sua Empresa",
     "labelEmail": "Email"
   },
-  "contactTeam" : {
-    "button":"Veja os detalhes da equipe",
+  "formValidation": {
+    "requiredName": "Nome da empresa é obrigatório",
+    "invalidEmail": "Email inválido",
+    "requiredEmail": "Email é obrigatório"
+  },
+  "toastEmailStatus": {
+    "successEmail": "Email enviado com sucesso",
+    "failedEmail": "Falha ao enviar email",
+    "errorEmailConfig": "Erro ao enviar email"
+  },
+  "contactTeam": {
+    "button": "Veja os detalhes da equipe",
     "title": "Encontre o seu time ideal",
     "description": "Uma equipe completa, com a expertise que você precisa para alavancar suas ideias."
+  },
+  "technology": {
+    "title": "Conheça as",
+    "technologies": "tecnologias",
+    "thatTheTeam": "que o time da",
+    "dominates": "domina",
+    "subtitle": "As tecnologias mais atuais em prol da efiência e performance",
+    "therFrameworks": "Outros frameworks que usamos:",
+    "subtitleFrontEnd": "Utilizamos este e outros frameworks conhecidos como os melhores do mercado",
+    "subtitleBackEnd": "Desenvolvemos uma estrutura robusta, com integrações e APIs para otimizar o desempenho.",
+    "Infrastructure": "Infraestrutura",
+    "subtitleInfra": "Gerenciamos a infraestrutura dos projetos com o que há de melhor no mercado."
+  },
+  "process": {
+    "mainLearnAbotBlack": "Nossa abordagem para",
+    "mainLearnAbotGreen": "garantir",
+    "subtitleLearnAbotBlack": "sucesso do seu",
+    "subtitleLearnAbotGreen": "projeto de tecnologia",
+    "cardTitle1": "Briefing",
+    "cardSubTitle1": "Através de uma conversa faremos um briefing e entenderemos quais são suas necessidades para indicar os melhores perfis de profissionais para atender as suas demandas.",
+    "cardTitle2": "Tempo hábil",
+    "cardSubTitle2": "Em poucos dias será apresentada uma lista de profissionais selecionados para que você também possa avaliar e aprovar.",
+    "cardTitle3": "Alocação",
+    "cardSubTitle3": "Após a aprovação, nosso profissional será alocado em até 7 dias dentro da sua empresa, sem perda de tempo e sem burocracia.",
+    "cardTitle4": "Acompanhamento",
+    "cardSubTitle4": "Enquanto nossos profissionais estiverem à sua disposição, faremos todo o acompanhamento e monitoramento do desempenho para garantir a máxima eficiência na entrega do trabalho."
   }
 }

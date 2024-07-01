@@ -60,7 +60,7 @@ export const ContactContainer = styled.div`
     margin: 0;
     gap: 25px;
   }
-  
+
   @media (${Styles.devices.tabletL}) {
     width: 100%;
   }
@@ -113,14 +113,13 @@ export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  gap: 1.58vh;
 `;
 
 export const ExpertiseContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 `;
 
 export const MemberName = styled.p`
@@ -141,6 +140,23 @@ export const BgImage = styled(Image)`
   transform: translate(-3.1rem, 15ex);
   width: 26.5415rem;
   height: 25.24469rem;
+
+  @media (${Styles.devices.laptopL}) {
+    transform: translate(-2rem, 21ex);
+    width: 20.5415rem;
+    height: 20.24469rem;
+  }
+
+  @media (${Styles.devices.laptop}) {
+    transform: translate(-1.5rem, 15ex);
+    width: 16.5415rem;
+    height: 16.24469rem;
+  }
+
+  @media (${Styles.devices.tabletL}) {
+    width: 26.5415rem;
+    height: 25.24469rem;
+  }
 `;
 
 export const ProfilePicture = styled(Image)`
@@ -156,3 +172,18 @@ export const ProfilePicture = styled(Image)`
 export const StyledLink = styled(Link)`
   font-size: 0.9rem;
 `;
+
+export const NameAndExpertiseContainer = styled.div `
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+    height: 30%;
+    gap: 10px;
+    margin-top: 10px;
+`
+
+export const TechnologyContainer = styled.div `
+  display: flex;
+    align-self: flex-end;
+    gap: 0.3vh;
+`

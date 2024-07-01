@@ -11,8 +11,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  padding-top: 8rem; // 10px
+  padding-top: 8rem; // 128px
+  padding-bottom: 2rem; // 10px
+  background: ${({ theme }) => theme.colors.white};
 `;
 
 export const FormContainer = styled.div`
@@ -37,6 +38,7 @@ export const BackgroundImageContainer = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -1;
 `;
 
 export const BackgroundImageRight = styled(Image)`
@@ -72,14 +74,13 @@ export const BackgroundImageLeft = styled(Image)`
   }
 `;
 
-export const FormContent = styled.div`
+export const FormContent = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem; // 32px
   width: 100%;
   max-width: 37.5rem; // 600px
-  height: 100%;
 `;
 
 export const FormTextContainer = styled.div`
@@ -138,7 +139,7 @@ export const FormInputContainer = styled.div`
   }
 `;
 
-export const FormInputContent = styled.form`
+export const FormInputContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;

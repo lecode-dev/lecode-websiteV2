@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 import { Header1, Subtitle, Header32, Paragraph1, Styles } from '@/styles';
 
@@ -11,6 +12,7 @@ export const TechnologyContainer = styled.div`
   width: 100vw;
   padding: 8rem 25px 60px 25px;
   background: ${({ theme }) => theme.colors.mainBack};
+  overflow: hidden;
 `;
 export const ContainerMainText = styled.div`
   margin-bottom: 48px;
@@ -103,4 +105,31 @@ export const ListTecnologys = styled(Paragraph1).attrs({ as: 'li' })`
   color: ${({ theme }) => theme.colors.white};
   padding: 2px 0;
   width: auto;
+`;
+
+
+
+export const StyledMaskTechnology = styled(Image)`
+  position: absolute;
+  bottom: -40px;
+  right: -130px;
+  opacity: 20%;
+  @media (${Styles.devices.tablet}) {
+    top: -100px;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+  }
+`;
+export const StyledMaskTechnologyInvert = styled(Image)`
+  position: absolute;
+  bottom: 0px;
+  left: -40px;
+  opacity: 20%;
+  @media (${Styles.devices.tablet}) {
+    bottom: -50px;
+    right: 0px;
+    left: -0px;
+    margin: 0 auto;
+  }
 `;

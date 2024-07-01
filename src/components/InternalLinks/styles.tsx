@@ -13,7 +13,10 @@ export const NavLinks = styled.div`
   gap: 1.39vw;
   color: ${({ theme }) => theme.colors.black};
   line-height: 125%;
-  
+
+  @media (max-width: 1285px) {
+    gap: 0.5vw;
+  }
   @media (${Styles.devices.tablet}) {
     display: none;
   }
@@ -26,7 +29,7 @@ export const StyledLink = styled(Link)`
     color: ${({ theme }) => theme.colors.hover.mainGreen};
   }
 
-  @media (${Styles.devices.laptop}) {
-    font-size: 1rem;
+  @media (max-width: 1285px) {
+    font-size: 0.9rem;
   }
 `;
