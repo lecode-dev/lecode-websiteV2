@@ -4,6 +4,7 @@ import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
 import { Form } from '@/components/Form';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { HeaderMobile } from '@/components/HeaderMobile';
 import { TechnologyBanner } from '@/components/TechnologyBanner';
 import { Clients } from '@/components/Clients';
 import { HeroSection } from '@/components/HeroSection';
@@ -14,6 +15,7 @@ import { TeamLecodeContainer } from '../(components)/(team)/team-member-containe
 export default function Home() {
   return (
     <main>
+      <HeaderMobile/>
       <Navbar />
       <ScrollbarWrapper>
         <Content>
