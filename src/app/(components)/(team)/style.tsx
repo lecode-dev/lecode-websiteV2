@@ -9,6 +9,7 @@ export const SectionContainer = styled.div`
   width: 100vw;
   padding: 9rem 25px 60px 25px;
   background: ${({ theme }) => theme.colors.white};
+  align-items: flex-start;
   /* flex-wrap: wrap; */
   gap: 2rem;
 

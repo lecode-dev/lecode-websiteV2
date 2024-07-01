@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
-import { MemberName, Subparagraph, ProfileContainer, ProfilePicture, ExpertiseContainer } from './style';
+import { MemberName, Subparagraph, ProfileContainer, ProfilePicture, ExpertiseContainer, NameAndExpertiseContainer, TechnologyContainer } from './style';
 
 export interface TeamMembersProps {
   id: string;
@@ -16,9 +16,11 @@ export const TeamLecode = ({ id, profile }: TeamMembersProps) => {
           src={profile.img}
           alt='Profile picture of an person in black and white'
         />
+        <NameAndExpertiseContainer>
         <MemberName>{profile.name}</MemberName>
         <ExpertiseContainer>
           <Subparagraph>{profile.charge}</Subparagraph>
+          <TechnologyContainer>
           {profile.expertise.map((item: any) => (
             <Image
               src={item}
@@ -28,7 +30,10 @@ export const TeamLecode = ({ id, profile }: TeamMembersProps) => {
               height={20}
             />
           ))}
+          </TechnologyContainer>
         </ExpertiseContainer>
+        </NameAndExpertiseContainer>
+        
       </ProfileContainer>
     </div>
   );

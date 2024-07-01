@@ -113,14 +113,13 @@ export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  gap: 1.58vh;
 `;
 
 export const ExpertiseContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 `;
 
 export const MemberName = styled.p`
@@ -173,3 +172,18 @@ export const ProfilePicture = styled(Image)`
 export const StyledLink = styled(Link)`
   font-size: 0.9rem;
 `;
+
+export const NameAndExpertiseContainer = styled.div `
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+    height: 30%;
+    gap: 10px;
+    margin-top: 10px;
+`
+
+export const TechnologyContainer = styled.div `
+  display: flex;
+    align-self: flex-end;
+    gap: 0.3vh;
+`
