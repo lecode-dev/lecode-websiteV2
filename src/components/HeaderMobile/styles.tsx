@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { Styles } from '@/styles';
-import { ContactButton } from '../ContactButton';
 
 export const NavbarContainer = styled.header`
   position: fixed;
@@ -37,7 +36,3 @@ export const LecodeLogo = styled(Image)`
     margin-right: 10%; 
   }
 `;
-
-export const StyledContactButton = styled(ContactButton) ` 
-
-`; 
