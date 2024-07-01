@@ -11,6 +11,7 @@ export const SectionContainer = styled.div`
   width: 100vw;
   padding: 8rem 25px 60px 25px;
   background-color: ${({ theme }) => theme.colors.gray};
+  overflow: hidden;
 
   @media (${Styles.devices.tablet}) {
     display: none;
@@ -45,31 +46,9 @@ export const TestimoniesContainer = styled.div`
 
 export const Mask = styled(Image)`
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: -100px;
+  right: -100px;
   opacity: 20%;
-`;
-export const StyledMaskTechnology = styled(Mask)`
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  opacity: 20%;
-  @media (${Styles.devices.tablet}) {
-    position: absolute;
-    top: 0px;
-    opacity: 20%;
-  }
-`;
-export const StyledMaskTechnologyInvert = styled(Mask)`
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  opacity: 20%;
-  @media (${Styles.devices.tablet}) {
-    position: absolute;
-    bottom: 0px;
-    left: 20%;
-  }
 `;
 
 export const LogoBackground = styled(Image)<{

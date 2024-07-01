@@ -1,7 +1,7 @@
 'use client';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
-import { StyledMaskTechnology , StyledMaskTechnologyInvert } from '@/app/(components)/(testimony)/styles';
-import TechnologyMask from '@/images/technology-mask.png';
+import TechnologyMask from '@/images/technology-mask.svg';
 import reactLogo from '../../../public/react-logo.svg';
 import cSharpLogo from '../../../public/c-logo.svg';
 import azureLogo from '../../../public/azure-logo.svg';
@@ -20,29 +20,32 @@ import {
   UnorderedListTecnology,
   ListTecnologys,
   WrapContainer,
+  StyledMaskTechnology,
+  StyledMaskTechnologyInvert,
 } from './styles';
-
 
 interface TechnologyContainerProps {
   id: string;
 }
 
 export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
+  const { t } = useTranslation();
+
   return (
     <TechnologyContainer id={id}>
       <ContainerMainText>
         <TextRow>
-          <LearnAboutText color='green'>Conheça as</LearnAboutText>
-          <LearnAboutText color='white'>tecnologias</LearnAboutText>
+          <LearnAboutText color='green'>{t('technology.title')}</LearnAboutText>
+          <LearnAboutText color='white'>{t('technology.technologies')}</LearnAboutText>
         </TextRow>
         <TextRow>
-          <LearnAboutText color='green'>que o time da</LearnAboutText>
+          <LearnAboutText color='green'>{t('technology.thatTheTeam')}</LearnAboutText>
           <WrapContainer>
             <LearnAboutText color='white'>Le code</LearnAboutText>
-            <LearnAboutText color='green'>domina</LearnAboutText>
+            <LearnAboutText color='green'>{t('technology.dominates')}</LearnAboutText>
           </WrapContainer>
         </TextRow>
-        <MoreTechnologiesText>As tecnologias mais atuais em prol da efiência e performance</MoreTechnologiesText>
+        <MoreTechnologiesText>{t('technology.subtitle')}</MoreTechnologiesText>
       </ContainerMainText>
 
       <ContainerTechnology>
@@ -53,10 +56,8 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
             src={reactLogo}
           />
           <MainTitleTechnology>React</MainTitleTechnology>
-          <TechnologyDescription>
-            Utilizamos este e outros frameworks conhecidos como os melhores do mercado
-          </TechnologyDescription>
-          <OthersFrameworksText>Outros frameworks que utilizamos:</OthersFrameworksText>
+          <TechnologyDescription>{t('technology.subtitleFrontEnd')}</TechnologyDescription>
+          <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
             <ListTecnologys>React Native</ListTecnologys>
             <ListTecnologys>Javascript</ListTecnologys>
@@ -72,11 +73,9 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
             alt='C# logo'
             src={cSharpLogo}
           />
-          <MainTitleTechnology>React</MainTitleTechnology>
-          <TechnologyDescription>
-            Desenvolvemos uma estrutura robusta, com integrações e APIs para otimizar o desempenho.
-          </TechnologyDescription>
-          <OthersFrameworksText>Outros frameworks que utilizamos:</OthersFrameworksText>
+          <MainTitleTechnology>C#</MainTitleTechnology>
+          <TechnologyDescription>{t('technology.subtitleBackEnd')}</TechnologyDescription>
+          <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
             <ListTecnologys>PHP</ListTecnologys>
             <ListTecnologys>Python</ListTecnologys>
@@ -93,10 +92,8 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
             src={azureLogo}
           />
           <MainTitleTechnology>Azure</MainTitleTechnology>
-          <TechnologyDescription>
-            Gerenciamos a infraestrutura dos projetos com o que há de melhor no mercado.
-          </TechnologyDescription>
-          <OthersFrameworksText>Outros frameworks que utilizamos:</OthersFrameworksText>
+          <TechnologyDescription>{t('technology.subtitleInfra')}</TechnologyDescription>
+          <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
             <ListTecnologys>SQL Server</ListTecnologys>
             <ListTecnologys>AWS</ListTecnologys>
