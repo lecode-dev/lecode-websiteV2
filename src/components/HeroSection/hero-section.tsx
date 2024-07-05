@@ -15,7 +15,9 @@ import PuzzleIcon from '../../images/module-puzzle.svg';
 import UserIcon from '../../images/user-expert.svg';
 import TimeIcon from '../../images/subway-time.svg';
 import Stroke from '../../images/stroke.svg';
+import Logo from '../../../public/lecode-logo.svg';
 import {
+  AnimatedLogo,
   Card,
   CardDescription,
   CardTitle,
@@ -27,6 +29,7 @@ import {
   HeroGroupSecundaryImageRight,
   HeroImage,
   ImagesContainer,
+  LogoContainer,
   RectangleWithGreenStroke,
   SectionContainer,
   SpanWithStroke,
@@ -40,14 +43,37 @@ const AnimatedGroupSecundaryImageLeft = motion(HeroGroupSecundaryImageLeft);
 const AnimatedGroupImageRight = motion(HeroGroupImageRight);
 const AnimatedGroupSecundaryImageRight = motion(HeroGroupSecundaryImageRight);
 
+const logoContainerVariants = {
+  initial: { opacity: 1 },
+  animate: { opacity: 0, transition: { duration: 0.5 } },
+};
+
+const logoVariants = {
+  initial: {
+    opacity: 0,
+    y: 0,
+  },
+  fadeIn: {
+    opacity: 1,
+    transition: { duration: 1, ease: 'easeInOut' },
+  },
+  animate: {
+    opacity: 1,
+    width: '9.28125rem', // 148.5px
+    height: '5.22069rem', // 83.5px
+    y: '-7.125rem', // -114px
+    transition: { duration: 0.5 },
+  },
+};
+
 const titleContainerVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 1, delay: 1 } },
+  visible: { opacity: 1, transition: { duration: 1 } },
 };
 
 const strokeVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.8, delay: 0.5 } },
+  visible: { opacity: 1, transition: { duration: 0.8 } },
 };
 
 const titleVariants = {
@@ -88,6 +114,9 @@ const groupSecundaryImageRightVariants = {
 export const HeroSection = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
+
+  const logoContainerControls = useAnimation();
+  const logoControls = useAnimation();
   const titleContainerControls = useAnimation();
   const strokeControls = useAnimation();
   const titleControls = useAnimation();
@@ -100,6 +129,9 @@ export const HeroSection = () => {
 
   useEffect(() => {
     async function sequence() {
+      await logoControls.start('fadeIn'); // Fase de fadeIn do logo
+      await logoControls.start('animate'); // Animação do logo
+      await logoContainerControls.start('animate'); // Animação do container do logo
       await titleContainerControls.start('visible'); // Animação do container
       await strokeControls.start('visible'); // Animação do stroke
       await Promise.all([
@@ -117,6 +149,8 @@ export const HeroSection = () => {
 
     sequence();
   }, [
+    logoContainerControls,
+    logoControls,
     titleContainerControls,
     strokeControls,
     titleControls,
@@ -131,6 +165,19 @@ export const HeroSection = () => {
   return (
     <Container id='aboutUs'>
       <SectionContainer>
+        <LogoContainer
+          initial='initial'
+          animate={logoContainerControls}
+          variants={logoContainerVariants}
+        >
+          <AnimatedLogo
+            src={Logo}
+            alt='Hero Image'
+            initial='initial'
+            animate={logoControls}
+            variants={logoVariants}
+          />
+        </LogoContainer>
         <TitleContainer
           as={motion.div}
           initial='hidden'
@@ -144,7 +191,7 @@ export const HeroSection = () => {
             variants={titleVariants}
           >
             <Trans
-              i18nKey="aboutUs.description"
+              i18nKey='aboutUs.description'
               components={{
                 span: <span />,
                 strokeSpan: <SpanWithStroke language={currentLanguage} />,
@@ -156,7 +203,7 @@ export const HeroSection = () => {
                     animate={strokeControls}
                     variants={strokeVariants}
                   />
-                )
+                ),
               }}
             />
           </Title>
