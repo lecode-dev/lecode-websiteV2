@@ -7,8 +7,8 @@ const changa = Changa({ subsets: ['latin'], weight: '300' });
 export const FooterContainer = styled.footer`
   display: flex;
   width: 100%;
-  height: 300px;
-  padding-top: 20px;
+  height: fit-content; 
+  padding: 40px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -67,4 +67,4 @@ export const Typo = styled.p`
   width: 100%;
   padding: 20px;
   text-align: center;
-`;
+`; 
