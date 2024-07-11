@@ -3,19 +3,15 @@ import Image from 'next/image';
 import intagramLogo from '../../images/instagram-icon.svg';
 import linkedlnLogo from '../../images/linkedln-icon.svg';
 import gitHubLogo from '../../images/github-icon.svg';
-import lecodeLogo from '../../images/lecode-logo-gray.svg';
-import { InternalLinks } from '../InternalLinks';
+// import { InternalLinks } from '../InternalLinks';
 import { ExternalLinks, FooterContainer, LinksContainer, Typo } from './styles';
 
 export const Footer = () => {
   return (
     <FooterContainer>
-      <Image
-        src={lecodeLogo}
-        alt='lecode logo in gray'
-      />
+  
       <LinksContainer>
-        <InternalLinks />
+      <Typo> © 2023 LeCode, Inc.Todos os direitos reservados. </Typo>
         <ExternalLinks>
           <a
             href='https://www.instagram.com/lecode_dev/'
@@ -55,7 +51,6 @@ export const Footer = () => {
           </a>
         </ExternalLinks>
       </LinksContainer>
-      <Typo> © 2023 LeCode, Inc.Todos os direitos reservados. </Typo>
     </FooterContainer>
   );
 };
