@@ -28,7 +28,7 @@ export const SectionContainer = styled.div`
 `;
 
 export const ContactContainer = styled.div`
-  background: ${({ theme }) => theme.colors.black};
+  background: ${({ theme }) => theme.colors.mainBack};
   width: 22.57vw;
   height: 418px;
   display: flex;

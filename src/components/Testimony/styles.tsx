@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { Poppins } from 'next/font/google';
 import { Paragraph2, Styles, createStyledParagraph } from '@/styles';
+
+const poppins = Poppins({ weight: ['400'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const ComponentContainer = styled.div<{ $oddEven: boolean }>`
   position: relative;
   display: flex;
   flex-direction: row;
-
+  font-family: ${poppins.style.fontFamily};
   left: ${({ $oddEven }) => ($oddEven ? '-10%' : '10%')};
 
   @media (${Styles.devices.laptop}) {
@@ -78,7 +81,7 @@ export const Paragraph = styled(Paragraph2)`
 
 export const CompanyName = styled(
   createStyledParagraph('p', {
-    fontFamily: 'Montserrat',
+    fontFamily: poppins.style.fontFamily,
     fontWeight: Styles.fonts.bold,
     fontSize: '20px',
     lineHeight: '25px',
@@ -93,7 +96,7 @@ export const CompanyName = styled(
 
 export const ClientName = styled(
   createStyledParagraph('p', {
-    fontFamily: 'Montserrat',
+    fontFamily: poppins.style.fontFamily,
     fontWeight: Styles.fonts.semiBold,
     fontSize: '20px',
     lineHeight: '25px',
@@ -107,7 +110,7 @@ export const ClientName = styled(
 
 export const ClientRole = styled(
   createStyledParagraph('p', {
-    fontFamily: 'Montserrat',
+    fontFamily: poppins.style.fontFamily,
     fontWeight: Styles.fonts.normal,
     fontSize: '20px',
     lineHeight: '25px',

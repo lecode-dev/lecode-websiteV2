@@ -1,5 +1,8 @@
 import styled from 'styled-components';
+import { Montserrat } from 'next/font/google';
 import { Header1, Styles } from '@/styles';
+
+const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const ComponentContainer = styled.div`
   position: relative;
@@ -20,7 +23,8 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled(Header1)`
-  @media (${Styles.devices.mobileL}) {
+  font-family: ${montserrat.style.fontFamily};
+  @media (${Styles.devices.tabletL}) {
     font-size: 2rem;
   }
 `;
