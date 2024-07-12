@@ -2,9 +2,9 @@ import { TestimonyContainer } from '@/app/(components)/(testimony)/testimony-con
 import { TestimonyData } from '@/app/(data)/(mock)/testimonies';
 import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
 import { Form } from '@/components/Form';
-import { Navbar } from '@/components/Header';
+import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { HeaderMobile } from '@/components/HeaderMobile';
+import { HeaderMobile } from '@/components/NavbarMobile';
 import { TechnologyBanner } from '@/components/TechnologyBanner';
 import { Clients } from '@/components/Clients';
 import { HeroSection } from '@/components/HeroSection';
