@@ -111,7 +111,8 @@ const groupSecundaryImageRightVariants = {
   visible: { x: 0, y: 0, opacity: 1, transition: { duration: 0.5 } },
 };
 
-export const HeroSection = () => {
+
+export const HeroSection = () =>{ 
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
@@ -166,7 +167,7 @@ export const HeroSection = () => {
   ]);
 
   return (
-    <Container id='aboutUs'>
+    <Container id='about'>
       <SectionContainer>
         {isLogoVisible ? <LogoContainer
             initial='initial'
