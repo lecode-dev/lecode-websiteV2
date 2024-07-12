@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
       <ScrollbarWrapper>
         <Content>
-          <HeroSection />
+          <HeroSection/>
           <TechnologyBanner id='technologies' />
           <TeamLecodeContainer
             id='team'

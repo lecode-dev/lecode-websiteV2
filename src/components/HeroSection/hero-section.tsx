@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { Trans, useTranslation } from 'react-i18next';
@@ -111,9 +111,12 @@ const groupSecundaryImageRightVariants = {
   visible: { x: 0, y: 0, opacity: 1, transition: { duration: 0.5 } },
 };
 
-export const HeroSection = () => {
+
+export const HeroSection = () =>{ 
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
+
+  const [isLogoVisible, setIsLogoVisible] = useState(true);
 
   const logoContainerControls = useAnimation();
   const logoControls = useAnimation();
@@ -132,6 +135,7 @@ export const HeroSection = () => {
       await logoControls.start('fadeIn'); // Fase de fadeIn do logo
       await logoControls.start('animate'); // Animação do logo
       await logoContainerControls.start('animate'); // Animação do container do logo
+      setIsLogoVisible(false); // Esconde o logo após a animação
       await titleContainerControls.start('visible'); // Animação do container
       await strokeControls.start('visible'); // Animação do stroke
       await Promise.all([
@@ -163,21 +167,21 @@ export const HeroSection = () => {
   ]);
 
   return (
-    <Container id='aboutUs'>
+    <Container id='about'>
       <SectionContainer>
-        <LogoContainer
-          initial='initial'
-          animate={logoContainerControls}
-          variants={logoContainerVariants}
-        >
-          <AnimatedLogo
-            src={Logo}
-            alt='Hero Image'
+        {isLogoVisible ? <LogoContainer
             initial='initial'
-            animate={logoControls}
-            variants={logoVariants}
-          />
-        </LogoContainer>
+            animate={logoContainerControls}
+            variants={logoContainerVariants}
+          >
+            <AnimatedLogo
+              src={Logo}
+              alt='Hero Image'
+              initial='initial'
+              animate={logoControls}
+              variants={logoVariants}
+            />
+          </LogoContainer> : null}
         <TitleContainer
           as={motion.div}
           initial='hidden'
