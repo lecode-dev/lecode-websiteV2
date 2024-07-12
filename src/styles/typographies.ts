@@ -1,7 +1,10 @@
 'use client';
 import styled from "styled-components";
+import { Montserrat, Poppins } from "next/font/google";
 import { fonts } from "./fonts";
 
+const poppins = Poppins({ weight: ['400'], style: ['normal'], subsets: ['latin'], display: 'swap' });
+const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 
 interface StyledComponentProps {
@@ -49,35 +52,35 @@ export const Header1 = createStyledHeading('h1', {
 });
 
 export const Subtitle = createStyledHeading('h2', {
-  fontFamily: 'Montserrat',
+  fontFamily: montserrat.style.fontFamily,
   fontWeight: fonts.bold,
   fontSize: '1.5rem',
   lineHeight: '125%'
 });
 
 export const Header32 = createStyledHeading('h3', {
-  fontFamily: 'Montserrat',
+  fontFamily: montserrat.style.fontFamily,
   fontWeight: fonts.bold,
   fontSize: '2rem',
   lineHeight: '125%'
 });
 
 export const Header24 = createStyledHeading('h4', {
-  fontFamily: 'Montserrat',
+  fontFamily: montserrat.style.fontFamily,
   fontWeight: fonts.bold,
   fontSize: '1.5rem',
   lineHeight: '125%'
 });
 
 export const Paragraph1 = createStyledParagraph('p', {
-  fontFamily: 'Poppins',
+  fontFamily: poppins.style.fontFamily,
   fontWeight: fonts.normal,
   fontSize: '1rem',
   lineHeight: '125%'
 });
 
 export const Paragraph2 = createStyledParagraph('p', {
-  fontFamily: 'Poppins',
+  fontFamily: poppins.style.fontFamily,
   fontWeight: fonts.medium,
   fontSize: '1.25rem',
   lineHeight: '125%'

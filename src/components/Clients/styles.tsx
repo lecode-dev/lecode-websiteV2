@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Header1, Styles } from '@/styles';
 
+
 export const ComponentContainer = styled.div`
   position: relative;
   display: flex;
@@ -20,7 +21,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled(Header1)`
-  @media (${Styles.devices.mobileL}) {
+  @media (${Styles.devices.tabletL}) {
     font-size: 2rem;
   }
 `;

@@ -4,7 +4,7 @@ import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
 import { Form } from '@/components/Form';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { HeaderMobile } from '@/components/HeaderMobile';
+import { HeaderMobile } from '@/components/NavbarMobile';
 import { TechnologyBanner } from '@/components/TechnologyBanner';
 import { Clients } from '@/components/Clients';
 import { HeroSection } from '@/components/HeroSection';
@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
       <ScrollbarWrapper>
         <Content>
-          <HeroSection />
+          <HeroSection/>
           <TechnologyBanner id='technologies' />
           <TeamLecodeContainer
             id='team'
