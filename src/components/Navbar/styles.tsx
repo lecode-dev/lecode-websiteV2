@@ -28,7 +28,7 @@ export const NavbarContentContainer = styled.div`
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  width: 90rem;
+  width: 90%;
 
   @media (${Styles.devices.laptopL}) {
     width: 100%;
@@ -38,7 +38,7 @@ export const NavbarContentContainer = styled.div`
 `;
 
 export const LecodeLogo = styled(Image) `
-  margin-right: 20%;
+  align-self: center;
 
   @media (${Styles.devices.laptopL}) {
     margin-right: 10%;
