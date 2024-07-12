@@ -15,18 +15,18 @@ export const HeaderMobile = () => {
   return (
     <NavbarContainer>
       <NavbarContentContainer>
-      <ContactButton type='button'>
+        <InternalLinks />
+        <Image
+          alt='LeCode logo: green triangle with white Le and black code'
+          src={lecodeLogo}
+        />
+        <ContactButton type='button'>
           <Link
             href='#contact'
           >
             {t('contactUs.button')}
           </Link>
         </ContactButton>
-        <InternalLinks />
-        <Image
-          alt='LeCode logo: green triangle with white Le and black code'
-          src={lecodeLogo}
-        />
         <Language />
       </NavbarContentContainer>
     </NavbarContainer>
