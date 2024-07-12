@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import { Poppins, Montserrat } from 'next/font/google';
 import { Header1, Subtitle, Header32, Paragraph1, Styles } from '@/styles';
 
-const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
-const poppins = Poppins({ weight: ['400'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const TechnologyContainer = styled.div`
   position: relative;
@@ -104,13 +101,11 @@ export const TechnologyDescription = styled(Paragraph1)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
   margin-bottom: 18px;
-  font-family:  ${poppins.style.fontFamily};
 `;
 export const OthersFrameworksText = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
   margin-bottom: 18px;
-  font-family: ${montserrat.style.fontFamily};
 
   @media (${Styles.devices.mobileL}) {
     font-size: 1rem;  }
