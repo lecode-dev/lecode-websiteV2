@@ -1,5 +1,9 @@
 import styled from 'styled-components';
+import { Montserrat, Poppins } from 'next/font/google';
 import {Styles, Header1,  } from '@/styles';
+
+const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['latin'], display: 'swap' });
+const poppins = Poppins({ weight: ['400'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const SessionProcessProgress = styled.div`
   @media (${Styles.devices.tablet}) {
@@ -13,6 +17,7 @@ export const MainTextContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: ${poppins.style.fontFamily};
 `;
 export const CenterContainerText = styled.div`
   height: 200px;
@@ -35,6 +40,8 @@ export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
   text-align: center;
   padding-right: 1rem;
   color: ${({ color, theme }) => (color === 'green' ? theme.colors.mainGreen : theme.colors.black)};
+  font-family: ${montserrat.style.fontFamily};
+
 `;
 export const WrapContainer = styled.div`
   display: flex;
