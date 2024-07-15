@@ -24,7 +24,7 @@ export const FormContainer = styled.div`
   padding: 2.25rem 0.5rem; // 36px 8px
   width: 80%;
   height: 33.75rem; // 540px
-  background-color:  ${({ theme }) => theme.colors.mainBack} ;
+  background-color: ${({ theme }) => theme.colors.mainBack};
   position: relative;
   z-index: 1;
   overflow: hidden;
