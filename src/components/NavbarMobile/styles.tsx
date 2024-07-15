@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
+
+
+export const ContactTraslate = styled.div `
+  display: flex;
+  justify-content: space-between;
+  gap: 0.700rem; 
+  align-items: center;
+`;
+
 export const NavbarContainer = styled.header`
   position: fixed;
   top: 0;
@@ -35,3 +44,4 @@ export const LecodeLogo = styled(Image)`
     margin-right: 10%; 
   }
 `;
+
