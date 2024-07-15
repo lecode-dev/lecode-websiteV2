@@ -6,7 +6,7 @@ import { ContactButton } from '@/components/ContactButton';
 import lecodeLogo from '../../../public/lecode-logo.svg';
 import { InternalLinks } from '../InternalLinks';
 import { Language } from '../Language';
-import { NavbarContainer, NavbarContentContainer } from './styles';
+import { NavbarContainer, NavbarContentContainer,ContactTraslate } from './styles';
 
 
 export const HeaderMobile = () => {
@@ -15,19 +15,21 @@ export const HeaderMobile = () => {
   return (
     <NavbarContainer>
       <NavbarContentContainer>
-      <ContactButton type='button'>
+        <InternalLinks />
+        <Image
+          alt='LeCode logo: green triangle with white Le and black code'
+          src={lecodeLogo}
+        />
+        <ContactTraslate>
+        <ContactButton type='button'>
           <Link
             href='#contact'
           >
             {t('contactUs.button')}
           </Link>
         </ContactButton>
-        <InternalLinks />
-        <Image
-          alt='LeCode logo: green triangle with white Le and black code'
-          src={lecodeLogo}
-        />
         <Language />
+        </ContactTraslate>
       </NavbarContentContainer>
     </NavbarContainer>
   );
