@@ -13,10 +13,17 @@ export const TechnologyContainer = styled.div`
   padding: 8rem 25px 60px 25px;
   background: ${({ theme }) => theme.colors.mainBack};
   overflow: hidden;
+
+  @media (${Styles.devices.mobileL}) {
+    text-align: center;
+  }
 `;
 export const ContainerMainText = styled.div`
   margin-bottom: 48px;
-`;
+  @media (${Styles.devices.mobileL}) {
+    font-size: 1.5rem;
+  }
+  `;
 interface LearnAboutTextProps {
   color?: string;
 }
@@ -26,21 +33,25 @@ export const TextRow = styled.span`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (${Styles.devices.mobileL}) {
+    width: 100%;
+    
+  }  
 `;
 
 export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
   text-align: center;
-  padding-right: 1rem;
   color: ${({ color, theme }) => (color === 'green' ? theme.colors.mainGreen : theme.colors.white)};
   text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.mainGreen};
-  @media (${Styles.devices.tablet}) {
+  @media (${Styles.devices.mobileL}) {
+    font-size: 1rem;
     width: 100%;
-    text-align: center;
   }
 `;
 export const WrapContainer = styled.div`
   display: flex;
-  @media (${Styles.devices.tablet}) {
+  @media (${Styles.devices.mobileL}) {
     flex-direction: column;
     align-items: center;
   }
@@ -54,6 +65,10 @@ export const MoreTechnologiesText = styled(Subtitle)`
   text-align: center;
   padding-top: 0.5rem;
   text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.mainGreen};
+  font-size: 1.5rem;
+
+  @media (${Styles.devices.mobileL}) {
+    font-size: 1rem;  }
 `;
 
 export const ContainerTechnology = styled.div`
@@ -66,8 +81,6 @@ export const ContainerTechnology = styled.div`
     gap:4rem;
   }
 `;
-
-
 
 export const CardTechnology = styled.div`
   height: 100%;
@@ -93,6 +106,9 @@ export const OthersFrameworksText = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
   margin-bottom: 18px;
+
+  @media (${Styles.devices.mobileL}) {
+    font-size: 1rem;  }
 `;
 export const UnorderedListTecnology = styled.ul`
   padding: 0;
