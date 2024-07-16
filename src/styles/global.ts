@@ -129,10 +129,6 @@ const GlobalCSS = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   html,
   body {
     max-width: 100vw;

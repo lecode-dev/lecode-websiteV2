@@ -11,6 +11,7 @@ export const ScrollbarWrapper = styled.div`
   overflow-y: scroll;
   scrollbar-color: ${({ theme }) => theme.colors.gray};
   direction: ltr; // Show the scrollbar on the right: ;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
     width: 8px;
