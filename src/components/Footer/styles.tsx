@@ -30,7 +30,8 @@ export const LinksContainer = styled.nav`
     width: 85vw;
   }
   @media (${Styles.devices.tablet}) {
-    margin-right: 4rem;
+    width: auto;
+    flex-direction: column;
   }
 `;
 
@@ -54,11 +55,7 @@ export const ExternalLinks = styled.div`
     }
   }
 
-  @media (${Styles.devices.laptopL}) {
-    width: 20vw;
-  }
   @media (${Styles.devices.mobileL}) {
-    flex-direction: column;
     align-items: center;
     gap: 28px;
   }
