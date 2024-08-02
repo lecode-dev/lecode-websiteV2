@@ -8,17 +8,17 @@ export const FooterContainer = styled.footer`
   display: flex;
   width: 100%;
   height: 100px;
-  padding-top: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.4vw;
   flex-shrink: 0;
   background: ${({ theme }) => theme.colors.mainBack};
+  @media (min-width: 768px) {
+    height: 110px;  
+  }
   @media (${Styles.devices.mobileL}) {
-  height: 220px;
-    
-    
+  height: 180px;  
   }
 `;
 
@@ -64,6 +64,6 @@ export const ExternalLinks = styled.div`
 export const Typo = styled.p`
   font-family: ${changa.style.fontFamily};
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   color: ${({ theme }) => theme.colors.white};
 `;
