@@ -11,7 +11,6 @@ import { NavbarContainer, NavbarContentContainer,ContactTraslate } from './style
 
 export const HeaderMobile = () => {
   const { t } = useTranslation();
-
   return (
     <NavbarContainer>
       <NavbarContentContainer>

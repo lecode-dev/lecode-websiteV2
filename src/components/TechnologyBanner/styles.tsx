@@ -36,14 +36,12 @@ export const TextRow = styled.span`
 
   @media (${Styles.devices.mobileL}) {
     width: 100%;
-    
   }  
 `;
 
 export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
   text-align: center;
   color: ${({ color, theme }) => (color === 'green' ? theme.colors.mainGreen : theme.colors.white)};
-  text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.mainGreen};
   @media (${Styles.devices.mobileL}) {
     font-size: 1rem;
     width: 100%;
@@ -64,7 +62,6 @@ export const MoreTechnologiesText = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
   padding-top: 0.5rem;
-  text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.mainGreen};
   font-size: 1.5rem;
 
   @media (${Styles.devices.mobileL}) {

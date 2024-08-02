@@ -9,7 +9,6 @@ import { ExternalLinks, FooterContainer, LinksContainer, Typo } from './styles';
 export const Footer = () => {
   return (
     <FooterContainer>
-  
       <LinksContainer>
       <Typo> © 2023 LeCode, Inc.Todos os direitos reservados. </Typo>
         <ExternalLinks>
