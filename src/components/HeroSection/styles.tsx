@@ -13,6 +13,7 @@ const montserrat = Montserrat({ weight: ['700'], style: ['normal'], subsets: ['l
 const poppins = Poppins({ weight: ['400'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 export const Container = styled.section`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,55 +21,25 @@ export const Container = styled.section`
   background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
   padding-top: 8rem;
+
+  @media (${Styles.devices.tablet}) {
+    padding-top: 6rem;
+  }
 `;
 
-export const LogoContainer = styled(motion.div)`
+export const AnimatedLogoContainer = styled(motion.div)`
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
-  position: absolute;
+  height: 100vh;
   top: 0;
-  left: 0;
-  z-index: 1000;
   background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const AnimatedLogo = styled(motion(Image))`
-  position: relative;
-  width: 42.88888rem; // 686px
-  height: 24.125rem; // 386px
-  top: 8rem; // 240px
-  right: -0.3125rem; // -5px
-  z-index: 1000;
-
-  @media (${Styles.devices.laptop}) {
-    right: 0.875rem; // 14px
-  }
-
-  @media (${Styles.devices.tablet}) {
-    right: -4.9375rem; // -79px
-    top: 6.5625rem; // 105px
-  }
-
-  @media (${Styles.devices.mobileL}) {
-    width: 29.625rem; // 474px
-    height: 16.625rem; // 266px
-    right: -2.6875rem; // -43px
-  }
-
-  @media (${Styles.devices.mobileM}) {
-    width: 27.75rem; // 444px
-    height: 15.5625rem; // 249px
-    right: -2.75rem; // -44px
-  }
-
-  @media (${Styles.devices.mobileS}) {
-    width: 25.875rem; // 414px
-    height: 14.5rem; // 232px
-    right: -3.125rem; // -50px
-  }
+  position: absolute;
 `;
 
 export const SectionContainer = styled(motion.section)`
