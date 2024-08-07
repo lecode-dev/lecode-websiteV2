@@ -35,13 +35,13 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
     <TechnologyContainer id={id}>
       <ContainerMainText>
         <TextRow>
-          <LearnAboutText color='green'>{t('technology.title')}</LearnAboutText>
+          <LearnAboutText color='green'>&nbsp;{t('technology.title')}&nbsp;</LearnAboutText>
           <LearnAboutText color='white'>{t('technology.technologies')}</LearnAboutText>
         </TextRow>
         <TextRow>
           <LearnAboutText color='green'>{t('technology.thatTheTeam')}</LearnAboutText>
           <WrapContainer>
-            <LearnAboutText color='white'>Le code</LearnAboutText>
+            <LearnAboutText color='white'>&nbsp;LeCode&nbsp;</LearnAboutText>
             <LearnAboutText color='green'>{t('technology.dominates')}</LearnAboutText>
           </WrapContainer>
         </TextRow>
