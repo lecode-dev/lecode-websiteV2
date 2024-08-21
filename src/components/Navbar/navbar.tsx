@@ -21,16 +21,11 @@ export const Navbar = () => {
           src={lecodeLogo}
         />
         <TranslateButtonContainer>
-        <ContactButton 
-          type='button'
-        >
-          <Link
-            href='#contact'
-          >
+        <Link href='#contact'>
+          <ContactButton type='button'>
             {t('contactUs.button')}
-          </Link>
-          
-        </ContactButton>
+          </ContactButton>
+        </Link>
         <Language />
         </TranslateButtonContainer>
       </NavbarContentContainer>

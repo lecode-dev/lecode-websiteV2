@@ -6,8 +6,7 @@ import { ContactButton } from '@/components/ContactButton';
 import lecodeLogo from '../../../public/lecode-logo.svg';
 import { InternalLinks } from '../InternalLinks';
 import { Language } from '../Language';
-import { NavbarContainer, NavbarContentContainer,ContactTraslate } from './styles';
-
+import { NavbarContainer, NavbarContentContainer, ContactTraslate } from './styles';
 
 export const HeaderMobile = () => {
   const { t } = useTranslation();
@@ -20,14 +19,10 @@ export const HeaderMobile = () => {
           src={lecodeLogo}
         />
         <ContactTraslate>
-        <ContactButton type='button'>
-          <Link
-            href='#contact'
-          >
-            {t('contactUs.button')}
+          <Link href='#contact'>
+            <ContactButton type='button'>{t('contactUs.button')}</ContactButton>
           </Link>
-        </ContactButton>
-        <Language />
+          <Language />
         </ContactTraslate>
       </NavbarContentContainer>
     </NavbarContainer>
