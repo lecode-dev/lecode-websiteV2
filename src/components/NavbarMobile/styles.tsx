@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 
@@ -24,7 +25,7 @@ export const NavbarContainer = styled.header`
   z-index: 1000;
   padding: 0.625rem;
    
-  @media  ( min-width: 768px){
+  @media (min-width: 768px){
   padding-right: 0.625rem;
   }
 `;
@@ -33,10 +34,16 @@ export const NavbarContentContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; 
+  width: 98%; 
 
   @media (min-width: 1440px) {
     width: 90rem; 
   }
+`;
+
+export const LecodeLogo = styled(Image) `
+  @media (max-width: 501px) {
+    width: 50px;
+}
 `;
 
