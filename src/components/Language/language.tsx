@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { i18nConfig } from '@/i18n';
 import { Paragraph1 } from '@/styles/typographies';
-import languageIcon from '../../../public/language.svg';
+import brazilFlag from '../../../public/brazil-flag.svg';
+import euaFlag from '../../../public/eua-flag.svg';
 import { SelectContainer, OptionsContainer, Option, ContainerLanguage } from './styles';
 
 const languageNames: Record<string, string> = {
-  pt: 'Português',
-  en: 'English',
+  pt: 'PT-BR',
+  en: 'EN-US',
 };
 
 export const Language: React.FC = () => {
@@ -51,7 +52,7 @@ export const Language: React.FC = () => {
         onClick={handleIconClick}
       >
         <Image
-          src={languageIcon}
+          src={currentLocale === 'pt' ? brazilFlag : euaFlag}
           alt='language icon in black'
           width={24}
           height={24}
