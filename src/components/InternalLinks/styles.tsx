@@ -13,6 +13,7 @@ export const NavLinks = styled.div`
   gap: 1.39vw;
   color: ${({ theme }) => theme.colors.black};
   line-height: 125%;
+  min-width: 40%;
 
   @media (max-width: 1285px) {
     gap: 0.5vw;

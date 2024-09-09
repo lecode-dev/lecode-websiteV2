@@ -48,12 +48,6 @@ export const TranslateButtonContainer = styled.div`
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-left: 20%;
-  
-  @media (max-width: 1285px) {
-    margin-left: 15%;
-  }
-  @media (${Styles.devices.laptop}) {
-    margin-left: auto;
-  }
+  min-width: 40%;
+  justify-content: end;
 `
