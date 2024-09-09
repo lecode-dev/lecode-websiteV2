@@ -18,7 +18,7 @@ export const NavLinks = styled.div`
   @media (max-width: 1285px) {
     gap: 0.5vw;
   }
-  @media (${Styles.devices.tablet}) {
+  @media (${Styles.devices.tabletL}) {
     display: none;
   }
 `;
