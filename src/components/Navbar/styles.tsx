@@ -29,6 +29,7 @@ export const NavbarContentContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 1920px;
 
   @media (${Styles.devices.laptopL}) {
     width: 100%;
@@ -39,10 +40,6 @@ export const NavbarContentContainer = styled.div`
 
 export const LecodeLogo = styled(Image) `
   align-self: center;
-
-  @media (${Styles.devices.laptopL}) {
-    margin-right: 10%;
-}
 `
 export const TranslateButtonContainer = styled.div`
   display: flex;
