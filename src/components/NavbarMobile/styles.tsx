@@ -6,7 +6,7 @@ import styled from 'styled-components';
 export const ContactTraslate = styled.div `
   display: flex;
   justify-content: space-between;
-  gap: 0.700rem; 
+  gap: 0.250rem; 
   align-items: center;
 `;
 
