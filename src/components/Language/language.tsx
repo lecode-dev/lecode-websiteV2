@@ -8,9 +8,9 @@ import brazilFlag from '../../../public/brazil-flag.svg';
 import euaFlag from '../../../public/eua-flag.svg';
 import { SelectContainer, OptionsContainer, Option, ContainerLanguage } from './styles';
 
-const languageNames: Record<string, string> = {
-  pt: 'PT-BR',
-  en: 'EN-US',
+const languageNames: Record<string, JSX.Element> = {
+  pt: <Image src={brazilFlag} alt='PT-BR' width={24} height={24} />,
+  en: <Image src={euaFlag} alt='EN-US' width={24} height={24} />,
 };
 
 export const Language: React.FC = () => {
