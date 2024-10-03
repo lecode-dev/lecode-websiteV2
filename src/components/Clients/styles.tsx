@@ -31,8 +31,8 @@ export const ClientsContainer = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  max-width: ${Styles.deviceSizes.laptopL};
-  padding: 48px 101px 101px 48px;
+  max-width: 1200px;
+  padding: 48px 101px 25px 48px;
   gap: 59px;
 
   @media (${Styles.devices.tablet}) {
@@ -50,8 +50,8 @@ export const ClientsCarouselContainer = styled.div`
 `;
 
 export const ClientCard = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: #D6D6D6;
 `;

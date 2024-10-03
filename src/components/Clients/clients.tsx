@@ -21,13 +21,13 @@ import synergyLogo from '../../../public/clients/synergyLogo.svg';
 
 export const Clients = () => {
   const clients: Record<string, JSX.Element> = {
-    client1: <Image src={novoLogo} alt='client1' width={150} height={150} />,
-    client2: <Image src={autonomyLogo} alt='client2' width={150} height={150} />,
-    client3: <Image src={ethicsNetLogo} alt='client3' width={150} height={150} />,
-    client4: <Image src={falconsLogo} alt='client4' width={150} height={150} />,
-    client5: <Image src={scouthubLogo} alt='client5' width={150} height={150} />,
-    client6: <Image src={workStory} alt='client6' width={150} height={150} />,
-    client7: <Image src={synergyLogo} alt='client7' width={150} height={150} />,
+    client1: <Image src={novoLogo} alt='client1' width={200} height={200} />,
+    client2: <Image src={autonomyLogo} alt='client2' width={200} height={200} />,
+    client3: <Image src={ethicsNetLogo} alt='client3' width={200} height={200} />,
+    client4: <Image src={falconsLogo} alt='client4' width={200} height={200} />,
+    client5: <Image src={scouthubLogo} alt='client5' width={200} height={200} />,
+    client6: <Image src={workStory} alt='client6' width={200} height={200} />,
+    client7: <Image src={synergyLogo} alt='client7' width={200} height={200} />,
   };
 
   return (
