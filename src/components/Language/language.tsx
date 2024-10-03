@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, ReactNode } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
@@ -8,7 +8,7 @@ import brazilFlag from '../../../public/brazil-flag.svg';
 import euaFlag from '../../../public/eua-flag.svg';
 import { SelectContainer, OptionsContainer, Option, ContainerLanguage } from './styles';
 
-const languageNames: Record<string, JSX.Element> = {
+const languageNames: Record<string, ReactNode> = {
   pt: <Image src={brazilFlag} alt='PT-BR' width={24} height={24} />,
   en: <Image src={euaFlag} alt='EN-US' width={24} height={24} />,
 };
