@@ -9,8 +9,8 @@ import euaFlag from '../../../public/eua-flag.svg';
 import { SelectContainer, OptionsContainer, Option, ContainerLanguage } from './styles';
 
 const languageNames: Record<string, ReactNode> = {
-  pt: <Image src={brazilFlag} alt='PT-BR' width={24} height={24} />,
-  en: <Image src={euaFlag} alt='EN-US' width={24} height={24} />,
+  pt: <Image src={brazilFlag} alt="PT-BR" width={24} height={24} />,
+  en: <Image src={euaFlag} alt="EN-US" width={24} height={24} />,
 };
 
 export const Language: React.FC = () => {
@@ -37,6 +37,7 @@ export const Language: React.FC = () => {
       }
 
       router.refresh();
+      setShowOptions(false);
     },
     [currentLocale, currentPathname, router],
   );
@@ -52,26 +53,29 @@ export const Language: React.FC = () => {
         onClick={handleIconClick}
       >
         <Image
-          src={currentLocale === 'pt' ? brazilFlag : euaFlag}
-          alt='language icon in black'
+          src={currentLocale === "pt" ? brazilFlag : euaFlag}
+          alt="language icon in black"
           width={24}
           height={24}
         />
       </SelectContainer>
       {showOptions ? (
         <OptionsContainer>
-          {languages.map((lang) => (
-            <Option
-              key={lang}
-              onClick={() => {
-                handleChange(lang);
-              }}
-            >
-              <Paragraph1>{languageNames[lang]}</Paragraph1>
-            </Option>
-          ))}
+          {languages
+            .filter((lang) => lang !== currentLocale)
+            .map((lang) => (
+              <Option
+                key={lang}
+                onClick={() => {
+                  handleChange(lang);
+                }}
+              >
+                <Paragraph1>{languageNames[lang]}</Paragraph1>
+              </Option>
+            ))}
         </OptionsContainer>
       ) : null}
     </ContainerLanguage>
   );
 };
+
