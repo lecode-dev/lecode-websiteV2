@@ -1,5 +1,5 @@
-import { TestimonyContainer } from '@/app/(components)/(testimony)/testimony-container';
-import { TestimonyData } from '@/app/(data)/(mock)/testimonies';
+// import { TestimonyContainer } from '@/app/(components)/(testimony)/testimony-container';
+// import { TestimonyData } from '@/app/(data)/(mock)/testimonies';
 import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
 import { Form } from '@/components/Form';
 import { Navbar } from '@/components/Navbar';
@@ -27,7 +27,7 @@ export default function Home() {
           />
           <ProcessProgress/>
           <Clients />
-          <TestimonyContainer testimonies={TestimonyData} />
+          {/* <TestimonyContainer testimonies={TestimonyData} /> */}
           <Form />
           <Footer />
         </Content>

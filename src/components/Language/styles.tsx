@@ -16,7 +16,7 @@ export const ContainerLanguage = styled.div`
 
 export const SelectContainer = styled.button`
   cursor: pointer;
-  padding: 8px 24px;
+  padding: 8px 14px;
   border: none;
   background-color: transparent;
 
