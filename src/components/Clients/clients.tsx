@@ -34,10 +34,10 @@ export const Clients = () => {
 
 
   const BackgroundLogo = [
-    { $top: '-3px', $right: '-50px' },
-    { $top: '300px', $left: '-30px', $opacity: '10%' },
-    { $bottom: '450px', $right: '100px' },
-    { $bottom: '100px', $left: '90px', $opacity: '10%' },
+    { $top: '100px', $right: '-50px' },
+    { $top: '100px', $left: '-30px', $opacity: '10%' },
+    { $bottom: '0px', $right: '100px' },
+    { $bottom: '50px', $left: '90px', $opacity: '10%' },
   ]
 
   return (
