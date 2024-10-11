@@ -162,8 +162,33 @@ export const HeroGroupImageLeft = styled(Image)`
   right: 35%;
   z-index: 0;
 
-  @media (${Styles.devices.laptop}) {
+  @media (${Styles.devices.laptopL}) {
     right: 40%;
+  }
+
+  @media (${Styles.devices.laptop}) {
+    right: 44%;
+  }
+
+  @media (${Styles.devices.tablet}) {
+    display: none;
+  }
+`;
+
+export const HeroGroupImageRight = styled(Image)`
+  position: absolute;
+  width: 100%;
+  height: 37%;
+  top: 20%;
+  right: -34%;
+  z-index: 0;
+
+  @media (${Styles.devices.laptopL}) {
+    right: -37%;
+  }
+
+  @media (${Styles.devices.laptop}) {
+    right: -41%;
   }
 
   @media (${Styles.devices.tablet}) {
@@ -179,28 +204,10 @@ export const HeroGroupSecundaryImageLeft = styled(Image)`
     position: absolute;
     width: 100%;
     top: 22%;
-    right: 37%;
+    right: 41%;
     height: 55%;
   }
 `;
-
-export const HeroGroupImageRight = styled(Image)`
-  position: absolute;
-  width: 100%;
-  height: 37%;
-  top: 20%;
-  right: -34%;
-  z-index: 0;
-
-  @media (${Styles.devices.laptop}) {
-    right: -40%;
-  }
-
-  @media (${Styles.devices.tablet}) {
-    display: none;
-  }
-`;
-
 export const HeroGroupSecundaryImageRight = styled(Image)`
   display: none;
 
@@ -209,7 +216,7 @@ export const HeroGroupSecundaryImageRight = styled(Image)`
     position: absolute;
     width: 100%;
     top: 32%;
-    right: -38%;
+    right: -43%;
     height: 40%;
   }
 `;
