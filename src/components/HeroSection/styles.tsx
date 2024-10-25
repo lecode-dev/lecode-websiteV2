@@ -242,6 +242,7 @@ export const CardsContainer = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     top: 0;
+    padding-bottom: 40px;
   }
 `;
 

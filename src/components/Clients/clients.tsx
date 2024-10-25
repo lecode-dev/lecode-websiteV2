@@ -1,5 +1,7 @@
 'use client'
 import { Trans } from 'react-i18next';
+import styled from 'styled-components';
+import {Styles} from '@/styles';
 import { Carousel } from '../Carousel';
 import {
   ComponentContainer,
@@ -21,15 +23,25 @@ import scouthubLogo from '../../../public/clients/scouthubLogo.svg';
 import workStory from '../../../public/clients/workStory.svg';
 import synergyLogo from '../../../public/clients/synergyLogo.svg';
 
+const ResponsiveImage = styled(Image) `
+width: 200px;
+height: 200px;
+
+@media (${Styles.devices.tablet}) {
+    width: 150px;
+    height: 150px
+  } 
+`;
+
 export const Clients = () => {
   const clients: Record<string, JSX.Element> = {
-    client1: <Image src={novoLogo} alt='client1' width={200} height={200} />,
-    client2: <Image src={autonomyLogo} alt='client2' width={200} height={200} />,
-    client3: <Image src={ethicsNetLogo} alt='client3' width={200} height={200} />,
-    client4: <Image src={falconsLogo} alt='client4' width={200} height={200} />,
-    client5: <Image src={scouthubLogo} alt='client5' width={200} height={200} />,
-    client6: <Image src={workStory} alt='client6' width={200} height={200} />,
-    client7: <Image src={synergyLogo} alt='client7' width={200} height={200} />,
+    client1: <ResponsiveImage src={novoLogo} alt="client1" />,
+    client2: <ResponsiveImage src={autonomyLogo} alt="client2" />,
+    client3: <ResponsiveImage src={ethicsNetLogo} alt="client3" />,
+    client4: <ResponsiveImage src={falconsLogo} alt="client4" />,
+    client5: <ResponsiveImage src={scouthubLogo} alt="client5" />,
+    client6: <ResponsiveImage src={workStory} alt="client6" />,
+    client7: <ResponsiveImage src={synergyLogo} alt="client7" />,
   };
 
 

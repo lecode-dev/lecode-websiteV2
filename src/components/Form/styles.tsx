@@ -14,6 +14,9 @@ export const Container = styled.div`
   padding-top: 8rem; // 128px
   padding-bottom: 2rem; // 10px
   background: ${({ theme }) => theme.colors.white};
+  @media (${Styles.devices.tablet}) {
+    padding-top: 0rem;
+  }
 `;
 
 export const FormContainer = styled.div`
