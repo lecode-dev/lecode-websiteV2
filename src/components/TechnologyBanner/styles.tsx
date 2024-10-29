@@ -16,6 +16,7 @@ export const TechnologyContainer = styled.div`
 
   @media (${Styles.devices.mobileL}) {
     text-align: center;
+    padding: 4rem 25px 60px 25px;
   }
 `;
 export const ContainerMainText = styled.div`
@@ -43,7 +44,7 @@ export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
   text-align: center;
   color: ${({ color, theme }) => (color === 'green' ? theme.colors.mainGreen : theme.colors.white)};
   @media (${Styles.devices.mobileL}) {
-    font-size: 1rem;
+    font-size: 1.35rem;
     width: 100%;
   }
 `;
