@@ -38,15 +38,20 @@ export const ClientsContainer = styled.div`
   padding: 48px 101px 25px 48px;
   gap: 59px;
   @media (${Styles.devices.tablet}) {
-    display: none;
+    max-height: 850px;
+    padding: 40px 0px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
   }
 `;
 
 export const ClientsCarouselContainer = styled.div`
-  padding: 48px 101px 101px 48px;
+  //padding: 48px 101px 101px 48px;
   display: none;
   @media (${Styles.devices.tablet}) {
-    display: block;
+    //display: block;
   }
 `;
 

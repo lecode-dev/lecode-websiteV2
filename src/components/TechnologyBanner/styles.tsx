@@ -15,10 +15,11 @@ export const TechnologyContainer = styled.div`
   overflow: hidden;
 
   @media (${Styles.devices.mobileL}) {
-    text-align: center;
+    //text-align: center;
     padding: 4rem 25px 60px 25px;
   }
 `;
+
 export const ContainerMainText = styled.div`
   margin-bottom: 48px;
   @media (${Styles.devices.mobileL}) {
@@ -27,7 +28,8 @@ export const ContainerMainText = styled.div`
   `;
 interface LearnAboutTextProps {
   color?: string;
-}
+};
+
 export const TextRow = styled.span`
   display: flex;
   flex-direction: row;
@@ -48,6 +50,7 @@ export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
     width: 100%;
   }
 `;
+
 export const WrapContainer = styled.div`
   display: flex;
   @media (${Styles.devices.mobileL}) {
@@ -55,10 +58,12 @@ export const WrapContainer = styled.div`
     align-items: center;
   }
 `;
+
 export const ContainerSubText = styled.div`
   border: 5px solid purple;
   margin-top: 1rem;
 `;
+
 export const MoreTechnologiesText = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
@@ -89,6 +94,7 @@ export const TitleCardTechnology = styled(Header32)`
   width: 209px;
   margin-bottom: 18px;
 `;
+
 export const MainTitleTechnology = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
@@ -100,6 +106,7 @@ export const TechnologyDescription = styled(Paragraph1)`
   width: 209px;
   margin-bottom: 18px;
 `;
+
 export const OthersFrameworksText = styled(Subtitle)`
   color: ${({ theme }) => theme.colors.white};
   width: 209px;
@@ -108,6 +115,7 @@ export const OthersFrameworksText = styled(Subtitle)`
   @media (${Styles.devices.mobileL}) {
     font-size: 1rem;  }
 `;
+
 export const UnorderedListTecnology = styled.ul`
   padding: 0;
   margin: 0;
@@ -121,8 +129,6 @@ export const ListTecnologys = styled(Paragraph1).attrs({ as: 'li' })`
   width: auto;
 `;
 
-
-
 export const StyledMaskTechnology = styled(Image)`
   position: absolute;
   bottom: -40px;
@@ -135,6 +141,7 @@ export const StyledMaskTechnology = styled(Image)`
     margin: 0 auto;
   }
 `;
+
 export const StyledMaskTechnologyInvert = styled(Image)`
   position: absolute;
   bottom: 0px;
@@ -145,5 +152,12 @@ export const StyledMaskTechnologyInvert = styled(Image)`
     right: 0px;
     left: -0px;
     margin: 0 auto;
+  }
+`;
+
+export const StyledImage = styled(Image)`
+  @media (${Styles.devices.tablet}) {
+    align-items: center;
+    text-align: center;
   }
 `;

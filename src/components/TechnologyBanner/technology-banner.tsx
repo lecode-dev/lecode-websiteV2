@@ -22,6 +22,7 @@ import {
   WrapContainer,
   StyledMaskTechnology,
   StyledMaskTechnologyInvert,
+  StyledImage
 } from './styles';
 
 interface TechnologyContainerProps {
@@ -51,10 +52,10 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
       <ContainerTechnology>
         <CardTechnology>
           <TitleCardTechnology>Front-end</TitleCardTechnology>
-          <Image
-            alt='React logo'
-            src={reactLogo}
-          />
+          <StyledImage
+           alt='React logo'
+           src={reactLogo}
+          ></StyledImage>
           <MainTitleTechnology>React</MainTitleTechnology>
           <TechnologyDescription>{t('technology.subtitleFrontEnd')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
