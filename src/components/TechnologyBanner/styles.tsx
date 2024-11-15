@@ -46,7 +46,7 @@ export const LearnAboutText = styled(Header1)<LearnAboutTextProps>`
   text-align: center;
   color: ${({ color, theme }) => (color === 'green' ? theme.colors.mainGreen : theme.colors.white)};
   @media (${Styles.devices.mobileL}) {
-    font-size: 1.35rem;
+    font-size: 2.0rem;
     width: 100%;
   }
 `;
@@ -71,7 +71,7 @@ export const MoreTechnologiesText = styled(Subtitle)`
   font-size: 1.5rem;
 
   @media (${Styles.devices.mobileL}) {
-    font-size: 1rem;  }
+    font-size: 1.2rem;  }
 `;
 
 export const ContainerTechnology = styled.div`

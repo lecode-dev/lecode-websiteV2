@@ -56,7 +56,7 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
            alt='React logo'
            src={reactLogo}
           ></StyledImage>
-          <MainTitleTechnology>React</MainTitleTechnology>
+          <MainTitleTechnology></MainTitleTechnology>
           <TechnologyDescription>{t('technology.subtitleFrontEnd')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -70,11 +70,11 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
 
         <CardTechnology>
           <TitleCardTechnology>Back-end</TitleCardTechnology>
-          <Image
+          <StyledImage
             alt='C# logo'
             src={cSharpLogo}
           />
-          <MainTitleTechnology>C#</MainTitleTechnology>
+          <MainTitleTechnology></MainTitleTechnology>
           <TechnologyDescription>{t('technology.subtitleBackEnd')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -88,11 +88,11 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
 
         <CardTechnology>
           <TitleCardTechnology>Infraestrutura</TitleCardTechnology>
-          <Image
+          <StyledImage
             alt='Azure logo'
             src={azureLogo}
           />
-          <MainTitleTechnology>Azure</MainTitleTechnology>
+          <MainTitleTechnology></MainTitleTechnology>
           <TechnologyDescription>{t('technology.subtitleInfra')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
