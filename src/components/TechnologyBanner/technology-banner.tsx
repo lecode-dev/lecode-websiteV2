@@ -1,6 +1,5 @@
 'use client';
 import { useTranslation } from 'react-i18next';
-import Image from 'next/image';
 import TechnologyMask from '@/images/technology-mask.svg';
 import reactLogo from '../../../public/react-logo.svg';
 import cSharpLogo from '../../../public/c-logo.svg';
