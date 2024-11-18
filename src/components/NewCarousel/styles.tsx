@@ -1,12 +1,16 @@
 import styled from 'styled-components'
+import { Header1, Styles } from '@/styles';
 
 export const CarouselContainer = styled.div`
   display: block;
   width: 100%;
   position: relative;
   margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 769px) {
     display: none;
   }
 `
@@ -68,3 +72,20 @@ export const Dot = styled.button<{ active: boolean }>`
     background-color: ${({ active }) => active ? '#000' : '#999'};
   }
 `
+
+export const TitleContainer = styled.div`
+  text-align: center;
+  max-width: 28rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
+
+  span {
+    color: ${({ theme }) => theme.colors.textGreen};
+  }
+`;
+
+export const Title = styled(Header1)`
+  @media (${Styles.devices.tabletL}) {
+    font-size: 2rem;
+  }
+`;

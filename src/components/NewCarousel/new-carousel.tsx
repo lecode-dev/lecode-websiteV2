@@ -2,6 +2,8 @@
 
 import { useState, useRef } from 'react'
 import Image from 'next/image';
+import { Trans } from 'react-i18next';
+import LecodeLogoBackground from '@/images/lecode-logo-background.svg';
 import  SetaEsquerda  from '../../images/seta-esquerda.svg';
 import  SetaDireita  from '../../images/seta-direita.svg';
 import novoLogo from '../../../public/clients/novoLogo.svg'
@@ -11,13 +13,16 @@ import falconsLogo from '../../../public/clients/falconsLogo.svg'
 import scouthubLogo from '../../../public/clients/scouthubLogo.svg'
 import workStory from '../../../public/clients/workStory.svg'
 import synergyLogo from '../../../public/clients/synergyLogo.svg'
+import {LogoBackground} from '../../app/(components)/(testimony)/styles';
 import { 
   CarouselContainer, 
   CarouselWrapper, 
   CarouselSlide, 
   NavigationButton, 
   DotsContainer, 
-  Dot
+  Dot,
+  TitleContainer,
+  Title,
 } from './styles'
 
 const logos = [
@@ -28,6 +33,13 @@ const logos = [
   { src: scouthubLogo, alt: 'Scouthub Logo' },
   { src: workStory, alt: 'Work Story Logo' },
   { src: synergyLogo, alt: 'Synergy Logo' },
+]
+
+const BackgroundLogo = [
+  { $top: '100px', $right: '-50px' },
+  { $top: '100px', $left: '-30px', $opacity: '10%' },
+  { $bottom: '0px', $right: '100px' },
+  { $bottom: '50px', $left: '90px', $opacity: '10%' },
 ]
 
 export function NewCarousel () {
@@ -54,6 +66,19 @@ export function NewCarousel () {
 
   return (
     <CarouselContainer>
+      {BackgroundLogo.map((props, index) => (
+          <LogoBackground
+            key={`logo-background-${index}`}
+            src={LecodeLogoBackground}
+            alt={`lecode-logo-background-${index}`}
+            {...props}
+          />
+        ))}
+      <TitleContainer>
+        <Title>
+          <Trans i18nKey='clients.subtitle' />
+        </Title>
+      </TitleContainer>
       <CarouselWrapper>
         <NavigationButton direction="left" onClick={prevSlide}>
         <Image alt='setaEsquerda'src={SetaEsquerda}/>
@@ -80,7 +105,10 @@ export function NewCarousel () {
         </CarouselSlide>
 
         <NavigationButton direction="right" onClick={nextSlide}>
-        <Image alt='setaDireita'src={SetaDireita} />
+        <Image 
+        alt='setaDireita'
+        src={SetaDireita}
+         />
         </NavigationButton>
       </CarouselWrapper>
 

@@ -10,6 +10,7 @@ export const ComponentContainer = styled.div`
   padding-top: 8rem;
   background-color: ${({ theme }) => theme.colors.gray};
   @media (${Styles.devices.tablet}) {
+    display: none;
     padding-top: 4rem;
   }
 `;
