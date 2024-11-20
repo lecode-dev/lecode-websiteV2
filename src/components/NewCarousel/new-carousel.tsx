@@ -8,7 +8,7 @@ import  SetaEsquerda  from '../../images/seta-esquerda.svg';
 import  SetaDireita  from '../../images/seta-direita.svg';
 import novoLogo from '../../../public/clients/novoLogo.svg'
 import autonomyLogo from '../../../public/clients/autonomyLogo.svg'
-import ethicsNetLogo from '../../../public/clients/ethicsNetLogo.svg'
+import ethicsNetLogo2 from '../../../public/clients/ethicsNetLogo2.svg'
 import falconsLogo from '../../../public/clients/falconsLogo.svg'
 import scouthubLogo from '../../../public/clients/scouthubLogo.svg'
 import workStory from '../../../public/clients/workStory.svg'
@@ -28,18 +28,18 @@ import {
 const logos = [
   { src: novoLogo, alt: 'Novo Logo' },
   { src: autonomyLogo, alt: 'Autonomy Logo' },
-  { src: ethicsNetLogo, alt: 'EthicsNet Logo' },
+  { src: synergyLogo, alt: 'Synergy Logo' },
   { src: falconsLogo, alt: 'Falcons Logo' },
   { src: scouthubLogo, alt: 'Scouthub Logo' },
   { src: workStory, alt: 'Work Story Logo' },
-  { src: synergyLogo, alt: 'Synergy Logo' },
+  { src: ethicsNetLogo2, alt: 'EthicsNet Logo' },
 ]
 
 const BackgroundLogo = [
-  { $top: '100px', $right: '-50px' },
-  { $top: '100px', $left: '-30px', $opacity: '10%' },
-  { $bottom: '0px', $right: '100px' },
-  { $bottom: '50px', $left: '90px', $opacity: '10%' },
+  { $top: '100px', $right: '-50px', $opacity: '9%'  },
+  { $top: '100px', $left: '-38px', $opacity: '9%' },
+  { $bottom: '70px', $right: '15px',$opacity: '9%' },
+  { $bottom: '70px', $left: '-48px', $opacity: '9%' },
 ]
 
 export function NewCarousel () {
@@ -97,7 +97,7 @@ export function NewCarousel () {
               style={{
                 width: '50%',
                 flexShrink: 0,
-                padding: '0 1rem',
+                padding: logo.alt === 'EthicsNet Logo' ? '20px 2.25rem' : '0 1rem',
                 objectFit: 'contain'
               }}
             />

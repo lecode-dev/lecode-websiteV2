@@ -12,6 +12,7 @@ export const ScrollbarWrapper = styled.div`
   scrollbar-color: ${({ theme }) => theme.colors.gray};
   direction: ltr; // Show the scrollbar on the right: ;
   scroll-behavior: smooth;
+  background-color: white;
 
   &::-webkit-scrollbar {
     width: 8px;

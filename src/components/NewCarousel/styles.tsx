@@ -9,6 +9,7 @@ export const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 
   @media (min-width: 769px) {
     display: none;
