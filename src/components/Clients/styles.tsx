@@ -8,6 +8,7 @@ export const ComponentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 8rem;
+  padding-bottom: 8rem;
   background-color: ${({ theme }) => theme.colors.gray};
   @media (${Styles.devices.tablet}) {
     display: none;

@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react'
 import Image from 'next/image';
 import { Trans } from 'react-i18next';
-import LecodeLogoBackground from '@/images/lecode-logo-background.svg';
+//import LecodeLogoBackground from '@/images/lecode-logo-background.svg';
 import  SetaEsquerda  from '../../images/seta-esquerda.svg';
 import  SetaDireita  from '../../images/seta-direita.svg';
 import novoLogo from '../../../public/clients/novoLogo.svg'
@@ -13,7 +13,7 @@ import falconsLogo from '../../../public/clients/falconsLogo.svg'
 import scouthubLogo from '../../../public/clients/scouthubLogo.svg'
 import workStory from '../../../public/clients/workStory.svg'
 import synergyLogo from '../../../public/clients/synergyLogo.svg'
-import {LogoBackground} from '../../app/(components)/(testimony)/styles';
+//import {LogoBackground} from '../../app/(components)/(testimony)/styles';
 import { 
   CarouselContainer, 
   CarouselWrapper, 
@@ -35,12 +35,12 @@ const logos = [
   { src: ethicsNetLogo2, alt: 'EthicsNet Logo' },
 ]
 
-const BackgroundLogo = [
-  { $top: '100px', $right: '-50px', $opacity: '9%'  },
-  { $top: '100px', $left: '-38px', $opacity: '9%' },
-  { $bottom: '70px', $right: '15px',$opacity: '9%' },
-  { $bottom: '70px', $left: '-48px', $opacity: '9%' },
-]
+// const BackgroundLogo = [
+//   { $top: '100px', $right: '-50px', $opacity: '9%'  },
+//   { $top: '100px', $left: '-38px', $opacity: '9%' },
+//   { $bottom: '70px', $right: '15px',$opacity: '9%' },
+//   { $bottom: '70px', $left: '-48px', $opacity: '9%' },
+// ]
 
 export function NewCarousel () {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -66,14 +66,14 @@ export function NewCarousel () {
 
   return (
     <CarouselContainer>
-      {BackgroundLogo.map((props, index) => (
+      {/* {BackgroundLogo.map((props, index) => (
           <LogoBackground
             key={`logo-background-${index}`}
             src={LecodeLogoBackground}
             alt={`lecode-logo-background-${index}`}
             {...props}
           />
-        ))}
+        ))} */}
       <TitleContainer>
         <Title>
           <Trans i18nKey='clients.subtitle' />
