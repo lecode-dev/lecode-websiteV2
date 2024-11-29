@@ -22,6 +22,7 @@ export const CarouselWrapper = styled.div`
   overflow: hidden;
   display: flex;
   align-items: center;
+  padding: 0 2rem;
 `
 
 export const CarouselSlide = styled.div`
@@ -34,12 +35,12 @@ export const NavigationButton = styled.button<{ direction: 'left' | 'right' }>`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  ${({ direction }) => direction === 'left' ? 'left: 0;' : 'right: 0;'}
+  ${({ direction }) => direction === 'left' ? 'left: 0.5rem;' : 'right: 0.5rem;'}
   background: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,3 +91,4 @@ export const Title = styled(Header1)`
     font-size: 2rem;
   }
 `;
+

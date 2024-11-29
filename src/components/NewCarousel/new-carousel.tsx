@@ -3,9 +3,8 @@
 import { useState, useRef } from 'react'
 import Image from 'next/image';
 import { Trans } from 'react-i18next';
-//import LecodeLogoBackground from '@/images/lecode-logo-background.svg';
-import  SetaEsquerda  from '../../images/seta-esquerda.svg';
-import  SetaDireita  from '../../images/seta-direita.svg';
+import SetaEsquerda from '../../images/seta-esquerda.svg';
+import SetaDireita from '../../images/seta-direita.svg';
 import novoLogo from '../../../public/clients/novoLogo.svg'
 import autonomyLogo from '../../../public/clients/autonomyLogo.svg'
 import ethicsNetLogo2 from '../../../public/clients/ethicsNetLogo2.svg'
@@ -13,7 +12,7 @@ import falconsLogo from '../../../public/clients/falconsLogo.svg'
 import scouthubLogo from '../../../public/clients/scouthubLogo.svg'
 import workStory from '../../../public/clients/workStory.svg'
 import synergyLogo from '../../../public/clients/synergyLogo.svg'
-//import {LogoBackground} from '../../app/(components)/(testimony)/styles';
+import bentCareLogo from '../../../public/clients/bentCareLogo.svg'
 import { 
   CarouselContainer, 
   CarouselWrapper, 
@@ -26,21 +25,15 @@ import {
 } from './styles'
 
 const logos = [
-  { src: novoLogo, alt: 'Novo Logo' },
+  { src: workStory, alt: 'Work Story Logo' },
+  { src: falconsLogo, alt: 'Falcons Logo' },
   { src: autonomyLogo, alt: 'Autonomy Logo' },
   { src: synergyLogo, alt: 'Synergy Logo' },
-  { src: falconsLogo, alt: 'Falcons Logo' },
   { src: scouthubLogo, alt: 'Scouthub Logo' },
-  { src: workStory, alt: 'Work Story Logo' },
+  { src: novoLogo, alt: 'Novo Logo' },
+  { src: bentCareLogo, alt: 'bentCareLogo' },
   { src: ethicsNetLogo2, alt: 'EthicsNet Logo' },
 ]
-
-// const BackgroundLogo = [
-//   { $top: '100px', $right: '-50px', $opacity: '9%'  },
-//   { $top: '100px', $left: '-38px', $opacity: '9%' },
-//   { $bottom: '70px', $right: '15px',$opacity: '9%' },
-//   { $bottom: '70px', $left: '-48px', $opacity: '9%' },
-// ]
 
 export function NewCarousel () {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -66,14 +59,6 @@ export function NewCarousel () {
 
   return (
     <CarouselContainer>
-      {/* {BackgroundLogo.map((props, index) => (
-          <LogoBackground
-            key={`logo-background-${index}`}
-            src={LecodeLogoBackground}
-            alt={`lecode-logo-background-${index}`}
-            {...props}
-          />
-        ))} */}
       <TitleContainer>
         <Title>
           <Trans i18nKey='clients.subtitle' />
@@ -81,7 +66,7 @@ export function NewCarousel () {
       </TitleContainer>
       <CarouselWrapper>
         <NavigationButton direction="left" onClick={prevSlide}>
-        <Image alt='setaEsquerda'src={SetaEsquerda}/>
+          <Image alt='setaEsquerda' src={SetaEsquerda} />
         </NavigationButton>
         
         <CarouselSlide ref={slideRef} style={{
@@ -97,21 +82,19 @@ export function NewCarousel () {
               style={{
                 width: '50%',
                 flexShrink: 0,
-                padding: logo.alt === 'EthicsNet Logo' ? '20px 2.25rem' : '0 1rem',
+                padding: '0 0.5rem',
                 objectFit: 'contain'
               }}
             />
           ))}
         </CarouselSlide>
-
         <NavigationButton direction="right" onClick={nextSlide}>
-        <Image 
-        alt='setaDireita'
-        src={SetaDireita}
-         />
+          <Image 
+            alt='setaDireita'
+            src={SetaDireita}
+          />
         </NavigationButton>
       </CarouselWrapper>
-
       <DotsContainer>
         {Array.from({ length: totalDots }).map((_, index) => (
           <Dot
