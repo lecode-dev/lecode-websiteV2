@@ -37,6 +37,6 @@ export const ScrollbarWrapper = styled.div`
   }
 
   @media (${Styles.devices.tabletL}) {
-    overflow-y: hidden;
+    scrollbar-width: none;
   }
 `;
