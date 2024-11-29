@@ -10,6 +10,7 @@ import { Clients } from '@/components/Clients';
 import { HeroSection } from '@/components/HeroSection';
 import { TeamMembers } from '@/app/(data)/(mock)/team-members';
 import { ProcessProgress } from '@/components/ProcessProgress';
+import { NewCarousel } from '@/components/NewCarousel';
 import { TeamLecodeContainer } from '../(components)/(team)/team-member-container';
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
           />
           <ProcessProgress/>
           <Clients />
+          <NewCarousel/>
           {/* <TestimonyContainer testimonies={TestimonyData} /> */}
           <Form />
           <Footer />

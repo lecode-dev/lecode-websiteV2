@@ -154,7 +154,7 @@ export const FormInputContent = styled.div`
 export const FormLabel = styled.label`
   font-size: 0.75rem; // 12px
   font-weight: normal;
-  font-family: 'Poppins', sans-serif;
+  font-family: '__Montserrat_c8fde2', '__Montserrat_Fallback_c8fde2';
   color: #ffffff;
   width: 8.8125rem; // 141px
   height: 1.125rem; // 18px
@@ -169,4 +169,5 @@ export const FormInput = styled.input`
   border-radius: 0.25rem; // 4px
   background-color: #ffffff;
   color: #000000;
+  outline: none;
 `;

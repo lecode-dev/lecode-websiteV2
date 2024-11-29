@@ -1,26 +1,26 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="subway:time-5" clip-path="url(#clip0_59_2917)">
-<g id="Vector" filter="url(#filter0_d_59_2917)">
-<path d="M16 0C7.1625 0 0 7.1625 0 16C0 24.8375 7.1625 32 16 32C24.8375 32 32 24.8375 32 16C32 7.1625 24.8375 0 16 0ZM16 29.3312C8.6375 29.3312 2.66875 23.3625 2.66875 16C2.66875 8.6375 8.6375 2.66875 16 2.66875C23.3625 2.66875 29.3312 8.6375 29.3312 16C29.3312 23.3625 23.3625 29.3312 16 29.3312ZM14.6687 13.3313L11.3313 10L9.33125 12L17.3312 20V5.33125H14.6625V13.3313H14.6687Z" fill="url(#paint0_linear_59_2917)"/>
+<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_172_21749)">
+<g filter="url(#filter0_d_172_21749)">
+<path d="M19 3C10.1625 3 3 10.1625 3 19C3 27.8375 10.1625 35 19 35C27.8375 35 35 27.8375 35 19C35 10.1625 27.8375 3 19 3ZM19 32.3312C11.6375 32.3312 5.66875 26.3625 5.66875 19C5.66875 11.6375 11.6375 5.66875 19 5.66875C26.3625 5.66875 32.3312 11.6375 32.3312 19C32.3312 26.3625 26.3625 32.3312 19 32.3312ZM17.6687 16.3313L14.3313 13L12.3313 15L20.3312 23V8.33125H17.6625V16.3313H17.6687Z" fill="url(#paint0_linear_172_21749)"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d_59_2917" x="-4" y="-4" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_172_21749" x="-1" y="-1" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="2"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0.0557298 0 0 0 0 0.759948 0 0 0 0 0.504226 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_59_2917"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_59_2917" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_172_21749"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_172_21749" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_59_2917" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_172_21749" x1="19" y1="3" x2="19" y2="35" gradientUnits="userSpaceOnUse">
 <stop stop-color="#00AB26"/>
 <stop offset="1" stop-color="#01B473"/>
 </linearGradient>
-<clipPath id="clip0_59_2917">
-<rect width="32" height="32" fill="white"/>
+<clipPath id="clip0_172_21749">
+<rect width="38" height="38" fill="white"/>
 </clipPath>
 </defs>
 </svg>
