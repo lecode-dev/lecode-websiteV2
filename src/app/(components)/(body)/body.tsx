@@ -1,5 +1,6 @@
 'use client'
 import styled from "styled-components";
+import { Styles } from '@/styles';
 
 export const Content = styled.div`
   overflow-x: hidden;
@@ -33,5 +34,9 @@ export const ScrollbarWrapper = styled.div`
   &::-webkit-scrollbar-thumb:hover {
     background: ${({ theme }) => theme.colors.mainGreen};
     max-height: 10px;
+  }
+
+  @media (${Styles.devices.tabletL}) {
+    overflow-y: hidden;
   }
 `;
