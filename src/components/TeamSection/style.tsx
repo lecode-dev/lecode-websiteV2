@@ -52,7 +52,7 @@ export const ContactContainer = styled.div`
     padding: 5.25rem 0.5rem; // 36px 8px
     width: 90%;
     height: fit-content; // 540px
-    background-color: black;
+    background-color: #161918;
     position: relative;
     z-index: 1;
     overflow: hidden;
