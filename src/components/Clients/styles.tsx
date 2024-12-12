@@ -8,8 +8,10 @@ export const ComponentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 8rem;
+  padding-bottom: 8rem;
   background-color: ${({ theme }) => theme.colors.gray};
   @media (${Styles.devices.tablet}) {
+    display: none;
     padding-top: 4rem;
   }
 `;
@@ -38,15 +40,20 @@ export const ClientsContainer = styled.div`
   padding: 48px 101px 25px 48px;
   gap: 59px;
   @media (${Styles.devices.tablet}) {
-    display: none;
+    max-height: 850px;
+    padding: 40px 0px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
   }
 `;
 
 export const ClientsCarouselContainer = styled.div`
-  padding: 48px 101px 101px 48px;
+  //padding: 48px 101px 101px 48px;
   display: none;
   @media (${Styles.devices.tablet}) {
-    display: block;
+    //display: block;
   }
 `;
 

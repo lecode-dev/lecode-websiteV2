@@ -1,6 +1,5 @@
 'use client';
 import { useTranslation } from 'react-i18next';
-import Image from 'next/image';
 import TechnologyMask from '@/images/technology-mask.svg';
 import reactLogo from '../../../public/react-logo.svg';
 import cSharpLogo from '../../../public/c-logo.svg';
@@ -22,6 +21,7 @@ import {
   WrapContainer,
   StyledMaskTechnology,
   StyledMaskTechnologyInvert,
+  StyledImage
 } from './styles';
 
 interface TechnologyContainerProps {
@@ -51,11 +51,11 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
       <ContainerTechnology>
         <CardTechnology>
           <TitleCardTechnology>Front-end</TitleCardTechnology>
-          <Image
-            alt='React logo'
-            src={reactLogo}
-          />
-          <MainTitleTechnology>React</MainTitleTechnology>
+          <StyledImage
+           alt='React logo'
+           src={reactLogo}
+          ></StyledImage>
+          <MainTitleTechnology></MainTitleTechnology>
           <TechnologyDescription>{t('technology.subtitleFrontEnd')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -69,11 +69,11 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
 
         <CardTechnology>
           <TitleCardTechnology>Back-end</TitleCardTechnology>
-          <Image
+          <StyledImage
             alt='C# logo'
             src={cSharpLogo}
           />
-          <MainTitleTechnology>C#</MainTitleTechnology>
+          <MainTitleTechnology></MainTitleTechnology>
           <TechnologyDescription>{t('technology.subtitleBackEnd')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -87,11 +87,11 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
 
         <CardTechnology>
           <TitleCardTechnology>Infraestrutura</TitleCardTechnology>
-          <Image
+          <StyledImage
             alt='Azure logo'
             src={azureLogo}
           />
-          <MainTitleTechnology>Azure</MainTitleTechnology>
+          <MainTitleTechnology></MainTitleTechnology>
           <TechnologyDescription>{t('technology.subtitleInfra')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>

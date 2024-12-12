@@ -22,6 +22,7 @@ import falconsLogo from '../../../public/clients/falconsLogo.svg';
 import scouthubLogo from '../../../public/clients/scouthubLogo.svg';
 import workStory from '../../../public/clients/workStory.svg';
 import synergyLogo from '../../../public/clients/synergyLogo.svg';
+import bentCareLogo from '../../../public/clients/bentCareLogo2.svg';
 
 const ResponsiveImage = styled(Image) `
 width: 200px;
@@ -42,6 +43,7 @@ export const Clients = () => {
     client5: <ResponsiveImage src={scouthubLogo} alt="client5" />,
     client6: <ResponsiveImage src={workStory} alt="client6" />,
     client7: <ResponsiveImage src={synergyLogo} alt="client7" />,
+    client8: <ResponsiveImage src={bentCareLogo} alt="client8" />,
   };
 
 

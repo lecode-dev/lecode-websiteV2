@@ -10,7 +10,6 @@ export const InternalLinks = () => {
     <NavLinks>
       <StyledLink href='#about'>{t('aboutUs.title')}</StyledLink>
       <StyledLink href='#technologies'>{t('ourSkills.title')}</StyledLink>
-      <StyledLink href='#cases'>{t('cases.title')}</StyledLink>
       <StyledLink href='#team'>{t('team.title')}</StyledLink>
       <StyledLink href='#clients'>{t('clients.title')}</StyledLink>
     </NavLinks>

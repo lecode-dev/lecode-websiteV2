@@ -8,7 +8,7 @@ const changa = Changa({ weight: ['500'],subsets: ['latin'] });
 export const NavLinks = styled.div`
   display: flex;
   padding: 10px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1.39vw;
   color: ${({ theme }) => theme.colors.black};
