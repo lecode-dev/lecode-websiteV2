@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/Providers/ThemeProvider/theme-provider';
 import { ResetCSS, GlobalCSS } from '@/styles';
 import { i18nConfig } from '@/i18n';
- import { GoogleAnalytics } from '@/components/GAnalytics/analytics';
+import { Analytics } from '@/components/Analytics';
 
 export const metadata: Metadata = {
   title: 'LeCode',
@@ -26,10 +26,10 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <ResetCSS />
-          <GoogleAnalytics/>
           <GlobalCSS />
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

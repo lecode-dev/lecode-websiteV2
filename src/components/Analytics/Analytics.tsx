@@ -1,7 +1,6 @@
 import Script from 'next/script'
-import React from 'react'
 
-export const GoogleAnalytics = () => {
+const Analytics = () => {
   const gaId = process.env.NEXT_PUBLIC_GA_ID
 
   if (!gaId) {
@@ -12,7 +11,6 @@ export const GoogleAnalytics = () => {
     <>
       <Script
         strategy="afterInteractive"
-        async
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
       />
       <Script
@@ -31,4 +29,4 @@ export const GoogleAnalytics = () => {
   )
 }
 
-export default GoogleAnalytics
+export default Analytics
