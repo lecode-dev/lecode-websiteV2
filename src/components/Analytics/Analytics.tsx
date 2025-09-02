@@ -1,6 +1,6 @@
 import Script from 'next/script'
 
-const Analytics = () => {
+const analytics = () => {
   const gaId = process.env.NEXT_PUBLIC_GA_ID
 
   if (!gaId) {
@@ -29,4 +29,4 @@ const Analytics = () => {
   )
 }
 
-export default Analytics
+export default analytics
