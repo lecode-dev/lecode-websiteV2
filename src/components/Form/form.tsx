@@ -6,8 +6,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Trans, useTranslation } from 'react-i18next';
-import { send } from 'emailjs-com';
-import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import BgImage from '@/images/technology-mask.svg';
 import { ContactButton } from '../ContactButton';
@@ -29,6 +29,7 @@ import {
 
 export const Form = () => {
   const { t } = useTranslation();
+  const form = useRef<HTMLFormElement>(null);
 
   const schema = z.object({
     name: z.string().min(1, t('formValidation.requiredName')),
@@ -36,7 +37,7 @@ export const Form = () => {
   });
 
   type FormData = z.infer<typeof schema>;
-  
+
   const {
     register,
     handleSubmit,
@@ -58,7 +59,8 @@ export const Form = () => {
     },
   };
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async () => {
+    // Substitua com suas variáveis de ambiente do EmailJS
     const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
     const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
@@ -68,20 +70,15 @@ export const Form = () => {
       return;
     }
 
+    if (!form.current) {
+      toast.error('Form reference is not available');
+      return;
+    }
+
     setLoading(true);
 
     try {
-      await send(
-        serviceId,
-        templateId,
-        {
-          from_name: data.name,
-          to_name: 'LeCode',
-          message: `You have a new message from ${data.name} (${data.email}).`,
-        },
-        publicKey,
-      );
-
+      await emailjs.sendForm(serviceId, templateId, form.current, publicKey);
       toast.success(t('toastEmailStatus.successEmail'));
       reset();
     } catch (error) {
@@ -104,7 +101,7 @@ export const Form = () => {
             alt='Background Image'
           />
         </BackgroundImageContainer>
-        <FormContent onSubmit={handleSubmit(onSubmit)}>
+        <FormContent ref={form} onSubmit={handleSubmit(onSubmit)}>
           <FormTextContainer>
             <FormTitle>
               <Trans i18nKey='contactUs.title' />
