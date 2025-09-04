@@ -6,9 +6,10 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Trans, useTranslation } from 'react-i18next';
-import emailjs from 'emailjs-com';
+import { sendForm } from 'emailjs-com';
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import ReCAPTCHA from 'react-google-recaptcha';
 import BgImage from '@/images/technology-mask.svg';
 import { ContactButton } from '../ContactButton';
 import {
@@ -25,11 +26,14 @@ import {
   FormTitle,
   FormInputContent,
   BackgroundImageContainer,
+  ReCAPTCHAContainer,
 } from './styles';
 
 export const Form = () => {
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
 
   const schema = z.object({
     name: z.string().min(1, t('formValidation.requiredName')),
@@ -60,27 +64,27 @@ export const Form = () => {
   };
 
   const onSubmit = async () => {
-    // Substitua com suas variáveis de ambiente do EmailJS
+    if (!recaptchaValue) {
+      toast.error(t('formValidation.recaptcha'));
+      return;
+    }
     const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
     const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
-
     if (!serviceId || !templateId || !publicKey) {
       toast.error(t('toastEmailStatus.errorEmailConfig'));
       return;
     }
-
     if (!form.current) {
       toast.error('Form reference is not available');
       return;
     }
-
     setLoading(true);
-
     try {
-      await emailjs.sendForm(serviceId, templateId, form.current, publicKey);
+      await sendForm(serviceId, templateId, form.current, publicKey);
       toast.success(t('toastEmailStatus.successEmail'));
       reset();
+      recaptchaRef.current?.reset();
     } catch (error) {
       toast.error(t('toastEmailStatus.failedEmail'));
     } finally {
@@ -129,6 +133,15 @@ export const Form = () => {
               {errors.email ? <p>{errors.email.message}</p> : null}
             </FormInputContent>
           </FormInputContainer>
+          <ReCAPTCHAContainer>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
+              onChange={(value) => {
+                setRecaptchaValue(value);
+              }}
+            />
+          </ReCAPTCHAContainer>
           <ContactButton type='submit'>
             {loading ? (
               <motion.div

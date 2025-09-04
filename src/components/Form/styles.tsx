@@ -26,7 +26,7 @@ export const FormContainer = styled.div`
   justify-content: center;
   padding: 2.25rem 0.5rem; // 36px 8px
   width: 80%;
-  height: 33.75rem; // 540px
+  height: 40rem; // 540px
   background-color: ${({ theme }) => theme.colors.mainBack};
   position: relative;
   z-index: 1;
@@ -144,6 +144,7 @@ export const FormInputContainer = styled.div`
 
 export const FormInputContent = styled.div`
   display: flex;
+  font-family: ${montserratSubtitle.style.fontFamily};
   flex-direction: column;
   align-items: start;
   gap: 0.375rem; // 6px
@@ -154,7 +155,7 @@ export const FormInputContent = styled.div`
 export const FormLabel = styled.label`
   font-size: 0.75rem; // 12px
   font-weight: normal;
-  font-family: '__Montserrat_c8fde2', '__Montserrat_Fallback_c8fde2';
+  font-family: ${montserratSubtitle.style.fontFamily};
   color: #ffffff;
   width: 8.8125rem; // 141px
   height: 1.125rem; // 18px
@@ -163,6 +164,7 @@ export const FormLabel = styled.label`
 
 export const FormInput = styled.input`
   width: 100%;
+  font-family: ${montserratSubtitle.style.fontFamily};
   height: 2.625rem; // 42px
   padding: 0.5rem; // 8px
   border: 1px solid #000000;
@@ -170,4 +172,10 @@ export const FormInput = styled.input`
   background-color: #ffffff;
   color: #000000;
   outline: none;
+`;
+
+export const ReCAPTCHAContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 80%;
 `;
