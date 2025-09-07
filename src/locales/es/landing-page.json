@@ -1,0 +1,91 @@
+{
+  "aboutUs": {
+    "title": "Sobre Nosotros",
+    "description": "Somos una <span>consultoría<strokeSpan> <animatedImage /></strokeSpan> Outsourcing</span> que se adapta a tu <span>Negocio</span>",
+    "ourQualities": [
+      {
+        "title": "Reclutamiento en el Momento Adecuado",
+        "description": "Ayudamos en la selección y asignación de talentos según los plazos definidos por el cliente."
+      },
+      {
+        "title": "Construye un Equipo Eficiente",
+        "description": "Busca y encuentra especialistas dedicados con las habilidades que tu equipo necesita en nuestra lista."
+      },
+      {
+        "title": "Rendimiento Monitoreado",
+        "description": "Contamos con niveles de gestión para monitorear el desempeño de nuestros especialistas asignados."
+      },
+      {
+        "title": "Talentos con Técnica y Calidad",
+        "description": "Nuestros especialistas son evaluados y pasan por un escrutinio técnico y de calidad para unirse a nuestra lista."
+      }
+    ]
+  },
+  "ourSkills": {
+    "title": "Nuestras Habilidades",
+    "description": "Somos un equipo de profesionales apasionados por lo que hacemos"
+  },
+  "cases": {
+    "title": "Casos",
+    "description": "Somos un equipo de profesionales apasionados por lo que hacemos"
+  },
+  "team": {
+    "title": "Equipo",
+    "description": "Somos un equipo de profesionales apasionados por lo que hacemos"
+  },
+  "clients": {
+    "title": "Clientes",
+    "subtitle": "Vea quién ya se ha <span>asociado con nosotros</span>."
+  },
+  "testimonials": {
+    "title": "Testimonios"
+  },
+  "contactUs": {
+    "button": "Contáctenos",
+    "title": "<span>Juntos</span>, elevamos <span>tu negocio</span> a un nivel completamente nuevo.",
+    "subtitle": "Contáctenos para ver qué podemos hacer por su equipo",
+    "labelCompanyName": "Nombre de la Empresa",
+    "labelEmail": "Correo Electrónico"
+  },
+  "formValidation": {
+    "requiredName": "El nombre de la empresa es obligatorio",
+    "invalidEmail": "Correo electrónico no válido",
+    "requiredEmail": "El correo electrónico es obligatorio"
+  },
+  "toastEmailStatus": {
+    "successEmail": "Correo electrónico enviado con éxito",
+    "failedEmail": "Error al enviar el correo electrónico",
+    "errorEmailConfig": "Error al enviar el correo electrónico"
+  },
+  "contactTeam": {
+    "button": "Ver más detalles sobre nuestro equipo",
+    "title": "Encuentra tu equipo ideal",
+    "description": "Un equipo completo, con la experiencia que necesitas para impulsar tus ideas."
+  },
+  "technology": {
+    "title": "Descubre las",
+    "technologies": "tecnologías",
+    "thatTheTeam": "que el",
+    "dominates": "equipo domina",
+    "subtitle": "Las tecnologías más actuales para eficiencia y rendimiento",
+    "therFrameworks": "Otros frameworks que utilizamos:",
+    "subtitleFrontEnd": "Utilizamos este y otros frameworks conocidos como los mejores del mercado.",
+    "subtitleBackEnd": "Desarrollamos un framework robusto, con integraciones y APIs para optimizar el rendimiento.",
+    "Infrastructure": "Infraestructura",
+    "subtitleInfra": "Gestionamos la infraestructura de proyectos con lo mejor del mercado."
+  },
+  "process": {
+    "mainLearnAbotBlack": "Nuestro enfoque para",
+    "mainLearnAbotGreen": "garantizar",
+    "subtitleLearnAbotBlack": " el éxito de tu",
+    "subtitleLearnAbotGreen": "proyecto tecnológico",
+    "cardTitle1": "Briefing del Proyecto",
+    "cardSubTitle1": "A través de una conversación, realizaremos un briefing para entender tus necesidades y recomendar los mejores perfiles profesionales para satisfacer tus demandas.",
+    "cardTitle2": "Cronograma",
+    "cardSubTitle2": "En pocos días, presentaremos una lista de profesionales seleccionados para tu revisión y aprobación.",
+    "cardTitle3": "Asignación de Recursos",
+    "cardSubTitle3": "Después de la aprobación, nuestro profesional será asignado a tu empresa en 7 días, sin demoras ni burocracia.",
+    "cardTitle4": "Seguimiento del Proyecto",
+    "cardSubTitle4": "Mientras nuestros profesionales estén a tu disposición, proporcionaremos un seguimiento continuo y un seguimiento del rendimiento para garantizar la máxima eficiencia en la entrega del trabajo."
+  }
+}

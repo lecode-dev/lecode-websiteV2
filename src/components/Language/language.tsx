@@ -6,11 +6,19 @@ import { i18nConfig } from '@/i18n';
 import { Paragraph1 } from '@/styles/typographies';
 import brazilFlag from '../../../public/brazil-flag.svg';
 import euaFlag from '../../../public/eua-flag.svg';
+import esFlag from '../../../public/spanish-flag.svg';
 import { SelectContainer, OptionsContainer, Option, ContainerLanguage } from './styles';
 
 const languageNames: Record<string, ReactNode> = {
   pt: <Image src={brazilFlag} alt="PT-BR" width={24} height={24} />,
   en: <Image src={euaFlag} alt="EN-US" width={24} height={24} />,
+  es: <Image src={esFlag} alt="ES" width={24} height={24} />,
+};
+
+const languageFlags: Record<string, any> = {
+  pt: brazilFlag,
+  en: euaFlag,
+  es: esFlag,
 };
 
 export const Language: React.FC = () => {
@@ -53,7 +61,7 @@ export const Language: React.FC = () => {
         onClick={handleIconClick}
       >
         <Image
-          src={currentLocale === "pt" ? brazilFlag : euaFlag}
+          src={languageFlags[currentLocale]}
           alt="language icon in black"
           width={24}
           height={24}
@@ -78,4 +86,3 @@ export const Language: React.FC = () => {
     </ContainerLanguage>
   );
 };
-
