@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <FooterContainer>
       <LinksContainer>
-      <Typo> © 2023 LeCode, Inc.Todos os direitos reservados. </Typo>
+      <Typo> © {new Date().getFullYear()} LeCode, Inc.Todos os direitos reservados. </Typo>
         <ExternalLinks>
           <a
             href='https://www.instagram.com/lecode_dev/'

@@ -44,8 +44,8 @@
     "button": "Contáctenos",
     "title": "<span>Juntos</span>, elevamos <span>tu negocio</span> a un nivel completamente nuevo.",
     "subtitle": "Contáctenos para ver qué podemos hacer por su equipo",
-    "labelCompanyName": "Nombre de la Empresa",
-    "labelEmail": "Correo Electrónico"
+    "labelCompanyName": "Nombre",
+    "labelEmail": "E-Mail"
   },
   "formValidation": {
     "requiredName": "El nombre de la empresa es obligatorio",

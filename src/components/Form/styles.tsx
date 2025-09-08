@@ -26,7 +26,7 @@ export const FormContainer = styled.div`
   justify-content: center;
   padding: 2.25rem 0.5rem; // 36px 8px
   width: 80%;
-  height: 40rem; // 540px
+  height: 48rem; // 540px
   background-color: ${({ theme }) => theme.colors.mainBack};
   position: relative;
   z-index: 1;
