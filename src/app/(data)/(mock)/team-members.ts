@@ -1,9 +1,6 @@
 import karenProfile from '../../../../public/karen-profile.jpg';
-import marconeProfile from '../../../../public/marcone-profile.jpg';
+import leroy from '../../../../public/leroy.png';
 import joaoProfile from '../../../../public/joao-profile.jpg';
-import c from '../../../../public/c.svg';
-import cPlusPlus from '../../../../public/cplusplus.svg';
-import python from '../../../../public/python.svg';
 import typeScript from '../../../../public/typescript.svg'
 import react from '../../../../public/react.svg'
 import nextJS from '../../../../public/nextjs.svg'
@@ -16,14 +13,14 @@ export const TeamMembers = [
   {
     id: '1',
     profile: {
-      name: 'Marcone Tenório',
+      name: 'Victor Leroy',
       expertise: [
-        c,
-        cPlusPlus,
-        python
+        nodeJs,
+        typeScript,
+        nextJS
       ],
-      charge: 'Embedded developer',
-      img: marconeProfile,
+      charge: 'Full-Stack Developer',
+      img: leroy,
 
     },
   },
