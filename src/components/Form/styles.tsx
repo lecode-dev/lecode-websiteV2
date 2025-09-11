@@ -26,7 +26,7 @@ export const FormContainer = styled.div`
   justify-content: center;
   padding: 2.25rem 0.5rem; // 36px 8px
   width: 80%;
-  height: 48rem; // 540px
+  height: 58rem; // 928px
   background-color: ${({ theme }) => theme.colors.mainBack};
   position: relative;
   z-index: 1;
@@ -135,7 +135,7 @@ export const FormInputContainer = styled.div`
   align-items: center;
   gap: 1.5rem; // 24px
   width: 80%;
-  height: 9.75rem; // 156px
+  height: 20.75rem; // 332px
 
   @media (max-width: 600px) {
     width: 100%;
@@ -150,6 +150,16 @@ export const FormInputContent = styled.div`
   gap: 0.375rem; // 6px
   width: 80%;
   height: 4.125rem; // 66px
+`;
+
+export const FormInputContentMessage = styled.div`
+  display: flex;
+  font-family: ${montserratSubtitle.style.fontFamily};
+  flex-direction: column;
+  align-items: start;
+  gap: 0.375rem; // 6px
+  width: 80%;
+  height: 9.5rem; // 152px
 `;
 
 export const FormLabel = styled.label`
@@ -172,6 +182,19 @@ export const FormInput = styled.input`
   background-color: #ffffff;
   color: #000000;
   outline: none;
+`;
+
+export const FormTextArea = styled.textarea`
+  width: 100%;
+  font-family: ${montserratSubtitle.style.fontFamily};
+  height: 8rem; // 128px
+  padding: 0.5rem; // 8px
+  border: 1px solid #000000;
+  border-radius: 0.25rem; // 4px
+  background-color: #ffffff;
+  color: #000000;
+  outline: none;
+  resize: none;
 `;
 
 export const ReCAPTCHAContainer = styled.div`
