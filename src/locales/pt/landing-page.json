@@ -45,12 +45,14 @@
     "title": "Vamos <span>juntos</span> tornar seu <span>negócio único</span>?",
     "subtitle": "Entre em contato conosco para avaliarmos o que podemos fazer pela sua equipe",
     "labelCompanyName": "Nome da sua Empresa",
-    "labelEmail": "Email"
+    "labelEmail": "Email",
+    "labelMessage": "Mensagem"
   },
   "formValidation": {
     "requiredName": "Nome da empresa é obrigatório",
     "invalidEmail": "Email inválido",
-    "requiredEmail": "Email é obrigatório"
+    "requiredEmail": "Email é obrigatório",
+    "requiredMessage": "A mensagem é obrigatória"
   },
   "toastEmailStatus": {
     "successEmail": "Email enviado com sucesso",
