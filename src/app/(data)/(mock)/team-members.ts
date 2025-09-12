@@ -2,18 +2,21 @@ import karenProfile from '../../../../public/karen-profile.jpg';
 import leroy from '../../../../public/leroy.png';
 import joaoProfile from '../../../../public/joao-profile.jpg';
 import typeScript from '../../../../public/typescript.svg'
-import react from '../../../../public/react.svg'
 import nextJS from '../../../../public/nextjs.svg'
 import nodeJs from '../../../../public/nodejs.svg'
 import electron from '../../../../public/electron.svg'
 import webpack from '../../../../public/webpack.svg'
+import agile from '../../../../public/agile.svg'
+import calendar from '../../../../public/calendar.svg'
+import jira from '../../../../public/jira.svg'
+
 
 
 export const TeamMembers = [
   {
     id: '1',
     profile: {
-      name: 'Victor Leroy',
+      name: 'Victor Le Roy',
       expertise: [
         nodeJs,
         typeScript,
@@ -42,11 +45,11 @@ export const TeamMembers = [
     profile: {
       name: 'Káren Myllena Gonçalves',
       expertise: [
-        typeScript,
-        nextJS,
-        react,
+        jira,
+        calendar,
+        agile,
       ],
-      charge: 'Web Developer',
+      charge: 'Project Manager',
       img: karenProfile,
     },
   },

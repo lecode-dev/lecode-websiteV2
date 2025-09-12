@@ -98,8 +98,8 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
             <ListTecnologys>SQL Server</ListTecnologys>
             <ListTecnologys>AWS</ListTecnologys>
             <ListTecnologys>Github</ListTecnologys>
-            <ListTecnologys>ConsumosDB</ListTecnologys>
-            <ListTecnologys>Cloudnary</ListTecnologys>
+            <ListTecnologys>CosmosDB</ListTecnologys>
+            <ListTecnologys>Cloudinary</ListTecnologys>
             <ListTecnologys>Auth0</ListTecnologys>
           </UnorderedListTecnology>
         </CardTechnology>
