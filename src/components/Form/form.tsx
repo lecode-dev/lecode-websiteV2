@@ -1,5 +1,4 @@
 'use client';
-
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -27,6 +26,8 @@ import {
   FormInputContent,
   BackgroundImageContainer,
   ReCAPTCHAContainer,
+  FormTextArea,
+  FormInputContentMessage,
 } from './styles';
 
 export const Form = () => {
@@ -38,6 +39,7 @@ export const Form = () => {
   const schema = z.object({
     name: z.string().min(1, t('formValidation.requiredName')),
     email: z.string().email(t('formValidation.invalidEmail')).min(1, t('formValidation.requiredEmail')),
+    message: z.string().min(1, t('formValidation.requiredMessage')),
   });
 
   type FormData = z.infer<typeof schema>;
@@ -132,6 +134,14 @@ export const Form = () => {
               />
               {errors.email ? <p>{errors.email.message}</p> : null}
             </FormInputContent>
+            <FormInputContentMessage>
+              <FormLabel htmlFor='message'>{t('contactUs.labelMessage')}:</FormLabel>
+              <FormTextArea
+                id='message'
+                {...register('message')}
+              />
+              {errors.message ? <p>{errors.message.message}</p> : null}
+            </FormInputContentMessage>
           </FormInputContainer>
           <ReCAPTCHAContainer>
             <ReCAPTCHA

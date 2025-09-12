@@ -45,12 +45,14 @@
     "title": "<span>Together</span>, we elevate <span>your business</span> to a whole new level.",
     "subtitle": "Contact us to see what we can do for your team",
     "labelCompanyName": "Company Name",
-    "labelEmail": "Email"
+    "labelEmail": "Email",
+    "labelMessage": "Message"
   },
   "formValidation": {
     "requiredName": "Company name is required",
     "invalidEmail": "Invalid email",
-    "requiredEmail": "Email is required"
+    "requiredEmail": "Email is required",
+    "requiredMessage": "Message is required"
   },
   "toastEmailStatus": {
     "successEmail": "Email sent successfully",
