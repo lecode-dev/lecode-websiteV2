@@ -202,3 +202,8 @@ export const ReCAPTCHAContainer = styled.div`
   justify-content: center;
   width: 80%;
 `;
+
+export const FormError = styled.p`
+  color: red;
+  font-size: 0.75rem;
+`;
