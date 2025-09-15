@@ -28,6 +28,7 @@ import {
   ReCAPTCHAContainer,
   FormTextArea,
   FormInputContentMessage,
+  FormError,
 } from './styles';
 
 export const Form = () => {
@@ -123,7 +124,7 @@ export const Form = () => {
                 id='name'
                 {...register('name')}
               />
-              {errors.name ? <p>{errors.name.message}</p> : null}
+              {errors.name ? <FormError>{errors.name.message}</FormError> : null}
             </FormInputContent>
             <FormInputContent>
               <FormLabel htmlFor='email'>{t('contactUs.labelEmail')}:</FormLabel>
@@ -132,7 +133,7 @@ export const Form = () => {
                 id='email'
                 {...register('email')}
               />
-              {errors.email ? <p>{errors.email.message}</p> : null}
+              {errors.email ? <FormError>{errors.email.message}</FormError> : null}
             </FormInputContent>
             <FormInputContentMessage>
               <FormLabel htmlFor='message'>{t('contactUs.labelMessage')}:</FormLabel>
@@ -140,7 +141,7 @@ export const Form = () => {
                 id='message'
                 {...register('message')}
               />
-              {errors.message ? <p>{errors.message.message}</p> : null}
+              {errors.message ? <FormError>{errors.message.message}</FormError> : null}
             </FormInputContentMessage>
           </FormInputContainer>
           <ReCAPTCHAContainer>
