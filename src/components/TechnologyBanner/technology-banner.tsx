@@ -52,10 +52,10 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
         <CardTechnology>
           <TitleCardTechnology>Front-end</TitleCardTechnology>
           <StyledImage
-           alt='React logo'
-           src={reactLogo}
-          ></StyledImage>
-          <MainTitleTechnology></MainTitleTechnology>
+            alt='React logo'
+            src={reactLogo}
+          />
+          <MainTitleTechnology />
           <TechnologyDescription>{t('technology.subtitleFrontEnd')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -73,7 +73,7 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
             alt='C# logo'
             src={cSharpLogo}
           />
-          <MainTitleTechnology></MainTitleTechnology>
+          <MainTitleTechnology />
           <TechnologyDescription>{t('technology.subtitleBackEnd')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
@@ -91,7 +91,7 @@ export const TechnologyBanner = ({ id }: TechnologyContainerProps) => {
             alt='Azure logo'
             src={azureLogo}
           />
-          <MainTitleTechnology></MainTitleTechnology>
+          <MainTitleTechnology />
           <TechnologyDescription>{t('technology.subtitleInfra')}</TechnologyDescription>
           <OthersFrameworksText>{t('technology.therFrameworks')}</OthersFrameworksText>
           <UnorderedListTecnology>
