@@ -90,7 +90,7 @@ export const Title = styled(motion.h1)`
   }
 `;
 
-export const SpanWithStroke = styled(motion.span)<SpanWithStrokeProps>`
+export const SpanWithStroke = styled(motion.span) <SpanWithStrokeProps>`
   position: relative;
 
   img {
@@ -128,18 +128,19 @@ export const ImagesContainer = styled(motion.div)`
 
 export const HeroImage = styled(Image)`
   position: relative;
-  width: 70%;
-  height: 70%;
-  max-width: 63.9375rem;
-  max-height: 34.40794rem;
-  top: -2.6875rem; // -43px
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  max-width: 43.9375rem;
+  max-height: 24.40794rem;
   left: -0.25rem; // -4px
+  top: 1rem;
   z-index: 1;
 
   @media (${Styles.devices.laptop}) {
     width: 80%;
     height: 80%;
-    top: -2.0625rem; // -33px
+    top: 0.8rem;
     left: -0.1875rem; // -3px
   }
 
@@ -151,7 +152,7 @@ export const HeroImage = styled(Image)`
 export const RectangleWithGreenStroke = styled(Image)`
   position: absolute;
   height: 100%;
-  top: 40%;
+  top: 45%;
 `;
 
 export const HeroGroupImageLeft = styled(Image)`
@@ -229,13 +230,13 @@ export const CardsContainer = styled(motion.div)`
   justify-content: center;
   align-items: flex-start;
   gap: 4.5rem; // 72px
-  top: -2.625rem; // -42px
+  top: -1rem; // -42px
   background-color: ${({ theme }) => theme.colors.white};
 
   @media (${Styles.devices.laptop}) {
     gap: 3.125rem; // 50px
     padding: 2.5rem 1.5625rem 0 1.5625rem; // 40px 25px 0 25px
-    top: -2.125rem; // -34px
+    top: -0.8rem; // -34px
   }
 
   @media (${Styles.devices.tablet}) {

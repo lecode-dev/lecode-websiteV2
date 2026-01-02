@@ -60,18 +60,18 @@ export const DotsContainer = styled.div`
   margin-top: 1rem;
 `
 
-export const Dot = styled.button<{ active: boolean }>`
+export const Dot = styled.button<{ $active: boolean }>`
   width: 8px;
   height: 8px;
   border-radius: 50%;
   border: none;
-  background-color: ${({ active }) => active ? '#000' : '#ccc'};
+  background-color: ${({ $active }) => $active ? '#000' : '#ccc'};
   cursor: pointer;
   padding: 0;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: ${({ active }) => active ? '#000' : '#999'};
+    background-color: ${({ $active }) => $active ? '#000' : '#999'};
   }
 `
 

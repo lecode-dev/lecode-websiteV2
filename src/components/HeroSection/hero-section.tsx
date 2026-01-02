@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { Trans, useTranslation } from 'react-i18next';
-import HeroImg from '../../images/hero-image.png';
+import HeroImg from '../../images/hero-section.svg';
 import HeroGroupImgLeft from '../../images/hero-group-left.svg';
 import RetangleWithGreenShadow from '../../images/rectangle-with-green-shadow.svg';
 import HeroGroupSecundaryImgLeft from '../../images/hero-group-secundary-left.svg';
@@ -72,13 +72,13 @@ export const HeroSection = () => {
         const rect = header.getBoundingClientRect();
         setHeaderPosition({ top: rect.top, left: rect.left, width: rect.width });
       }
-      setIsSmallScreen(window.innerWidth <= 768);
+      setIsSmallScreen(globalThis.innerWidth <= 768);
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
+    globalThis.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      globalThis.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -95,8 +95,8 @@ export const HeroSection = () => {
     },
     animate: {
       opacity: 0,
-      x: isSmallScreen ? -window.innerWidth / 2 + 100 : (headerPosition.left + headerPosition.width / 2 - window.innerWidth / 2) + 10,
-      y: isSmallScreen ? headerPosition.top - window.innerHeight / 2 + 33 : headerPosition.top - window.innerHeight / 2 + 55,
+      x: isSmallScreen ? -globalThis.innerWidth / 2 + 100 : (headerPosition.left + headerPosition.width / 2 - globalThis.innerWidth / 2) + 10,
+      y: isSmallScreen ? headerPosition.top - globalThis.innerHeight / 2 + 33 : headerPosition.top - globalThis.innerHeight / 2 + 55,
       scale: 1,
       transition: { duration: 1 },
     },

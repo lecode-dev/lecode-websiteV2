@@ -13,12 +13,12 @@ import scouthubLogo from '../../../public/clients/scouthubLogo.svg'
 import workStory from '../../../public/clients/workStory.svg'
 import synergyLogo from '../../../public/clients/synergyLogo.svg'
 import bentCareLogo from '../../../public/clients/bentCareLogo.svg'
-import { 
-  CarouselContainer, 
-  CarouselWrapper, 
-  CarouselSlide, 
-  NavigationButton, 
-  DotsContainer, 
+import {
+  CarouselContainer,
+  CarouselWrapper,
+  CarouselSlide,
+  NavigationButton,
+  DotsContainer,
   Dot,
   TitleContainer,
   Title,
@@ -35,18 +35,18 @@ const logos = [
   { src: ethicsNetLogo2, alt: 'EthicsNet Logo' },
 ]
 
-export function NewCarousel () {
+export function NewCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const slideRef = useRef<HTMLDivElement>(null)
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex + 2 >= logos.length ? 0 : prevIndex + 2
     )
   }
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex - 2 < 0 ? logos.length - 2 : prevIndex - 2
     )
   }
@@ -68,7 +68,7 @@ export function NewCarousel () {
         <NavigationButton direction="left" onClick={prevSlide}>
           <Image alt='setaEsquerda' src={SetaEsquerda} />
         </NavigationButton>
-        
+
         <CarouselSlide ref={slideRef} style={{
           transform: `translateX(-${currentIndex * 50}%)`
         }}>
@@ -89,7 +89,7 @@ export function NewCarousel () {
           ))}
         </CarouselSlide>
         <NavigationButton direction="right" onClick={nextSlide}>
-          <Image 
+          <Image
             alt='setaDireita'
             src={SetaDireita}
           />
@@ -99,7 +99,7 @@ export function NewCarousel () {
         {Array.from({ length: totalDots }).map((_, index) => (
           <Dot
             key={index}
-            active={Math.floor(currentIndex / 2) === index}
+            $active={Math.floor(currentIndex / 2) === index}
             onClick={() => { goToSlide(index); }}
           />
         ))}
