@@ -46,9 +46,9 @@ export async function generateMetadata({
     alternates: {
       canonical: currentUrl,
       languages: {
-        'pt-BR': `${baseUrl}/pt`,
-        'en-US': `${baseUrl}/en`,
-        'es-ES': `${baseUrl}/es`,
+        pt: `${baseUrl}/pt`,
+        en: `${baseUrl}/en`,
+        es: `${baseUrl}/es`,
         'x-default': baseUrl,
       },
     },
