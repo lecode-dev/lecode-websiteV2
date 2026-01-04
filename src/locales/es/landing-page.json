@@ -89,5 +89,12 @@
     "cardSubTitle3": "Después de la aprobación, nuestro profesional será asignado a tu empresa en 7 días, sin demoras ni burocracia.",
     "cardTitle4": "Seguimiento del Proyecto",
     "cardSubTitle4": "Mientras nuestros profesionales estén a tu disposición, proporcionaremos un seguimiento continuo y un seguimiento del rendimiento para garantizar la máxima eficiencia en la entrega del trabajo."
+  },
+  "seo": {
+    "title": "LeCode - Desarrollo Web de Alta Calidad | Consultoría y Outsourcing",
+    "description": "Expertos en React, JavaScript, Node.js, Electron y Next.js. Consultoría tecnológica y outsourcing. Asignación de talento técnico y desarrollo de soluciones digitales completas.",
+    "ogTitle": "LeCode - Desarrollo Web de Alta Calidad",
+    "ogDescription": "Expertos en React, JavaScript, Node.js, Electron y Next.js. Consultoría tecnológica y outsourcing para tu empresa.",
+    "siteName": "LeCode"
   }
 }
