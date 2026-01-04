@@ -40,6 +40,13 @@ export async function generateMetadata({
     ogLocale = 'en_US';
   }
 
+  const ogImageConfig = {
+    url: ogImage,
+    width: 1200,
+    height: 630,
+    alt: t('seo.ogTitle'),
+  };
+
   return {
     title: t('seo.title'),
     description: t('seo.description'),
@@ -57,14 +64,7 @@ export async function generateMetadata({
       description: t('seo.ogDescription'),
       url: currentUrl,
       siteName: t('seo.siteName'),
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: t('seo.ogTitle'),
-        },
-      ],
+      images: [ogImageConfig],
       locale: ogLocale,
       type: 'website',
     },
@@ -86,6 +86,9 @@ export default async function Layout({ children, params: { locale } }: LayoutPro
       resources={resources}
       namespaces={i18nNamespaces}
     >
+      <head>
+        <meta name="google-site-verification" content="BZhBqoGx6SDryOP_8vIFZbRlmGeec18IE2GETf7fTys" />
+      </head>
       <StructuredData locale={locale} />
       {children}
     </TranslationProvider>

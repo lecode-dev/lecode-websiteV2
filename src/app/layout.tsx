@@ -5,6 +5,7 @@ import { i18nConfig } from '@/i18n';
 import { Analytics } from '@/components/Analytics';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://lecode.dev'),
   title: 'LeCode',
   description:
     'LeCode Enterprise specializes in web development and operates as an agency with expertise in React, JavaScript, Node.js, Electron, and Next.js.',
