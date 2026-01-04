@@ -89,5 +89,12 @@
     "cardSubTitle3": "After approval, our professional will be allocated to your company within 7 days, without any delays or bureaucracy.",
     "cardTitle4": "Project Monitoring",
     "cardSubTitle4": "While our professionals are at your disposal, we will provide continuous monitoring and performance tracking to ensure maximum efficiency in delivering the work."
+  },
+  "seo": {
+    "title": "LeCode - High Quality Web Development | Consulting and Outsourcing",
+    "description": "Experts in React, JavaScript, Node.js, Electron and Next.js. Technology consulting and outsourcing. Technical talent allocation and complete digital solutions development.",
+    "ogTitle": "LeCode - High Quality Web Development",
+    "ogDescription": "Experts in React, JavaScript, Node.js, Electron and Next.js. Technology consulting and outsourcing for your business.",
+    "siteName": "LeCode"
   }
 }

@@ -89,5 +89,12 @@
     "cardSubTitle3": "Após a aprovação, nosso profissional será alocado em até 7 dias dentro da sua empresa, sem perda de tempo e sem burocracia.",
     "cardTitle4": "Acompanhamento",
     "cardSubTitle4": "Enquanto nossos profissionais estiverem à sua disposição, faremos todo o acompanhamento e monitoramento do desempenho para garantir a máxima eficiência na entrega do trabalho."
+  },
+  "seo": {
+    "title": "LeCode - Desenvolvimento Web de Alta Qualidade | Consultoria e Outsourcing",
+    "description": "Especialistas em React, JavaScript, Node.js, Electron e Next.js. Consultoria e outsourcing de profissionais de tecnologia. Alocação de talentos técnicos e desenvolvimento de soluções digitais completas.",
+    "ogTitle": "LeCode - Desenvolvimento Web de Alta Qualidade",
+    "ogDescription": "Especialistas em React, JavaScript, Node.js, Electron e Next.js. Consultoria e outsourcing de profissionais de tecnologia para sua empresa.",
+    "siteName": "LeCode"
   }
 }
