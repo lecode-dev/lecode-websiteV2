@@ -1,20 +1,11 @@
 'use client'
 import { Trans } from 'react-i18next';
 import styled from 'styled-components';
-import {Styles} from '@/styles';
-import { Carousel } from '../Carousel';
-import {
-  ComponentContainer,
-  ClientsContainer,
-  TitleContainer,
-  ClientCard,
-  ClientsCarouselContainer,
-  Title,
-} from './styles';
 import Image from 'next/image';
+import { Styles } from '@/styles';
 import LecodeLogoBackground from '@/images/lecode-logo-background.svg';
-import {LogoBackground} from '../../app/(components)/(testimony)/styles';
-
+import { Carousel } from '../Carousel';
+import { LogoBackground } from '../../app/(components)/(testimony)/styles';
 import novoLogo from '../../../public/clients/novoLogo.svg';
 import autonomyLogo from '../../../public/clients/autonomyLogo.svg';
 import ethicsNetLogo from '../../../public/clients/ethicsNetLogo.svg';
@@ -23,8 +14,16 @@ import scouthubLogo from '../../../public/clients/scouthubLogo.svg';
 import workStory from '../../../public/clients/workStory.svg';
 import synergyLogo from '../../../public/clients/synergyLogo.svg';
 import bentCareLogo from '../../../public/clients/bentCareLogo2.svg';
+import {
+  ComponentContainer,
+  ClientsContainer,
+  TitleContainer,
+  ClientCard,
+  ClientsCarouselContainer,
+  Title,
+} from './styles';
 
-const ResponsiveImage = styled(Image) `
+const ResponsiveImage = styled(Image)`
 width: 200px;
 height: 200px;
 
@@ -62,7 +61,7 @@ export const Clients = () => {
         </Title>
       </TitleContainer>
       <ClientsContainer>
-      {BackgroundLogo.map((props, index) => (
+        {BackgroundLogo.map((props, index) => (
           <LogoBackground
             key={`logo-background-${index}`}
             src={LecodeLogoBackground}
