@@ -1,5 +1,3 @@
-// import { TestimonyContainer } from '@/app/(components)/(testimony)/testimony-container';
-// import { TestimonyData } from '@/app/(data)/(mock)/testimonies';
 import { Content, ScrollbarWrapper } from '@/app/(components)/(body)/body';
 import { Form } from '@/components/Form';
 import { Navbar } from '@/components/Navbar';
@@ -11,12 +9,17 @@ import { HeroSection } from '@/components/HeroSection';
 import { TeamMembers } from '@/app/(data)/(mock)/team-members';
 import { ProcessProgress } from '@/components/ProcessProgress';
 import { NewCarousel } from '@/components/NewCarousel';
+import { i18nConfig } from '@/i18n';
 import { TeamLecodeContainer } from '../(components)/(team)/team-member-container';
+
+export function generateStaticParams() {
+  return i18nConfig.locales.map((locale) => ({ locale }));
+}
 
 export default function Home() {
   return (
     <main>
-      <HeaderMobile/>
+      <HeaderMobile />
       <Navbar />
       <ScrollbarWrapper>
         <Content>
@@ -26,9 +29,9 @@ export default function Home() {
             id='team'
             profiles={TeamMembers}
           />
-          <ProcessProgress/>
+          <ProcessProgress />
           <Clients />
-          <NewCarousel/>
+          <NewCarousel />
           {/* <TestimonyContainer testimonies={TestimonyData} /> */}
           <Form />
           <Footer />
@@ -37,3 +40,5 @@ export default function Home() {
     </main>
   );
 }
+
+export const dynamic = 'force-static';

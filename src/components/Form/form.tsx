@@ -31,11 +31,14 @@ import {
   FormError,
 } from './styles';
 
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? '';
+
 export const Form = () => {
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement>(null);
   const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
+  const hasRecaptcha = Boolean(RECAPTCHA_SITE_KEY);
 
   const schema = z.object({
     name: z.string().min(1, t('formValidation.requiredName')),
@@ -67,7 +70,7 @@ export const Form = () => {
   };
 
   const onSubmit = async () => {
-    if (!recaptchaValue) {
+    if (hasRecaptcha && !recaptchaValue) {
       toast.error(t('formValidation.recaptcha'));
       return;
     }
@@ -87,7 +90,7 @@ export const Form = () => {
       await sendForm(serviceId, templateId, form.current, publicKey);
       toast.success(t('toastEmailStatus.successEmail'));
       reset();
-      recaptchaRef.current?.reset();
+      if (hasRecaptcha) recaptchaRef.current?.reset();
     } catch (error) {
       toast.error(t('toastEmailStatus.failedEmail'));
     } finally {
@@ -144,15 +147,17 @@ export const Form = () => {
               {errors.message ? <FormError>{errors.message.message}</FormError> : null}
             </FormInputContentMessage>
           </FormInputContainer>
-          <ReCAPTCHAContainer>
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
-              onChange={(value) => {
-                setRecaptchaValue(value);
-              }}
-            />
-          </ReCAPTCHAContainer>
+          {hasRecaptcha ? (
+            <ReCAPTCHAContainer>
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={RECAPTCHA_SITE_KEY}
+                onChange={(value) => {
+                  setRecaptchaValue(value);
+                }}
+              />
+            </ReCAPTCHAContainer>
+          ) : null}
           <ContactButton type='submit'>
             {loading ? (
               <motion.div

@@ -17,23 +17,23 @@ export const TeamLecode = ({ id, profile }: TeamMembersProps) => {
           alt='Profile picture of an person in black and white'
         />
         <NameAndExpertiseContainer>
-        <MemberName>{profile.name}</MemberName>
-        <ExpertiseContainer>
-          <Subparagraph>{profile.charge}</Subparagraph>
-          <TechnologyContainer>
-          {profile.expertise.map((item: any) => (
-            <Image
-              src={item}
-              alt='technologies icons'
-              key={id}
-              width={20}
-              height={20}
-            />
-          ))}
-          </TechnologyContainer>
-        </ExpertiseContainer>
+          <MemberName>{profile.name}</MemberName>
+          <ExpertiseContainer>
+            <Subparagraph>{profile.charge}</Subparagraph>
+            <TechnologyContainer>
+              {profile.expertise.map((item: any, index: number) => (
+                <Image
+                  src={item}
+                  alt='technologies icons'
+                  key={`${id}-expertise-${index}`}
+                  width={20}
+                  height={20}
+                />
+              ))}
+            </TechnologyContainer>
+          </ExpertiseContainer>
         </NameAndExpertiseContainer>
-        
+
       </ProfileContainer>
     </div>
   );

@@ -216,7 +216,7 @@ export const HeroSection = () => {
               i18nKey='aboutUs.description'
               components={{
                 span: <span />,
-                strokeSpan: <SpanWithStroke language={currentLanguage} />,
+                strokeSpan: <SpanWithStroke $language={currentLanguage} />,
                 animatedImage: (
                   <AnimatedImage
                     src={Stroke}
