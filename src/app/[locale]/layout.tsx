@@ -81,16 +81,15 @@ export default async function Layout({ children, params: { locale } }: LayoutPro
   const { resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
-    <TranslationProvider
-      locale={locale}
-      resources={resources}
-      namespaces={i18nNamespaces}
-    >
-      <head>
-        <meta name="google-site-verification" content="BZhBqoGx6SDryOP_8vIFZbRlmGeec18IE2GETf7fTys" />
-      </head>
+    <>
       <StructuredData locale={locale} />
-      {children}
-    </TranslationProvider>
+      <TranslationProvider
+        locale={locale}
+        resources={resources}
+        namespaces={i18nNamespaces}
+      >
+        {children}
+      </TranslationProvider>
+    </>
   );
 }
