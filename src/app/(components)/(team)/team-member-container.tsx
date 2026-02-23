@@ -12,7 +12,7 @@ export const TeamLecodeContainer = ({ id, profiles }: TeamLecodeContainerProps) 
     <SectionContainer id={id}>
       <ContactTeam />
       <MemberContainer>
-        {profiles.map(({ id: profileId,  profile }) => (
+        {profiles.map(({ id: profileId, profile }) => (
           <TeamLecode
             id={profileId}
             profile={profile}
