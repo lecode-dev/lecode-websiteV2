@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { Trans, useTranslation } from 'react-i18next';
@@ -15,10 +15,7 @@ import PuzzleIcon from '../../images/module-puzzle.svg';
 import UserIcon from '../../images/user-expert.svg';
 import TimeIcon from '../../images/subway-time.svg';
 import Stroke from '../../images/stroke.svg';
-import Logo from '../../../public/lecode-logo.svg';
 import {
-  AnimatedLogo,
-  AnimatedLogoContainer,
   Card,
   CardDescription,
   CardTitle,
@@ -41,20 +38,12 @@ export const HeroSection = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
-  const [isLogoVisible, setIsLogoVisible] = useState(true);
-
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  const [headerPosition, setHeaderPosition] = useState({ top: 0, left: 0, width: 0 });
-
   const AnimatedImage = motion(Image);
   const AnimatedGroupImageLeft = motion(HeroGroupImageLeft);
   const AnimatedGroupSecundaryImageLeft = motion(HeroGroupSecundaryImageLeft);
   const AnimatedGroupImageRight = motion(HeroGroupImageRight);
   const AnimatedGroupSecundaryImageRight = motion(HeroGroupSecundaryImageRight);
 
-  const logoContainerControls = useAnimation();
-  const logoControls = useAnimation();
   const titleContainerControls = useAnimation();
   const strokeControls = useAnimation();
   const titleControls = useAnimation();
@@ -65,46 +54,9 @@ export const HeroSection = () => {
   const groupImageRightControls = useAnimation();
   const groupSecundaryImageRightControls = useAnimation();
 
-  useEffect(() => {
-    const handleResize = () => {
-      const header = document.querySelector('header');
-      if (header) {
-        const rect = header.getBoundingClientRect();
-        setHeaderPosition({ top: rect.top, left: rect.left, width: rect.width });
-      }
-      setIsSmallScreen(globalThis.innerWidth <= 768);
-    };
-
-    handleResize();
-    globalThis.addEventListener('resize', handleResize);
-    return () => {
-      globalThis.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const logoContainerVariants = {
-    initial: { opacity: 1, zIndex: 1000 },
-    animate: { opacity: 0, zIndex: 0, transition: { duration: 0.5 } },
-  };
-
-  const logoVariants = {
-    initial: { opacity: 0, x: 0, y: 0, scale: 4 },
-    fadeIn: {
-      opacity: 1,
-      transition: { duration: 1, ease: 'easeInOut' },
-    },
-    animate: {
-      opacity: 0,
-      x: isSmallScreen ? -globalThis.innerWidth / 2 + 100 : (headerPosition.left + headerPosition.width / 2 - globalThis.innerWidth / 2) + 10,
-      y: isSmallScreen ? headerPosition.top - globalThis.innerHeight / 2 + 33 : headerPosition.top - globalThis.innerHeight / 2 + 55,
-      scale: 1,
-      transition: { duration: 1 },
-    },
-  };
-
   const titleContainerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1 } },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
   };
 
   const strokeVariants = {
@@ -114,17 +66,17 @@ export const HeroSection = () => {
 
   const titleVariants = {
     hidden: { y: 100, opacity: 1 },
-    visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
   };
 
   const imagesContainerVariants = {
     hidden: { y: 200, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
   };
 
   const cardsContainerVariants = {
     hidden: { y: 200, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
   };
 
   const groupImageLeftVariants = {
@@ -149,10 +101,6 @@ export const HeroSection = () => {
 
   useEffect(() => {
     async function sequence() {
-      await logoControls.start('fadeIn'); // Fase de fadeIn do logo
-      await logoControls.start('animate'); // Animação do logo
-      await logoContainerControls.start('animate'); // Animação do container do logo
-      setIsLogoVisible(false); // Esconde o logo após a animação
       await titleContainerControls.start('visible'); // Animação do container
       await strokeControls.start('visible'); // Animação do stroke
       await Promise.all([
@@ -169,8 +117,6 @@ export const HeroSection = () => {
     }
     sequence();
   }, [
-    logoContainerControls,
-    logoControls,
     titleContainerControls,
     strokeControls,
     titleControls,
@@ -185,21 +131,6 @@ export const HeroSection = () => {
   return (
     <Container id='about'>
       <SectionContainer>
-        {isLogoVisible ? (
-          <AnimatedLogoContainer
-            initial='initial'
-            animate={logoContainerControls}
-            variants={logoContainerVariants}
-          >
-            <AnimatedLogo
-              src={Logo}
-              alt='Hero Image'
-              initial='initial'
-              animate={logoControls}
-              variants={logoVariants}
-            />
-          </AnimatedLogoContainer>
-        ) : null}
         <TitleContainer
           as={motion.div}
           initial='hidden'
